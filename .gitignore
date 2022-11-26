@@ -1,0 +1,5 @@
+*.rar
+*.zip
+*.jar
+*/build/
+*.class
