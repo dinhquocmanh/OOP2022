@@ -1,22 +1,25 @@
 
 package oop;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
 
 class Time{
-    private int hour, minute, second;
+    private short hour, minute, second; 
 
-    public Time(int hour, int minute, int second) {
+    public Time(short hour, short minute, short second) {
         this.hour = hour;
         this.minute = minute;
         this.second = second;
     }
     
-    public int to_second(){
-        return this.hour*60*60+this.minute*60+this.second;
-    }
     
-    public int compareTo(Time t){
-        return Integer.compare(this.to_second(), t.to_second());
+    public short compareTo(Time t){
+        int a = this.hour*60*60+this.minute*60+this.second - (t.hour*60*60+t.minute*60+t.second);
+        if(a>0) return 1;
+        else if(a<0) return -1;
+        else return 0;
     }
     
     @Override
@@ -30,9 +33,10 @@ public class J05033 {
     public static void main(String[] args) {
         ArrayList<Time> listTime = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
+        short n = sc.nextShort();
+        
         for (int i = 0; i < n; i++) {
-            Time t = new Time(sc.nextInt(), sc.nextInt(), sc.nextInt());
+            Time t = new Time(sc.nextShort(), sc.nextShort(), sc.nextShort());
             listTime.add(t);
         }
           
