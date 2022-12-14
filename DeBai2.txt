@@ -1,0 +1,5228 @@
+------------------------------
+CODE: DSA06023
+Hãy thực hiện thuật toán sắp xếp đổi chỗ trực tiếp trên dãy N số nguyên. Ghi ra các bước thực hiện thuật toán.
+Dữ liệu vào: Dòng 1 ghi số N (không quá 100). Dòng 2 ghi N số nguyên dương (không quá 100).
+Kết quả: Ghi ra màn hình từng bước thực hiện thuật toán. Mỗi bước trên một dòng, các số trong dãy cách nhau đúng một khoảng trống.
+Ví dụ:
+Input
+Output
+4
+5 7 3 2
+Buoc 1: 2 7 5 3
+Buoc 2: 2 3 7 5
+Buoc 3: 2 3 5 7
+ 
+------------------------------
+CODE: DSA06024
+Hãy thực hiện thuật toán sắp xếp chọn trên dãy N số nguyên. Ghi ra các bước thực hiện thuật toán.
+Dữ liệu vào: Dòng 1 ghi số N (không quá 100). Dòng 2 ghi N số nguyên dương (không quá 100).
+Kết quả: Ghi ra màn hình từng bước thực hiện thuật toán. Mỗi bước trên một dòng, các số trong dãy cách nhau đúng một khoảng trống.
+Ví dụ:
+Input
+Output
+4
+5 7 3 2
+Buoc 1: 2 7 3 5
+Buoc 2: 2 3 7 5
+Buoc 3: 2 3 5 7
+ 
+------------------------------
+CODE: DSA06025
+Hãy thực hiện thuật toán sắp xếp chèn trên dãy N số nguyên. Ghi ra các bước thực hiện thuật toán.
+Dữ liệu vào: Dòng 1 ghi số N (không quá 100). Dòng 2 ghi N số nguyên dương (không quá 100).
+Kết quả: Ghi ra màn hình từng bước thực hiện thuật toán. Mỗi bước trên một dòng, các số trong dãy cách nhau đúng một khoảng trống.
+Ví dụ:
+Input
+Output
+4
+5 7 3 2
+Buoc 0: 5
+Buoc 1: 5 7
+Buoc 2: 3 5 7
+Buoc 3: 2 3 5 7
+ 
+------------------------------
+CODE: DSA06026
+Hãy thực hiện thuật toán sắp xếp nổi bọt trên dãy N số nguyên. Ghi ra các bước thực hiện thuật toán.
+Dữ liệu vào: Dòng 1 ghi số N (không quá 100). Dòng 2 ghi N số nguyên dương (không quá 100).
+Kết quả: Ghi ra màn hình từng bước thực hiện thuật toán. Mỗi bước trên một dòng, các số trong dãy cách nhau đúng một khoảng trống.
+Ví dụ:
+Input
+Output
+4
+5 3 2 7
+Buoc 1: 3 2 5 7
+Buoc 2: 2 3 5 7
+   
+------------------------------
+CODE: DSA07020
+Cho một xâu ký tự str bao gồm nhiều từ trong xâu. Hãy đảo ngược từng từ trong xâu?
+Input:
+Dòng đầu tiên đưa vào số lượng bộ test T;
+Những dòng tiếp theo mỗi dòng đưa vào một bộ test. Mỗi bộ test là một dòng ghi lại nhiều từ trong xâu str.
+Output:
+Đưa ra kết quả mỗi test theo từng dòng.
+Ràng buộc:
+T, str thỏa mãn ràng buộc: 1≤T≤100; 2≤length(str)≤106.
+Ví dụ:
+Input
+Output
+2
+ABC DEF
+123 456
+CBA FED
+321 654
+ 
+------------------------------
+CODE: DSA07021
+Cho một xâu chỉ gồm các kí tự ‘(‘ và ‘)’. Một dãy ngoặc đúng được định nghĩa như sau:
+-     Xâu rỗng là 1 dãy ngoặc đúng.
+-     Nếu A là 1 dãy ngoặc đúng thì (A) là 1 dãy ngoặc đúng.
+-     Nếu A và B là 2 dãy ngoặc đúng thì AB là 1 dãy ngoặc đúng.
+Cho một xâu S. Nhiệm vụ của bạn là hãy tìm dãy ngoặc đúng dài nhất xuất hiện trong xâu đã cho.
+Input: Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
+Mỗi test gồm một xâu S có độ dài không vượt quá 105 kí tự.
+Output:  Với mỗi test in ra một số nguyên là độ dài dãy ngoặc đúng dài nhất tìm được.
+Ví dụ:
+Input:
+Output
+3
+((()
+)()())
+()(()))))
+  2
+4
+6
+ 
+------------------------------
+CODE: DSA07110
+Cho một xâu chỉ gồm các kí tự ‘(‘, ‘)’, ‘[‘, ‘]’, ‘{‘, ‘}’. Một dãy ngoặc đúng được định nghĩa như sau:
+-     Xâu rỗng là 1 dãy ngoặc đúng.
+-     Nếu A là 1 dãy ngoặc đúng thì (A), [A], {A} là 1 dãy ngoặc đúng.
+-     Nếu A và B là 2 dãy ngoặc đúng thì AB là 1 dãy ngoặc đúng.
+Cho một xâu S. Nhiệm vụ của bạn là xác định xâu S có là dãy ngoặc đúng hay không?
+Input:
+Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
+Mỗi test gồm 1 xâu S có độ dài không vượt quá 100 000.
+Output: 
+Với mỗi test, in ra “YES” nếu như S là dãy ngoặc đúng, in ra “NO” trong trường hợp ngược lại.
+Ví dụ:
+Input:
+Output
+2
+[()]{}{[()()]()}
+[(])
+YES
+NO
+ 
+------------------------------
+CODE: DSA08021
+Cho ma trận A[M][N]. Nhiệm vụ của bạn hãy tìm số bước đi ít nhất dịch chuyển từ vị trí A[1][1] đến vị trí A[M][N]. Biết mỗi bước đi ta chỉ được phép dịch chuyển đến vị trí A[i][j+A[i][j]] hoặc vị trí A[i+A[i][j]][j] bên trong ma trận.
+Input:
+Dòng đầu tiên đưa vào số lượng test T.
+Dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm hai phần: phần thứ nhất là hai số M, N; phần thứ hai là các phần tử của ma trận A[][]; các số được viết cách nhau một vài khoảng trống.
+T, M, N, A[i][j] thỏa mãn ràng buộc: 1≤T≤100; 1≤M, N, A[i][j]≤103.
+Output:
+Đưa ra kết quả mỗi test theo từng dòng. In ra -1 nếu không tìm được đáp án.
+Ví dụ:
+Input
+Output
+1
+3  3
+2  1  2
+1  1  1
+1  1  1
+2
+ 
+------------------------------
+CODE: DSA09001
+Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy viết chương trình thực hiện chuyển đổi biểu diễn đồ thị dưới dạng danh sách kề.
+Input:
+Dòng đầu tiên đưa vào T là số lượng bộ test.
+Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm |E| +1 dòng: dòng đầu tiên đưa vào hai số |V|, |E| tương ứng với số đỉnh và số cạnh của đồ thị; |E| dòng tiếp theo đưa vào các bộ đôi uÎV, vÎV tương ứng với một cạnh của đồ thị.
+T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤200; 1≤|V|≤103; 1≤|E|≤|V|(|V|-1)/2;
+Output:
+Đưa ra danh sách kề của các đỉnh tương ứng theo khuôn dạng của ví dụ dưới đây. Các đỉnh trong danh sách in ra theo thứ tự tăng dần.
+     Ví dụ:
+Input:
+Output:
+1
+6  9
+1  2
+1  3 
+2  3
+2  5
+3  4
+3  5
+4  5
+4  6
+5  6
+1: 2 3
+2: 1 3 5
+3: 1 2 4 5
+4: 3 5 6
+5: 2 3 4 6
+6: 4 5
+ 
+------------------------------
+CODE: DSA09002
+Cho đơn đồ thị G vô hướng liên thông được mô tả bởi danh sách kề. Hãy in ra danh sách cạnh tương ứng của G.
+Input
+Dòng đầu tiên ghi số N là số đỉnh (1<N<50)
+N dòng tiếp theo mỗi dòng ghi 1 danh sách kề lần lượt theo thứ tự từ đỉnh 1 đến đỉnh N
+Output: Ghi ra lần lượt từng cạnh của đồ thị theo thứ tự tăng dần.
+Ví dụ
+Input
+Output
+3
+2 3
+1 3
+1 2
+  1 2
+1 3
+2 3
+ 
+------------------------------
+CODE: DSA09003
+Cho đồ thị có hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy viết chương trình thực hiện chuyển đổi biểu diễn đồ thị dưới dạng danh sách kề.
+Input:
+Dòng đầu tiên đưa vào T là số lượng bộ test.
+Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm |E| +1 dòng: dòng đầu tiên đưa vào hai số |V|, |E| tương ứng với số đỉnh và số cạnh của đồ thị; |E| dòng tiếp theo đưa vào các bộ đôi uÎV, vÎV tương ứng với một cạnh của đồ thị.
+T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤200; 1≤|V|≤103; 1≤|E|≤|V|(|V|-1)/2;
+Output:
+Đưa ra danh sách kề của các đỉnh tương ứng theo khuôn dạng của ví dụ dưới đây. Các đỉnh trong danh sách in ra theo thứ tự tăng dần.
+     Ví dụ:
+  Input:
+Output:
+1
+6  9
+1  2
+2  5
+3  1
+3  2
+3  5
+4  3
+5  4
+5  6
+6  4
+1: 2
+2: 5
+3: 1 2 5
+4: 3
+5: 4 6
+6: 4
+ 
+------------------------------
+CODE: DSA09004
+Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy viết thuật toán duyệt theo chiều sâu bắt đầu tại đỉnh uÎV (DFS(u)=?)
+Input:
+Dòng đầu tiên đưa vào T là số lượng bộ test.
+Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm |E| +1 dòng: dòng đầu tiên đưa vào ba số |V|, |E| tương ứng với số đỉnh và số cạnh của đồ thị, và u là đỉnh xuất phát; |E| dòng tiếp theo đưa vào các bộ đôi uÎV, vÎV tương ứng với một cạnh của đồ thị.
+T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤200; 1≤|V|≤103; 1≤|E|≤|V|(|V|-1)/2;
+Output:
+Đưa ra danh sách các đỉnh được duyệt theo thuật toán DFS(u) của mỗi test theo khuôn dạng của ví dụ dưới đây.
+      Ví dụ:
+Input:
+Output:
+1
+6 9 5
+1 2
+1 3
+2 3
+2 4
+3 4
+3 5
+4 5
+4 6
+5 6
+5 3 1 2 4 6
+ 
+------------------------------
+CODE: DSA09005
+Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy viết thuật toán duyệt theo chiều rộng bắt đầu tại đỉnh uÎV (BFS(u)=?)
+Input:
+Dòng đầu tiên đưa vào T là số lượng bộ test.
+Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưa vào ba số |V|, |E|, uÎV tương ứng với số đỉnh, số cạnh và đỉnh bắt đầu duyệt; Dòng tiếp theo đưa vào các bộ đôi uÎV, vÎV tương ứng với một cạnh của đồ thị.
+T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤200; 1≤|V|≤103; 1≤|E|≤|V|(|V|-1)/2;
+Output:
+Đưa ra danh sách các đỉnh được duyệt theo thuật toán BFS(u) của mỗi test theo khuôn dạng của ví dụ dưới đây.
+     Ví dụ:
+Input:
+Output:
+1
+6 9 1
+1 2 1 3 2 3 2 5 3 4 3 5 4 5 4 6 5 6
+1 2 3 5 4 6
+ 
+------------------------------
+CODE: DSAKT053
+Cho hai số nguyên lớn N và M có không quá 1000 chữ số. Người ta muốn tính xem liệu có thể lấy ra nhiều nhất bao nhiêu chữ số trong N (không cần liên tiếp) và giữ nguyên thứ tự của nó để tạo ra một số X sao cho ta cũng có thể tìm thấy X trong số M theo cách tương tự.
+Input: Dòng đầu tiên là số lượng bộ test T (T ≤ 20). Mỗi test gồm hai dòng, dòng thứ nhất ghi số N, dòng thứ 2 ghi số M.
+Output:  Với mỗi test, hãy in ra số chữ số nhiều nhất có thể của X.
+Ví dụ:
+Input
+Output
+2
+144615
+4976135
+44
+88
+4
+0
+Giải thích test 1: số X tìm được là 4615.
+------------------------------
+CODE: DSAKT055
+Một người có cái túi thể tích V (V<1000). Anh ta có N đồ vật cần mang theo (N≤1000), mỗi đồ vật có thể tích là A[i] (A[i]≤100) và giá trị là C[i] (C[i]≤100). Hãy xác định tổng giá trị lớn nhất của các đồ vật mà người đó có thể mang theo, sao cho tổng thể tích không vượt quá V.
+Input
+Dòng đầu ghi số bộ test T (T<10)
+Mỗi bộ test gồm ba dòng. Dòng đầu ghi 2 số N và V. Dòng tiếp theo ghi N số của mảng A. Sau đó là một dòng ghi N số của mảng C.
+Dữ liệu vào luôn đảm bảo không có đồ vật nào có thể tích lớn hơn V.
+Output
+Với mỗi bộ test, ghi trên một dòng giá trị lớn nhất có thể đạt được.
+Ví dụ
+Input
+Output
+1
+15 10
+5 2 1 3 5 2 5 8 9 6 3 1 4 7 8
+1 2 3 5 1 2 5 8 7 4 1 2 3 2 1
+15
+ 
+------------------------------
+CODE: DSAKT110
+Có N ngôi nhà trên một dãy phố, mỗi ngôi nhà chứa đựng một số lượng tài sản khác nhau. Một tên trộm muốn ăp cắp được nhiều nhất tài sản của dãy phố nhưng không muốn lấy tài sản của hai nhà kề nhau. Hãy cho biết, bằng cách đó tên trộm có thể đánh cắp được nhiều nhất bao nhiêu tài sản.
+Input:
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng thứ nhất là một số N là số lượng ngôi nhà; dòng tiếp theo đưa vào N số là tài sản tương ứng trong mỗi ngôi nhà; các số được viết cách nhau một vài khoảng trống.
+T, N, A[i] thỏa mãn ràng buộc: 1≤T≤100;  1≤N ≤106; 1≤A[i] ≤107.
+Output:
+Đưa ra kết quả mỗi test theo từng dòng.
+Ví dụ:
+ Input
+Output
+2
+6
+5 5 10 100 10 5
+4
+3 2 7 10
+110
+13
+ 
+------------------------------
+CODE: J01004
+Viết chương trình kiểm tra một số nguyên dương có phải số nguyên tố hay không. Dòng đầu của dữ liệu vào ghi số bộ test. Mỗi dòng tiếp theo có một nguyên dương không quá 9 chữ số. Kết quả in ra YES nếu đó là số nguyên tố, in ra NO nếu ngược lại.
+  Input
+Output
+3
+123456
+997
+111111111
+NO
+YES
+NO
+ 
+------------------------------
+CODE: J01009
+Viết chương trình tính tổng S = 1 + 1.2 + 1.2.3 +   ...+1.2.3...n.  
+Dữ liệu vào chỉ có một dòng ghi số n không quá 20.
+Kết quả cũng được ghi trên một dòng duy nhất.  
+Input
+Output
+3
+9
+ 
+------------------------------
+CODE: J01011
+Tìm bội số chung nhỏ nhất và ước số chung lớn nhất của hai số nguyên dương a, b.
+Input:  
+Dòng đầu tiên đưa vào T là số lượng bộ test.
+T dòng tiếp theo mỗi dòng có một cặp số a, b.
+T, a, b thỏa mãn ràng buộc: 1≤T≤100; 1≤a, b≤108;
+Output:
+Đưa ra kết quả mỗi test theo từng dòng.
+       Ví dụ:
+  Input
+Output
+2
+5 10
+14 8
+10 5
+56 2
+ 
+------------------------------
+CODE: J01016
+Cho số nguyên dương N có không quá 18 chữ số. Hãy đếm xem số chữ số 4 cộng với số chữ số 7 trong N có phải bằng 4 hay bằng 7 hay không.
+Input
+Chỉ có số N
+Output
+Ghi ra YES hoặc NO tùy thuộc kết quả kiểm tra
+Ví dụ
+Input
+Output
+40047
+NO
+7747774
+YES
+1000000000000000000
+NO
+ 
+------------------------------
+CODE: J01017
+Viết chương trình kiểm tra số nguyên dương N có thỏa mãn tính chất: tất cả các chữ số cạnh nhau chỉ sai khác nhau đúng một đơn vị hay không. Ví dụ: số 123212 là số thỏa mãn, số 34578 không thỏa mãn.
+Input
+Dòng đầu ghi số số test (không quá 20). Mỗi test là 1 số nguyên dương N có ít nhất 2 chữ số, nhưng không quá 18 chữ số.
+Output
+Ghi ra YES hoặc NO
+Ví dụ
+Input
+Output
+3
+123212
+5654345676
+10233211123
+YES
+YES
+NO
+ 
+------------------------------
+CODE: J01018
+Cho số nguyên dương N. Hãy kiểm tra xem N có thỏa mãn đồng thời hai tính chất sau đây hay không?
+Tổng chữ số của N chia hết cho 10
+Các chữ số cạnh nhau đều khác nhau đúng 2 đơn vị
+Input
+Dòng đầu ghi số bộ test. Mỗi bộ test ghi trên một dòng số nguyên dương N. N có ít nhất 3 chữ số nhưng không quá 18 chữ số.
+Output
+Ghi ra YES hoặc NO tùy thuộc kết quả kiểm tra
+Ví dụ
+Input
+Output
+3
+1353
+246864
+123435
+NO
+YES
+NO
+   
+------------------------------
+CODE: J02004
+Nhập một dãy số nguyên có n phần tử (n không quá 100, các phần tử trong dãy không quá 109). Hãy viết chương trình kiểm tra xem dãy có phải đối xứng hay không. Nếu đúng in ra YES, nếu sai in ra NO.
+Dữ liệu vào: Dòng đầu ghi số bộ test, mỗi bộ test gồm hai dòng. Dòng đầu là số phần tử của dãy, dòng sau ghi ra dãy đó, mỗi số cách nhau một khoảng trống.
+Kết quả: In ra kết quả kiểm tra.
+Input
+Ouput
+2
+4
+1 4 4 1
+5
+1 5 5 5 3
+YES
+NO
+ 
+------------------------------
+CODE: J02005
+Cho dãy số a[] có n phần tử và dãy số b[] có m phần tử là các số nguyên dương nhỏ hơn 1000. Gọi tập hợp A là tập các số khác nhau trong a[], tập hợp B là tập các số khác nhau trong b[].
+Hãy tìm tập giao của A và B. 
+Input
+Dòng đầu ghi 2 số n và m (1 < n,m <100).
+Dòng thứ 2 ghi n số của a[].
+Dòng thứ 3 ghi m số của b[].
+Các số đều dương và nhỏ hơn 1000. 
+Output
+Ghi tập giao của A và B trên một dòng theo thứ tự từ nhỏ đến lớn. 
+Ví dụ
+Input
+Output
+5 6
+1 2 3 4 5
+3 4 5 6 7 8
+3 4 5
+   
+------------------------------
+CODE: J02006
+Cho dãy số a[] có n phần tử và dãy số b[] có m phần tử là các số nguyên dương nhỏ hơn 1000. Gọi tập hợp A là tập các số khác nhau trong a[], tập hợp B là tập các số khác nhau trong b[].
+Hãy tìm hợp của A và B
+Input
+Dòng đầu ghi 2 số n và m (1 < n,m <100).
+Dòng thứ 2 ghi n số của a[].
+Dòng thứ 3 ghi m số của b[].
+Các số đều dương và nhỏ hơn 1000. 
+Output
+Ghi ra hợp của hai tập A và B theo thứ tự tăng dần. 
+Ví dụ:
+Input
+Output
+5 6
+1 2 3 4 5
+3 4 5 6 7 8
+1 2 3 4 5 6 7 8
+  Giới hạn thời gian: 1s
+------------------------------
+CODE: J02017
+Cho dãy số A[] chỉ bao gồm các số nguyên dương. Người ta thu gọn dần dãy số bằng cách loại bỏ các cặp phần tử kề nhau mà có tổng là chẵn. Sau khi cặp phần tử đó bị loại ra thì dãy số được dồn lại. Cứ tiếp tục như vậy cho đến khi không còn cặp phần tử nào kề nhau có tổng chẵn nữa.
+Hãy tính xem cuối cùng dãy A[] còn bao nhiêu phần tử.
+Input
+Dòng đâu ghi số N là số phần tử của dãy (1 ≤ N ≤ 105 tức là dãy A có thể có đến 10 nghìn phần tử).
+Dòng tiếp theo ghi N số của dãy A (1 ≤ A[i] ≤ 100).
+Output
+Ghi ra trên một dòng số phần tử còn lại trong dãy A[].
+Ví dụ
+Input
+Output
+5
+2 3 4 5 6
+5
+Input
+Output
+10
+1 5 5 8 6 4 3 5 9 3
+2
+ 
+------------------------------
+CODE: J03011
+Cho hai số a và b trong đó a≤1012, b≤10250. Nhiệm vụ của bạn là tìm ước số chung lớn nhất của hai số a, b.
+Input:
+Dòng đầu tiên đưa vào T là số lượng bộ test.
+T dòng tiếp đưa các bộ test. Mỗi bộ test gồm hai dòng: dòng đầu tiên đưa vào số a; dòng tiếp theo đưa vào số b.
+Các số T, a, b thỏa mãn ràng buộc: 1≤T≤100; 1≤a≤1012; 1≤b≤10250;
+Output:
+Đưa ra kết quả mỗi test theo từng dòng.
+     Ví dụ:
+  Input
+Output
+1
+1221
+1234567891011121314151617181920212223242526272829
+3
+ 
+------------------------------
+CODE: J03015
+Cho hai xâu ký tự A và B mô tả hai số nguyên dương lớn có thể có đến 1000 chữ số.
+Có thể có các chữ số 0 ở đầu của A và B.
+Hãy tính A - B.
+Kết quả có thể âm, khi ghi ra cần loại bỏ các chữ số 0 ở đầu nếu có.
+Tất nhiên nếu kết quả là -0 thì ghi ra là 0.
+Input
+Có hai dòng ghi 2 số A và B.
+Output
+Ghi ra kết quả A - B.
+Ví dụ
+Input
+Output
+000123456789012345678901234567890
+00000000000000001234567890
+123456789012345678900000000000
+ 
+------------------------------
+CODE: J03033
+Viết chương trình tính bội số chung nhỏ nhất của hai số nguyên dương lớn (có thể đến 500 chữ số)
+Input:
+Dòng 1 ghi số bộ test. Mỗi bộ test gồm 2 dòng, mỗi dòng ghi một số.
+  Output:
+Với mỗi bộ test ghi ra kết quả trên một dòng.
+
+Ví dụ:
+Input Output
+3
+12
+100
+1212
+8888
+121212121212121212
+45678978 300
+26664
+102534181818181818079284
+   
+------------------------------
+CODE: J03038
+Cho một xâu ký tự S chỉ có các chữ cái Tiếng Anh viết thường. Hãy đếm xem có bao nhiêu ký tự chữ cái khác nhau trong S.
+Input: Có duy nhất một dòng chứa xâu ký tự S, độ dài không quá 100.
+Output: Ghi ra số ký tự chữ cái khác nhau
+Ví dụ:
+Input
+Output
+banana
+3
+ 
+------------------------------
+CODE: J04003
+Viết chương trình khai báo lớp Phân số gồm hai thuộc tính private là tử số và mẫu số. Các giá trị đều nguyên dương và không quá 18 chữ số.
+Sau đó thực hiện nhập vào một phân số và in ra phân số đó ở dạng tối giản.
+Input
+Có hai số nguyên dương lần lượt là tử số và mẫu số.
+Output
+Ghi ra phân số tối giản như trong ví dụ
+Ví dụ
+Input
+Output
+123 456
+41/152
+ 
+------------------------------
+CODE: J04005
+Viết chương trình khai báo lớp Thí Sinh gồm các thông tin: Họ tên, Ngày sinh, Điểm môn 1, Điểm môn 2, Điểm môn 3 và Tổng điểm.
+Đọc thông tin 1 thí sinh từ bàn phím và in ra màn hình 3 thông tin: Họ tên, Ngày sinh, Tổng điểm.
+Input
+Gồm 5 dòng lần lượt, mỗi dòng ghi 1 thông tin: Họ tên, Ngày sinh, Điểm môn 1, Điểm môn 2, Điểm môn 3. Họ tên không quá 50 chữ cái, Ngày sinh viết đúng chuẩn dd/mm/yyyy. Các giá trị điểm là số thực (float).
+Output
+Ghi ra Họ tên, Ngày sinh và Tổng điểm. Mỗi thông tin cách nhau một khoảng trống. Điểm được ghi ra với 1 số sau dấu phẩy.
+Ví dụ
+Input
+Output
+Nguyen Hoang Ha
+11/10/2001
+4.5
+10.0
+5.5
+Nguyen Hoang Ha 11/10/2001 20.0
+ 
+------------------------------
+CODE: J04006
+Viết chương trình khai báo lớp Sinh Viên gồm các thông tin: Mã SV, Họ tên, Lớp, Ngày sinh và Điểm GPA (dạng số thực float). Hàm khởi tạo không có tham số, gán các giá trị thuộc tính ở trạng thái mặc định (xâu ký tự rỗng, giá trị số bằng 0).
+Đọc thông tin 1 sinh viên từ bàn phím (không có mã sinh viên) và in ra màn hình. Trong đó Mã SV được gán là B20DCCN001. Ngày sinh được chuẩn hóa về dạng dd/mm/yyyy.
+Input
+Gồm 4 dòng lần lượt là Họ tên, Lớp, Ngày sinh và Điểm GPA.
+Trong đó:
+Họ tên không quá 30 chữ cái.
+Lớp theo đúng định dạng thường dùng ở PTIT
+Ngày sinh có đủ 3 phần ngày tháng năm nhưng có thể chưa đúng chuẩn dd/mm/yyyy.
+Điểm GPA đảm bảo trong thang điểm 4 với 2 nhiều nhất 2 số sau dấu phẩy. 
+Output
+Ghi thông tin sinh viên trên 1 dòng, mỗi thông tin cách nhau 1 khoảng trống.
+Ví dụ
+Input
+Output
+Nguyen Hoa Binh
+D20CQCN04-B
+2/2/2002
+2
+B20DCCN001 Nguyen Hoa Binh D20CQCN04-B 02/02/2002 2.00
+ 
+------------------------------
+CODE: J04007
+Một nhân viên làm việc trong công ty được lưu lại các thông tin sau:
+Mã nhân viên: được gán giá trị là 00001
+Họ tên: Xâu ký tự không quá 40 chữ cái.
+Giới tính: Nam hoặc Nu
+Ngày sinh: đúng theo chuẩn dd/mm/yyyy
+Địa chỉ: Xâu ký tự không quá 100 chữ cái
+Mã số thuế: Dãy số có đúng 10 chữ số
+Ngày ký hợp đồng: đúng theo chuẩn dd/mm/yyyy
+Viết chương trình nhập một nhân viên (không nhập mã) in ra màn hình thông tin của nhân viên đó.
+Input
+Gồm 6 dòng lần lượt ghi các thông tin theo thứ tự đã ghi trong đề bài. Không có mã nhân viên.
+Output
+Ghi ra đầy đủ thông tin nhân viên trên một dòng, các thông tin cách nhau đúng một khoảng trống.
+Ví dụ
+Input
+Nguyen Van Hoa
+Nam
+22/11/1982
+Mo Lao-Ha Dong-Ha Noi
+8333123456
+31/12/2013
+Output
+00001 Nguyen Van Hoa Nam 22/11/1982 Mo Lao-Ha Dong-Ha Noi 8333123456 31/12/2013
+ 
+------------------------------
+CODE: J04015
+Trường phổ thông XYZ tính lương giáo viên theo quy tắc sau:
+Mỗi giáo viên có mã ngạch gồm 4 ký tự trong đó
+2 ký tự đầu là chức vụ (HT: Giáo viên kiêm nhiệm Hiệu trưởng, HP: Giáo viên kiêm nhiệm Hiệu phó, GV: Giáo viên thường)
+2 ký tự số cuối cùng cho biết hệ số bậc lương (không quá 20)
+Lương cơ bản của mỗi giáo viên cũng có thể khác nhau
+Phụ cấp quy định như sau
+HT: 2.000.000
+HP: 900.000
+GV: 500.000
+Thu nhập được tính bằng lương cơ bản nhân với hệ số bậc lương và cộng thêm phụ cấp.
+Hãy tính lương cho 1 giáo viên theo quy tắc trên.
+Input
+Có 3 dòng lần lượt là mã ngạch, họ tên và lương cơ bản.
+Ouput
+Chỉ có một dòng ghi lần lượt các thông tin: mã ngạch, họ tên, bậc lương, phụ cấp, thu nhập.
+Ví dụ
+Input
+Output
+HP04
+Tran Quoc Huy
+1578000
+HP04 Tran Quoc Huy 4 900000 7212000
+ 
+------------------------------
+CODE: J05081
+Bài toán quản lý danh sách mặt hàng trong đó mỗi mặt hàng sẽ có các thông tin:
+Mã mặt hàng: tự động tăng, tính từ MH001
+Tên mặt hàng: xâu ký tự độ dài không quá 100
+Đơn vị tính: xâu ký tự độ dài không quá 10
+Giá mua: số nguyên dương không quá 7 chữ số
+Giá bán: số nguyên dương không quá 7 chữ số
+Viết chương trình nhập danh sách mặt hàng, sắp xếp theo lợi nhuận (giá bán trừ đi giá mua) giảm dần. Nếu lợi nhuận bằng nhau thì in ra theo thứ tự mã tăng dần. 
+Input
+Dòng đầu ghi số M là số mặt hàng (không quá 40).
+Tiếp theo là thông tin của M mặt hàng, mỗi mặt hàng ghi trên 4 dòng theo đúng thứ tự đã mô tả (không có mã)
+Output
+Ghi ra danh sách mặt hàng có đầy đủ thông tin ở trên và lợi nhuận tính được (mỗi thông tin cách nhau một khoảng trống)
+Ví dụ
+Input Output
+2
+Ao phong tre em
+Cai
+25000
+41000
+Ao khoac nam
+Cai
+240000
+515000
+MH002 Ao khoac nam Cai 240000 515000 275000
+MH001 Ao phong tre em Cai 25000 41000 16000
+ 
+------------------------------
+CODE: J07001
+Cho file văn bản DATA.in
+Hãy đọc toàn bộ nội dung của file và in ra màn hình theo đúng định dạng ban đầu. 
+Ví dụ:
+DATA.in
+Output
+Lap trinh huong doi tuong
+voi Java
+Lap trinh huong doi tuong
+voi Java
+ 
+------------------------------
+CODE: J07002
+Cho file dữ liệu dạng văn bản DATA.in có thể chứa cả số và ký tự.
+Hãy lọc ra các số nguyên int trong file và tính tổng các số đó.
+Chú ý: file dữ liệu có rất nhiều dòng với rất nhiều số và ký tự xen kẽ nhau. Chỉ tính tổng các số thỏa mãn điều kiện là số kiểu int.
+Input
+File văn bản DATA.in có không quá 1000 dòng.
+Output
+Ghi ra giá trị tổng các số tính được.
+Ví dụ
+DATA.in
+Output
+12 3 4 5 6 7
+Aaa 1 1 Bbb XXX yyy 5 5
+999999999999999999999999
+9
+58
+ 
+------------------------------
+CODE: J07004
+Cho file văn bản DATA.in có không quá 100000 số nguyên dương, giá trị các số nhỏ hơn 1000.
+Hãy liệt kê các số khác nhau xuất hiện trong file và số lần xuất hiện của từng số đó.
+Input
+File DATA.in có không quá 100000 số nguyên dương.
+Output
+Ghi ra các số khác nhau và số lần xuất hiện theo thứ tự tăng dần
+Ví dụ
+DATA.in
+Output
+17 20 25 20 15 10 24 17 25 17 22 11 23 18
+14 25 12 10 12 17 21 25
+10 2
+11 1
+12 2
+14 1
+15 1
+17 4
+18 1
+20 2
+21 1
+22 1
+23 1
+24 1
+25 4
+ 
+------------------------------
+CODE: J07007
+Cho file văn bản VANBAN.in.
+Một từ được định nghĩa là một dãy ký tự liên tiếp không có khoảng trống, dấu tab hay dấu xuống dòng. Tạm thời chưa xét đến các dấu câu trong bải toán này.
+Hãy chuyển tất cả các từ về dạng chữ thường sau đó liệt kê các từ khác nhau xuất hiện trong file VANBAN.in theo thứ tự từ điển.
+Input
+File VANBAN.in có không quá 200 dòng.
+Output
+Ghi ra danh sách các từ khác nhau xuất hiện trong file. Mỗi từ trên một dòng theo thứ tự từ điển.
+Ví dụ
+VANBAN.in
+Output
+lap trinh Huong doi tuong
+lap trinh Huong thanh phan
+doi
+huong
+lap
+phan
+thanh
+trinh
+tuong
+   
+------------------------------
+CODE: J07010
+Khai báo lớp Sinh Viên gồm các thông tin: Mã SV, Họ tên, Ngày sinh, Lớp và Điểm GPA (dạng số thực). 
+Đọc thông tin N sinh viên từ file văn bản SV.in (không có mã sinh viên) và in ra lần lượt màn hình mỗi dòng 1 sinh viên theo đúng thứ tự ban đầu. Trong đó Mã SV được tự tạo ra theo quy tắc thêm mã B20DCCN sau đó là giá trị nguyên tự động tăng tính từ 001 (tối đa là 099). Ngày sinh được chuẩn hóa về dạng dd/mm/yyyy
+Input (file SV.in)
+Dòng đầu tiên ghi số sinh viên N (0 < N < 50).
+Mỗi sinh viên ghi trên 4 dòng lần lượt là Họ tên, Lớp, Ngày sinh và Điểm GPA.
+Trong đó:
+Họ tên không quá 30 chữ cái.
+Lớp theo đúng định dạng thường dùng ở PTIT
+Ngày sinh có đủ 3 phần ngày tháng năm nhưng có thể chưa đúng chuẩn dd/mm/yyyy.
+Điểm GPA đảm bảo trong thang điểm 4 với 2 nhiều nhất 2 số sau dấu phẩy.  
+Output
+Ghi ra màn hình danh sách lần lượt các sinh viên có đầy đủ Mã sinh viên, Họ tên, Lớp, Ngày sinh (đã chuẩn hóa về dạng dd/mm/yyyy), Điểm GPA (với đúng 2 số sau dấu phẩy).
+Mỗi sinh viên ghi trên 1 dòng, mỗi thông tin cách nhau 1 khoảng trống.
+Ví dụ
+SV.in
+Output
+1
+Nguyen Van An
+D20CQCN01-B
+2/12/2002
+3.19
+B20DCCN001 Nguyen Van An D20CQCN01-B 02/12/2002 3.19
+ 
+------------------------------
+CODE: J07015
+Cho file nhị phân SONGUYEN.in trong đó ghi một ArrayList<Integer> theo kiểu object. Các giá trị đều nguyên dương và nhỏ hơn 10000.
+Hãy viết chương trình trình liệt kê các số nguyên tố khác nhau xuất hiện trong file theo thứ tự tăng dần và số lần xuất hiện của các số đó.
+Input
+File nhị phân SONGUYEN.in
+Output
+Ghi ra các số nguyên tố khác nhau theo thứ tự tăng dần và số lần xuất hiện.
+Ví dụ
+Input
+Output
+File SONGUYEN.in theo mô tả đề bài
+Danh sách các số nguyên tố tăng dần và số lần xuất hiện. Ví dụ:
+2 17
+11 15
+997 8
+ 
+------------------------------
+CODE: J07052
+Trường Đại học XYZ tuyển sinh theo hình thức xét điểm thi ba môn Toán – Lý – Hóa, trong đó điểm Toán được nhân đôi. Để đơn giản, khu vực tuyển sinh được quy định luôn bởi ba chữ cái đầu tiên trong mã thí sinh. Do rất thích các thí sinh đến từ Khu vực 3 nên trường XYZ tự quy định giá trị điểm ưu tiên Khu vực như trong bảng sau:
+Cho trước số chỉ tiêu. Hãy xác định mức điểm chuẩn và kết quả của từng thí sinh sau đó sắp xếp theo điểm xét tuyển giảm dần. Chú ý: tất cả thí sinh bằng điểm chuẩn trở lên đều được coi là trúng tuyển, kể cả khi số thí sinh trúng tuyển nhiều hơn chỉ tiêu.
+Input - file THISINH.in
+Dòng đầu tiên ghi số thí sinh (nhỏ hơn 100), thông tin của một thí sinh trên 5 dòng lần lượt là:
+Mã thí sinh
+Họ tên - có thể chưa ở dạng chuẩn
+Điểm toán
+Điểm lý
+Điểm hóa
+Các giá trị điểm đều đảm bảo trong phạm vi [0,10] và có thể có 1 chữ số phần thập phân.  
+Dòng cuối ghi giá trị số chỉ tiêu.
+Output
+Dòng đầu tiên ghi ra giá trị điểm chuẩn xác định được (có 1 chữ số phần thập phân)
+Tiếp theo in ra danh sách đã sắp xếp theo điểm xét tuyển giảm dần, nếu điểm xét tuyển bằng nhau thì sắp xếp theo mã thí sinh (thứ tự từ điển) .
+Với mỗi thí sinh ghi ra các thông tin:
+Mã thí sinh
+Họ tên - đã được chuẩn hóa
+Điểm ưu tiên (có thể có 1 số phần thập phân)
+Điểm xét tuyển – có ưu tiên (có thể có 1 số phần thập phân)
+Trạng thái: TRUNG TUYEN hoac TRUOT (sau khi đã tính cả điểm ưu tiên)
+Ví dụ
+Input - THISINH.in
+Output
+2
+KV2A002
+Hoang THAnh tuan
+5
+6
+5
+KV3B123
+ LY Thi   THU ha
+8
+6.5
+7
+1
+32.0
+KV3B123 Ly Thi Thu Ha 2.5 32 TRUNG TUYEN
+KV2A002 Hoang Thanh Tuan 1 22 TRUOT
+   
+------------------------------
+CODE: J07053
+Công ty PH tổ chức bài thi tuyển dụng gồm 2 nội dung: thi lý thuyết và thi thực hành. Điểm để xếp loại sẽ là điểm trung bình của hai bài thi đó cộng với điểm thưởng và làm tròn (round) đến hàng đơn vị. (Chú ý nếu tổng lớn hơn 10 thì vẫn chỉ là 10).
+Điểm thưởng được tính như sau:
+Nếu không có điểm nào nhỏ hơn 8 thì điểm thưởng = 1
+Nếu không có điểm nào nhỏ hơn 7.5 thì điểm thưởng = 0.5
+Còn lại: không có điểm thưởng.
+Xếp loại theo quy tắc sau:
+Nhỏ hơn 5: Truot
+Từ 5 đến 6: Trung binh
+Điểm 7: Kha
+Điểm 8: Gioi
+Điểm 9 hoặc 10: Xuat sac
+Hãy nhập thông tin và lập bảng kết quả xếp loại.
+Input - file XETTUYEN.in
+Dòng đầu ghi số người thi tuyển (nhỏ hơn 100).
+Mỗi người sẽ có thông tin trên 4 dòng gồm:
+Họ tên - có thể chưa được chuẩn hóa
+Ngày sinh (có thể chưa đúng định dạng dd/mm/yyyy)
+Điểm lý thuyết
+Điểm thực hành
+Các giá trị điểm đảm bảo trong phạm vi 10 và có thể có 1 số phần thập phân.
+Output
+Ghi ra danh sách theo đúng thứ tự nhập, các thông tin cách nhau một khoảng trống, lần lượt là:
+Mã thi tuyển (bắt đầu từ PH01)
+Họ tên: đã được chuẩn hóa
+Tuổi (chỉ cần tính theo năm sinh)
+Điểm trung bình (đã tính cả điểm thưởng và làm tròn)
+Xếp loại
+Ví dụ
+Input
+Output
+3
+Doan Thi Kim
+13/03/1982
+8
+9.5
+dinh Thi NGOC HA
+3/9/1996
+6.5
+8
+  tran thanh mai
+12/9/2004
+8
+9
+  PH01 Doan Thi Kim 39 10 Xuat sac
+PH02 Dinh Thi Ngoc Ha 25 7 Kha
+PH03 Tran Thanh Mai 17 10 Xuat sac
+ 
+------------------------------
+CODE: J07054
+Nhóm sinh viên PTIT cùng nhau đăng ký 3 môn học trong Học kỳ hè năm 2021 theo đúng thứ tự:
+Môn 1: Lập trình hướng đối tượng: 3 tín chỉ
+Môn 2: Ngôn ngữ lập trình C++: 3 tín chỉ
+Môn 3: Tin học cơ sở 2: 2 tín chỉ
+Người ta muốn xếp hạng thứ tự các sinh viên trong danh sách theo điểm trung bình giảm dần. Biết rằng điểm trung bình tính đến 2 số phần thập phân và nếu điểm bằng nhau thì thứ hạng cũng bằng nhau.
+Input – BANGDIEM.in
+Dòng đầu ghi số sinh viên (không quá 20).
+Mỗi sinh viên ghi trên 4 dòng gồm:
+Họ tên: có thể chưa được chuẩn hóa
+Điểm môn 1
+Điểm môn 2
+Điểm môn 3
+Các giá trị điểm là số nguyên và đảm bảo trong phạm vi từ 0 đến 10.
+Output
+Ghi ra danh sách sinh viên đã tính điểm và sắp xếp theo xếp hạng từ cao nhất đến thấp nhất, gồm các thông tin:
+Mã sinh viên (tự động tăng theo thứ tự nhập, tính từ SV01)
+Họ tên đã chuẩn hóa
+Điểm trung bình với đúng 2 số phần thập phân
+Xếp hạng
+Chú ý: 2 sinh viên có điểm trung bình bằng nhau thì xếp hạng bằng nhau, và nếu có 2 sinh viên hạng là X thì sinh viên tiếp theo trong danh sách có hạng X+2.
+Trong trường hợp xếp hạng bằng nhau thì cần sắp xếp theo mã sinh viên tăng dần.
+Ví dụ
+Input – BANGDIEM.in
+Output
+2
+ ha Thi kieu     anh
+7
+6
+7
+Pham    THI  HAO
+6
+7
+6
+SV01 Ha Thi Kieu Anh 6.63 1
+SV02 Pham Thi Hao 6.38 2
+ 
+------------------------------
+CODE: J07055
+Điểm tổng kết môn Lập trình hướng đối tượng được tính theo thang điểm 10 với tỉ lệ như sau:
+Điểm luyện tập: chiếm 25%
+Điểm thực hành online: chiếm 35%
+Điểm thi: chiếm 40%
+Hãy nhập bảng điểm, tính điểm tổng kết và xếp loại cho các sinh viên theo quy tắc:
+Từ 8 trở lên: xếp loại GIOI
+Từ 6.5 đến dưới 8: xếp loại KHA
+Từ 5 đến dưới 6.5: xếp loại TRUNG BINH
+Dưới 5 thì xếp loai KEM
+Input – BANGDIEM.in
+Dòng đầu ghi số sinh viên (không quá 20).
+Mỗi sinh viên ghi trên 4 dòng gồm:
+Họ tên: có thể chưa được chuẩn hóa
+Điểm luyện tập
+Điểm thực hành
+Điểm thi
+Các giá trị điểm là số nguyên và đảm bảo trong phạm vi từ 0 đến 10.
+Output
+Ghi ra danh sách sinh viên đã tính điểm và sắp xếp theo điểm tổng kết từ cao xuống thấp, gồm các thông tin:
+Mã sinh viên (tự động tăng theo thứ tự nhập, tính từ SV01)
+Họ tên đã chuẩn hóa
+Điểm tổng kết với đúng 2 số phần thập phân
+Xếp loại
+Chú ý: Dữ liệu đảm bảo không có 2 sinh viên nào có điểm tổng kết bằng nhau.
+Ví dụ
+Input – BANGDIEM.in
+Output
+2
+ ha Thi kieu     anh
+7
+6
+7
+Pham    THI  HAO
+6
+7
+6
+SV01 Ha Thi Kieu Anh 6.65 KHA
+SV02 Pham Thi Hao 6.35 TRUNG BINH
+ 
+------------------------------
+CODE: J07057
+Theo quy định mới, điểm tuyển sinh vào trường đại học XYZ sau khi tính tổng sẽ được cộng ưu tiên, cụ thể:
+Thí sinh khu vực 1 ưu tiên 1.5 điểm
+Thí sinh khu vực 2 ưu tiên 1 điểm
+Thí sinh khu vực 3 không ưu tiên
+Thí sinh dân tộc Kinh không ưu tiên
+Thí sinh các dân tộc khác ưu tiên 1.5 điểm
+Hãy tính tổng điểm đã ưu tiên và xác định tình trạng trúng tuyển. Biết điểm chuẩn của trường năm nay là 20.5 điểm.
+Input – THISINH.in
+Dòng đầu ghi số thí sinh.
+Mỗi thí sinh ghi trên 4 dòng gồm:
+Họ tên: có thể chưa chuẩn hóa
+Điểm thi: giá trị số thực không quá 30
+Dân tộc
+Khu vực
+Output
+Ghi ra danh sách đã sắp xếp theo tổng điểm (đã tính ưu tiên) giảm dần, nếu tổng điểm bằng nhau thì sắp xếp theo mã thí sinh tăng dần. Các thông tin cần liệt kê gồm:
+Mã thí sinh (tính theo thứ tự nhập từ TS01)
+Họ tên đã chuẩn hóa
+Tổng điểm với đúng 1 chữ số phần thập phân
+Trạng thái: Do hoặc Truot
+Ví dụ
+Input – THISINH.in
+Output
+2
+Nguyen  hong ngat
+22
+Kinh
+1
+  Chu thi MINh
+14
+Dao
+3
+TS01 Nguyen Hong Ngat 23.5 Do
+TS02 Chu Thi Minh 15.5 Truot
+ 
+------------------------------
+CODE: J07058
+Học viện Hoàng gia tổ chức thi thời kỳ giãn cách theo các hình thức thi linh hoạt, phù hợp với từng môn học.
+Thông tin về mỗi môn học gồm:
+Mã môn: xâu ký tự không có khoảng trống, không quá 15 ký tự
+Tên môn: xâu ký tự không có thể có  khoảng trống, không quá 100 ký tự
+Hình thức thi: xâu ký tự không có thể có  khoảng trống, không quá 100 ký tự
+Hãy đọc thông tin môn học trong file văn bản MONHOC.in và in danh sách sắp xếp theo mã môn.
+Input – file văn bản MONHOC.in
+Dòng đầu ghi số môn học. Mỗi môn ghi trên 3 dòng lần lượt là mã môn, tên môn, hình thức thi.
+Output
+Ghi ra danh sách đã sắp xếp theo mã môn, thứ tự từ điển.
+Ví dụ
+Input
+Output
+2
+MUL1320
+Nhap mon da phuong tien
+Bai tap lon + Van dap truc tuyen
+BAS1203
+Giai tich 1
+Thi viet + Van dap truc tuyen
+BAS1203 Giai tich 1 Thi viet + Van dap truc tuyen
+MUL1320 Nhap mon da phuong tien Bai tap lon + Van dap truc tuyen
+ 
+------------------------------
+CODE: J07059
+Học viện Hoàng gia tổ chức thi thời kỳ giãn cách theo các hình thức thi linh hoạt, phù hợp với từng môn học.
+Mỗi ca thi gồm các thông tin:
+Mã ca thi: tự động tăng, tính từ C001
+Ngày thi: đúng định dạng dd/mm/yyyy
+Giờ thi: theo đúng định dạng hh:mm
+Phòng thi: một dãy chữ số đại diện cho ID phòng online, không quá 12 chữ số
+Hãy nhập danh sách các ca thi và sắp xếp theo thời gian thi (từ sớm nhất đến muộn nhất). Nếu hai ca thi cùng giờ thì sắp xếp theo mã ca thi tăng dần.
+Input – file văn bản CATHI.in
+Dòng đầu ghi số ca thi. Mỗi ca thi ghi trên 3 dòng gồm Ngày, Giờ và ID phòng thi.
+Output
+Ghi ra danh sách các ca thi theo thứ tự thời gian, nếu cùng giờ thì sắp xếp theo mã ca thi.
+Ví dụ
+Input
+Output
+2
+09/01/2022
+15:30
+70172
+09/01/2022
+10:00
+70279
+  C002 09/01/2022 10:00 70279
+C001 09/01/2022 15:30 70172
+   
+------------------------------
+CODE: J07071
+Không hiểu sao khi comment trên các trang mạng xã hội, các bạn trẻ rất hay có thói quen viết tắt tên của “đối tượng”. Quy tắc viết tắt được nhắc đến trong bài tập này là lấy chữ cái đầu của mỗi từ và thêm dấu chấm vào giữa (không có khoảng trống).
+Ví dụ:
+Nguyễn Văn Nam sẽ được viết tắt thành N.V.N
+Hoàng Trung Dũng sẽ được viết tắt thành H.T.D
+Đôi khi để tăng tính tò mò của người đọc, tên viết tắt còn có thể thêm một ký tự dấu * thay cho một trong các ký tự viết tắt. Ví dụ N.V.* hoặc H.*.D (chú ý: chỉ viết nhiều nhất một dấu * và dấu * cũng chỉ thay cho đúng 1 ký tự viết tắt).
+Cho một danh sách họ tên trong file văn bản DANHSACH.in
+Các xâu đều là Tiếng Việt không dấu và đảm bảo đã được chuẩn hóa đúng quy tắc. Tuy nhiên chưa được sắp xếp theo tên.
+Với mỗi từ viết tắt, hãy in ra danh sách các họ tên có thể đúng với viết tắt đó theo thứ tự từ điển (sắp xếp theo tên, nếu tên giống nhau thì sắp xếp theo họ).
+Input – file văn bản DANHSACH.in
+Dòng đầu tiên ghi số N là số lượng họ tên. Tiếp theo là N dòng họ tên, các xâu họ tên có độ dài không quá 50.
+Tiếp theo là một dòng ghi số M là số lượng từ viết tắt. Sau đó là M dòng, mỗi dòng một từ viết tắt
+Output
+Ghi ra M danh sách các họ tên phù hợp với M từ viết tắt tương ứng. Yêu cầu sắp xếp mỗi danh sách theo thứ tự từ điển (sắp xếp theo tên, nếu tên giống nhau thì sắp xếp theo họ).
+Ví dụ
+Input – DANHSACH.in
+Output
+4
+Nguyen Manh Son
+Ngo Minh Tuan
+Nguyen Manh Hung
+Tran Trung Dung
+1
+N.M.*
+Nguyen Manh Hung
+Nguyen Manh Son
+Ngo Minh Tuan
+ 
+------------------------------
+CODE: J07073
+Chuẩn bị cho học kỳ thời và để thích ứng linh hoạt với tình hình dịch bệnh, Học viện Hoàng gia dự kiến cho phép các Khoa và Bộ môn được phép đăng ký hình thức giảng dạy linh hoạt cho các môn học. Thông tin về mỗi môn học khi đăng ký gồm:
+Mã môn học: xâu ký tự, độ dài không quá 20
+Tên môn học: xâu ký tự, độ dài không quá 100
+Số tín chỉ: giá trị số nguyên từ 1 đến 10
+Hình thức giảng dạy lý thuyết: có thể là “Truc tiep” hoặc “Truc tuyen”
+Hình thức giảng dạy thực hành: có thể là:
+“Truc tiep”
+“Truc tuyen” hoặc ghi rõ một địa chỉ tên miền online có đoạn cuối là .ptit.edu.vn (ví dụ code.ptit.edu.vn …)
+Hãy nhập danh sách đăng ký môn học và lọc ra danh sách các môn học đăng ký thực hành trực tuyến. Sau đó sắp xếp theo mã môn học (thứ tự từ điển tăng dần)
+Input – file văn bản MONHOC.in
+Dòng đầu ghi số môn học. Mỗi môn học ghi trên 5 dòng lần lượt là: mã môn, tên môn, số tín chỉ, hình thức học lý thuyết, hình thức học thực hành.
+Output
+Ghi ra danh sách các môn thực hành trực tuyến đã sắp xếp theo mã.
+Các thông tin cần liệt kê gồm: mã môn, tên môn, số tín chỉ, hình thức lý thuyết, hình thức thực hành. Mỗi thông tin cách nhau một khoảng trống.
+Ví dụ
+Input – MONHOC.in
+Output
+3
+INT1306
+Cau truc du lieu va giai thuat
+3
+Truc tiep
+code.ptit.edu.vn
+INT13110
+Lap trinh mang voi C++
+3
+Truc tiep
+Truc tuyen
+INT1155
+Tin hoc co so 2
+2
+Truc tiep
+code.ptit.edu.vn
+INT1155 Tin hoc co so 2 2 Truc tiep code.ptit.edu.vn
+INT1306 Cau truc du lieu va giai thuat 3 Truc tiep code.ptit.edu.vn
+INT13110 Lap trinh mang voi C++ 3 Truc tiep Truc tuyen
+   
+------------------------------
+CODE: J07084
+Hết học kỳ nên rảnh rỗi, nhóm admin CODE PTIT thử thống kê xem trong học kỳ vừa qua sinh viên nào online liên tục lâu nhất trên hệ thống.
+Thông tin về thời gian online dài nhất của cá nhân mỗi sinh viên được truy vấn từ CSDL sau đó mô tả với ba thông tin:
+Họ và tên sinh viên: xâu ký tự Tiếng Việt không dấu, độ dài không quá 50
+Thời gian bắt đầu: đúng định dạng: dd/mm/yyyy hh:mm:ss
+Thời gian kết thúc: đúng định dạng: dd/mm/yyyy hh:mm:ss
+Hãy tính thời gian online của từng sinh viên và sắp xếp theo thứ tự thời gian giảm dần (từ lâu nhất đến ít nhất). Nếu hai sinh viên có thời gian online bằng nhau thì sắp xếp theo họ tên (thứ tự từ điển).
+Input
+File văn bản ONLINE.in
+Dòng đầu ghi số sinh viên
+Mỗi sinh viên ghi trên ba dòng lần lượt là họ tên (đã chuẩn hóa), thời gian bắt đầu, thời gian kết thúc.
+Output
+Ghi ra danh sách sắp xếp theo thời gian online giảm dần.
+Mỗi dòng ghi họ tên và thời lượng online (tính theo phút)
+Ví dụ
+Input – ONLINE.in
+Output
+3
+Do Viet Anh
+11/12/2021 16:35:00
+11/12/2021 17:35:00
+Le Tuan Anh
+11/12/2021 16:45:00
+11/12/2021 18:15:00
+Nguyen Tuan Anh
+11/12/2021 17:00:00
+11/12/2021 19:15:00
+Nguyen Tuan Anh 135
+Le Tuan Anh 90
+Do Viet Anh 60
+ 
+------------------------------
+CODE: JP007
+Sau khi thu thập thông tin liên lạc của bạn bè trong lớp, Nam phát hiện thấy nhiều bạn đã đăng ký nhiều lần, dẫn tới các địa chỉ email bị trùng nhau.
+Hãy giúp Nam loại bỏ các email trùng nhau và sắp xếp các email còn lại theo thứ tự từ điển.
+Chú ý: địa chỉ email thì không phân biệt chữ hoa, chữ thường. Kết quả in ra cần đưa tất cả về dạng chữ thường.
+Input
+Gồm không quá 300 dòng, mỗi dòng ghi một địa chỉ email.
+Độ dài mỗi email không quá 100 ký tự.
+Chú ý: Dữ liệu vào không có số dòng nên cần đọc đến hết luồng.
+Output
+Ghi ra danh sách các email đã loại bỏ trùng nhau và sắp xếp theo thứ tự từ điển.
+Ví dụ
+Input
+Output
+nguyenmanhson@gmail.com
+sonnm@ptit.edu.vn
+NGUYENMANHSON@gmail.com
+SonNM@ptit.edu.vn
+NguyenManhSon@GMAIL.com
+nguyenmanhson@gmail.com
+sonnm@ptit.edu.vn
+ 
+------------------------------
+CODE: S213
+Một số được gọi là lộc phát nếu chỉ có 2 chữ số 6 và 8. Cho số tự nhiên N. Hãy liệt kê các số lộc phát có không quá N chữ số.
+Input:
+Dòng đầu tiên ghi lại số tự nhiên T là số lượng bộ test (T<10);
+T dòng kế tiếp mỗi dòng ghi số N (1<N<15).
+Output:
+Dòng đầu tiên là số lượng số lộc phát tìm được. Dòng thứ hai in ra đáp án theo thứ tự giảm dần.
+ Ví dụ:
+Input
+Output
+2
+2
+3
+6
+88 86 68 66 8 6
+14
+888 886 868 866 688 686 668 666 88 86 68 66 8 6
+ 
+------------------------------
+CODE: S301
+Cho đồ thị có hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh.
+Hãy tìm đường đi từ đỉnh u đến đỉnh v trên đồ thị bằng thuật toán BFS.
+Input:
+Dòng đầu tiên đưa vào T là số lượng bộ test.
+Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm |E|+1 dòng: dòng đầu tiên đưa vào bốn số |V|, |E|, u, v tương ứng với số đỉnh, số cạnh,  đỉnh xuất phát u, đỉnh kết thúc v;
+|E| dòng tiếp theo mỗi dòng đưa vào bộ đôi x, y tương ứng với một cạnh của đồ thị.
+T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤100; 1≤|V|≤103; 1≤|E|≤|V|(|V|-1)/2;
+Output:
+Đưa ra đường đi từ đỉnh s đến đỉnh t của mỗi test theo thuật toán BFS của mỗi test theo khuôn dạng của ví dụ dưới đây. Nếu không có đáp án, in ra -1.
+Ví dụ:
+Input
+Output
+1
+6 9 1 6
+1 2  
+2 5
+3 1
+3 2
+3 5
+4 3
+5 4
+5 6
+6 4
+1 -> 2 -> 5 -> 6
+ 
+------------------------------
+CODE: S302
+Một thành phố có N điểm nút giao thông. Các tuyến đường hai chiều được thiết kế giúp cho người dân có thể đi từ một nút bất kỳ đến tất cả các nút còn lại.
+Những nút giao thông trọng yếu được định nghĩa là nút giao thông mà nếu các con đường đến nó đều bị chặn thì thành phố sẽ bị chia cắt, tức là khi đó sẽ có những cặp điểm nút không thể đi đến nhau được nữa.
+Giả sử các điểm nút giao thông được đánh số từ 1 đến N. Hãy liệt kê các nút giao thông trọng yếu theo thứ tự tăng dần.
+Input
+Dòng đầu là số bộ test (không quá 100)
+Mỗi bộ test bắt đầu với số nút giao thông N (không quá 1000) và số tuyến đường M.
+Tiếp theo là một dòng có M cặp số mô tả các tuyến đường hai chiều trong thành phố.
+Output
+Dòng đầu ghi ra số lượng điểm nút giao thông trọng yếu
+Dòng thứ 2 lần lượt liệt kê các nút giao thông trọng yếu theo thứ tự tăng dần
+Ví dụ
+Input
+Output
+1
+5 5
+1 2 1 3 2 3 2 5 3 4
+2
+2 3
+ 
+------------------------------
+CODE: T205
+Cho số nguyên dương N và K. Hãy tính NK modulo 109+7.
+Input:
+Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
+Mỗi test gồm 1 số nguyên N và K (1 ≤ N ≤ 1000, 1 ≤ K ≤ 109).
+Output: 
+Với mỗi test, in ra đáp án trên một dòng.
+Ví dụ:
+Input:
+Output
+2
+2 3
+4 2
+  8
+16
+ 
+------------------------------
+CODE: T206
+Một dãy số tự nhiên bắt đầu bởi con số 1 và được thực hiện N-1 phép biến đổi “gấp đôi” dãy số như sau:
+Với dãy số A hiện tại, dãy số mới có dạng A, x, A trong đó x là số tự nhiên bé nhất chưa xuất hiện trong A.
+Ví dụ với 2 bước biến đổi, ta có [1] à [1 2 1] à [1 2 1 3 1 2 1].
+Các bạn hãy xác định số thứ K trong dãy số cuối cùng là bao nhiêu?
+Input:
+Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
+Mỗi test gồm số nguyên dương N và K (1 ≤ N ≤ 50, 1 ≤ K ≤ 2N - 1).
+Output: 
+Với mỗi test, in ra đáp án trên một dòng.
+Test ví dụ:
+Input:
+Output
+2
+3 2
+4 8
+  2
+4
+  Giải thích test 1: Dãy số thu được là [1, 2, 1, 3, 1, 2, 1].
+Giải thích test 2: Dãy số thu được là [1, 2, 1, 3, 1, 2, 1, 4, 1, 2, 1, 3, 1, 2, 1].
+------------------------------
+CODE: T207
+Một dãy xâu ký tự G chỉ bao gồm các chữ cái A và B được gọi là dãy xâu Fibonacci nếu thỏa mãn tính chất:    G(1) = A; G(2) = B; G(n) = G(n-2)+G(n-1). Với phép cộng (+) là phép nối hai xâu với nhau.  Bài toán đặt ra là tìm ký tự ở vị trí thứ i (tính từ 1) của xâu Fibonacci thứ n.
+Dữ liệu vào: Dòng 1 ghi số bộ test. Mỗi bộ test ghi trên một dòng 2 số nguyên N và i (1<N<93). Số i đảm bảo trong phạm vi của xâu G(N) và không quá 18 chữ số. Kết quả: Ghi ra màn hình kết quả tương ứng với từng bộ test.
+Input
+Output
+2
+6 4
+8 19
+A
+B
+   
+------------------------------
+CODE: T208
+Dãy số Fibonacci được xác định bằng công thức như sau:
+F[0] = 0, F[1] = 1;
+F[n] = F[n-1] + F[n-2] với mọi n >= 2.
+Các phần tử đầu tiên của dãy số là 0, 1, 1, 2, 3, 5, 8, ...
+Nhiệm vụ của bạn là hãy xác định số Fibonaci thứ n. Do đáp số có thể rất lớn, in ra kết quả theo modulo 10^9+7.
+Input:
+Dòng đầu tiên là số lượng bộ test T (T ≤ 1000).
+Mỗi test bắt gồm một số nguyên N (1 ≤ N ≤ 109).
+Output: 
+Với mỗi test, in ra đáp án trên một dòng.
+Ví dụ:
+Input:
+Output
+3
+2
+6
+20
+  1
+8
+6765
+ 
+------------------------------
+CODE: T212
+Cho biểu thức số học, hãy cho biết biểu thức số học có dư thừa các cặp ký hiệu ‘(’,’) ‘ hay không?
+Input:
+Dòng đầu tiên đưa vào số lượng bộ test T;
+Những dòng tiếp theo mỗi dòng đưa vào một bộ test. Mỗi bộ test là một biểu thức tiền tố exp.
+Output:
+Đưa ra kết quả mỗi test theo từng dòng.
+Ràng buộc:
+T, exp thỏa mãn ràng buộc: 1≤T≤100; 2≤length(exp)≤20.
+Ví dụ:
+  Input
+Output
+3
+((a+b))
+(a + (b)/c)
+(a + b*(c-d))
+Yes
+Yes
+No
+   
+------------------------------
+CODE: T213
+Cho một xâu chỉ gồm các kí tự ‘(‘, ‘) và có độ dài chẵn. Hãy đếm số lượng dấu ngoặc cần phải đổi chiều ít nhất, sao cho xâu mới thu được là một dãy ngoặc đúng.
+Input:
+Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
+Mỗi test gồm 1 xâu S có độ dài không vượt quá 100 000, chỉ gồm dấu ( và ).
+Output: 
+Với mỗi test, in ra đáp án tìm được trên một dòng.
+Ví dụ:
+Input:
+Output
+4
+))((
+((((
+(((())
+)(())(((
+2
+2
+1
+3
+ 
+------------------------------
+CODE: T214
+Hãy viết chương trình chuyển đổi biểu thức biểu diễn dưới dạng tiền tố về dạng hậu tố.
+Input:
+Dòng đầu tiên đưa vào số lượng bộ test T;
+Những dòng tiếp theo mỗi dòng đưa vào một bộ test. Mỗi bộ test là một biểu thức tiền tố exp.
+Output:
+Đưa ra kết quả mỗi test theo từng dòng.
+Ràng buộc:
+T, exp thỏa mãn ràng buộc: 1≤T≤100; 2≤length(exp)≤106.
+Ví dụ:
+Input
+Output
+2
+*+AB-CD
+*-A/BC-/AKL
+AB+CD-*
+ABC/-AK/L-*
+ 
+------------------------------
+CODE: T215
+   Hãy viết chương trình chuyển đổi biểu thức biểu diễn dưới dạng hậu tố về dạng tiền tố.
+Input:
+Dòng đầu tiên đưa vào số lượng bộ test T;
+Những dòng tiếp theo mỗi dòng đưa vào một bộ test. Mỗi bộ test là một biểu thức tiền tố exp.
+Output:
+Đưa ra kết quả mỗi test theo từng dòng.
+Ràng buộc:
+T, exp thỏa mãn ràng buộc: 1≤T≤100; 2≤length(exp)≤106.
+Ví  dụ:
+Input
+Output
+2
+AB+CD-*
+ABC/-AK/L-*
+*+AB-CD
+*-A/BC-/AKL
+              
+------------------------------
+CODE: T216
+Hãy viết chương trình chuyển tính toán giá trị của biểu thức hậu tố.
+Input:
+Dòng đầu tiên đưa vào số lượng bộ test T;
+Những dòng tiếp theo mỗi dòng đưa vào một bộ test. Mỗi bộ test là một biểu thức hậu tố exp. Các số xuất hiện trong biểu thức là các số đơn có 1 chữ số.
+Output:
+Đưa ra kết quả mỗi test theo từng dòng, chỉ lấy giá trị phần nguyên.
+Ràng buộc:
+T, exp thỏa mãn ràng buộc: 1≤T≤100; 2≤length(exp)≤20.
+Ví dụ:
+Input
+Output
+2
+231*+9–
+875*+9-
+-4
+34
+ 
+------------------------------
+CODE: T217
+   Hãy viết chương trình tính toán giá trị của biểu thức tiền tố.
+Input:
+Dòng đầu tiên đưa vào số lượng bộ test T;
+Những dòng tiếp theo mỗi dòng đưa vào một bộ test. Mỗi bộ test là một biểu thức tiền tố exp. Các số xuất hiện trong biểu thức là các số đơn có 1 chữ số.
+Output:
+Đưa ra kết quả mỗi test theo từng dòng, chỉ lấy giá trị phần nguyên.
+Ràng buộc:
+T, exp thỏa mãn ràng buộc: 1≤T≤100; 2≤length(exp)≤20.
+Ví dụ:
+Input
+Output
+2
+-+8/632
+-+7*45+20
+8
+25
+   
+------------------------------
+CODE: T218__
+Cho dãy số A[] gồm N phần tử. Với mỗi A[i], bạn cần tìm phần tử bên phải đầu tiên lớn hơn nó. Nếu không tồn tại, in ra -1.
+Input:
+Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
+Mỗi test bắt đầu bởi số nguyên N (1 ≤ N ≤ 100000).
+Dòng tiếp theo gồm N số nguyên A[i] (0 ≤ A[i] ≤ 109).
+Output: 
+Với mỗi test, in ra trên một dòng N số R[i], với R[i] là giá trị phần tử đầu tiên lớn hơn A[i].
+Ví dụ
+Input
+Output
+3
+4
+4 5 2 25
+3
+2 2 2
+4
+4 4 5 5
+  5 25 25 -1
+-1 -1 -1
+5 5 -1 -1
+------------------------------
+CODE: T220
+Cho dãy ký tự S chỉ bao gồm các ký tự I hoặc D. Ký tự I được hiểu là tăng (Increasing) ký tự D được hiểu là giảm (Decreasing). Sử dụng các số từ 1 đến 9, hãy đưa ra số nhỏ nhất được đoán nhận từ S. Chú ý, các số không được phép lặp lại. Dưới đây là một số ví dụ mẫu:
+A[] = “I”              : số tăng nhỏ nhất là 12.
+A[] = “D”            : số giảm nhỏ nhất là 21
+A[] =”DD”           : số giảm nhỏ nhất là 321
+A[] = “DDIDDIID”: số thỏa mãn 321654798
+Input:
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test là một xâu S
+T, S thỏa mãn ràng buộc: 1≤ T ≤100; 1≤ length(S) ≤8; .
+Output:
+Đưa ra kết quả mỗi test theo từng dòng.
+Ví dụ:
+Input:
+Output:
+4
+I
+D
+DD
+DDIDDIID
+12
+21
+321
+321654798
+ 
+------------------------------
+CODE: T221
+Cho số tự nhiên n. Hãy in ra tất cả các số nhị phân từ 1 đến n.
+Input:
+Dòng đầu tiên ghi lại số lượng test T (T≤100).
+Mỗi test là một số tự nhiên n được ghi trên một dòng (n≤10000).
+Output:
+Đưa ra kết quả mỗi test trên một dòng.
+Ví dụ:
+Input
+Output
+2
+2
+5
+1 10
+1 10 11 100 101
+ 
+------------------------------
+CODE: T222
+Ta gọi số nguyên dương K là một số BDN nếu các chữ số trong K chỉ bao gồm các 0 hoặc 1 có nghĩa. Ví dụ số K = 1, 10, 101. Cho số tự nhiên N (N<231). Hãy cho biết có bao nhiêu số BDN không lớn hơn N. Ví dụ N=100 ta có 4 số BDN bao gồm các số: 1, 10, 11, 100.
+Dữ liệu vào: Dòng đầu tiên ghi lại số tự nhiên T (T ≤ 50) là số lượng bộ test.
+T dòng kế tiếp mỗi dòng là một số tự nhiên N (1 ≤ N ≤ 231).
+Kết quả: Với mỗi số N in ra kết quả trên một dòng là số các số BDN không lớn hơn N.
+    Input
+Output
+3
+10
+100
+200
+2
+4
+7
+ 
+------------------------------
+CODE: T223
+Ta gọi số nguyên dương K là một số BDN nếu các chữ số trong K chỉ bao gồm các 0 hoặc 1 có nghĩa. Ví dụ số K =  101 là số BDN, k=102 không phải là số BDN.
+Số BDN của N là số P =M´N sao cho P là số BDN. Cho số tự nhiên N (N<1000), hãy tìm số BDN nhỏ nhất của N.
+Ví dụ. Với N=2, ta tìm được số BDN của N là P = 5´2=10. N = 17 ta tìm được số BDN của 17 là P = 653´17=11101.
+Input:
+Dòng đầu tiên ghi lại số tự nhiên T là số lượng Test;
+T dòng kế tiếp mỗi dòng ghi lại một bộ Test. Mỗi test là một số tự nhiên N.
+          Output:
+                        Đưa ra kết quả mỗi test theo từng dòng.
+          Ví dụ:
+  Input
+Output
+3
+2
+12
+17
+10
+11100
+11101
+ 
+------------------------------
+CODE: T224
+Cho số tự nhiên N. Hãy tìm số nguyên dương X nhỏ nhất được tạo bởi số 9 và số 0 chia hết cho N. Ví dụ với N = 5 ta sẽ tìm ra  X = 90.
+Input:
+Dòng đầu tiên ghi lại số lượng test T (T≤100).
+Những dòng kế tiếp mỗi dòng ghi lại một test. Mỗi test là một số tự nhiên N được ghi trên một dòng (N≤100).
+Output:
+Đưa ra theo từng dòng số X nhỏ nhất chia hết cho N tìm được .
+Ví dụ:
+Input
+Output
+2
+5
+7
+90
+9009
+------------------------------
+CODE: T225
+Cho xâu ký tự S[] bao gồm các ký tự in hoa [A, B, …,Z]. Ta định nghĩa giá trị của xâu S[] là tổng bình phương số lần xuất hiện mỗi ký tự trong xâu. Ví dụ với xâu S[] = “AAABBCD” ta có F(S) = 32 + 22 + 12 + 12 = 15. Hãy tìm giá trị nhỏ nhất của xâu S[] sau khi loại bỏ K ký tự trong xâu.
+Input:
+Dòng đầu tiên đưa vào số lượng test T (T≤100).
+Mỗi test được tổ chức thành 2 dòng. Dòng thứ nhất ghi lại số K. Dòng thứ 2 ghi lại xâu ký tự S[] có độ dài không vượt quá 10^6.
+Output:
+Đưa ra giá trị nhỏ nhất của mỗi test theo từng dòng.
+Input
+Output
+2
+0
+ABCC
+1
+ABCC
+6
+3
+   
+------------------------------
+CODE: T226
+Cho hai số nguyên dương S và T (S, T<10000) và hai thao tác (a), (b) dưới đây:
+                   Thao tác (a): Trừ S đi 1  (S = S-1) ;
+Thao tác (b): Nhân S với 2 ( S = S*2);
+Hãy dịch chuyển S thành T sao cho số lần thực hiện các thao tác (a), (b) là ít nhất. Ví dụ với    S =2, T=5 thì số các bước ít nhất để dịch chuyển S thành T thông qua 4 thao tác sau:
+Thao tác (a): 2*2 = 4;
+Thao tác (b): 4-1 = 3;
+Thao tác (a): 3*2 = 6;
+Thao tác (b): 6-1 = 5;
+Input:
+Dòng đầu tiên ghi lại số tự nhiên T là số lượng Test;
+T dòng kế tiếp mỗi dòng ghi lại một bộ Test. Mỗi test là một bộ đôi S và T.
+          Output: Đưa ra kết quả mỗi test theo từng dòng.
+                    Ví dụ:
+Input
+Output
+3
+2 5
+3 7
+7 4
+4
+4
+3
+ 
+------------------------------
+CODE: T227
+Cho cặp số S và T là các số nguyên tố có 4 chữ số (Ví dụ S = 1033, T = 8197 là các số nguyên tố có 4 chữ số). Hãy viết chương trình tìm cách dịch chuyển S thành T thỏa mãn đồng thời những điều kiện dưới đây:
+Mỗi phép dịch chuyển chỉ được phép thay đổi một chữ số của số ở bước trước đó (ví dụ nếu S=1033 thì phép dịch chuyển S thành 1733 là hợp lệ);
+Số nhận được cũng là một số nguyên tố có 4 chữ số (ví dụ nếu S=1033 thì phép dịch chuyển S thành 1833 là không hợp lệ, và S dịch chuyển thành 1733 là hợp lệ);
+Số các bước dịch chuyển là ít nhất.
+Ví dụ số các phép dịch chuyển ít nhất để S = 1033 thành  T = 8179 là 6 bao gồm các phép dịch chuyển như sau:       
+8179  - 8779 - 3779 - 3739 - 3733 - 1733 - 1033.
+Input:
+Dòng đầu tiên đưa vào số lượng test T (T≤100)
+Những dòng kế tiếp mỗi dòng đưa vào một test. Mỗi test là một bộ đôi S, T.
+Output:
+Đưa ra kết quả mỗi test theo từng dòng.
+Ví dụ:
+Input
+Output
+2
+1033 8179
+1033 8779
+6
+5
+   
+------------------------------
+CODE: T229
+Có một chiếc bảng hình chữ nhật với 6 miếng ghép, trên mỗi miếng ghép được điền một số nguyên trong khoảng từ 1 đến 6. Tại mỗi bước, chọn một hình vuông (bên trái hoặc bên phải), rồi quay theo chiều kim đồng hồ.
+Yêu cầu: Cho một trạng thái của bảng, hãy tính số phép biến đổi ít nhất để đưa bảng đến trạng thái đích.
+Input:
+Dòng đầu ghi số bộ test (không quá 10). Mỗi bộ test gồm hai dòng:
+Dòng đầu tiên chứa 6 số là trạng thái bảng ban đầu (thứ tự từ trái qua phải, dòng 1 tới dòng 2).
+Dòng thứ hai chứa 6 số là trạng thái bảng đích (thứ tự từ trái qua phải, dòng 1 tới dòng 2).
+Output: 
+Với mỗi test, in ra một số nguyên là đáp số của bài toán.
+Ví dụ:
+Input
+Output
+1
+1 2 3 4 5 6
+4 1 2 6 5 3
+  2
+   
+------------------------------
+CODE: T230
+Cho một bảng kích thước N x N, trong đó có các ô trống ‘.’ và vật cản ‘X’. Các hàng và các cột được đánh số từ 0.
+Mỗi bước di chuyển, bạn có thể đi từ ô (x, y) tới ô (u, v) nếu như 2 ô này nằm trên cùng một hàng hoặc một cột, và không có vật cản nào ở giữa.
+Cho điểm xuất phát và điểm đích. Bạn hãy tính số bước di chuyển ít nhất?
+Input:
+Dòng đầu ghi số bộ test (không quá 10). Mỗi test gồm:
+Dòng đầu tiên là số nguyên dương N (1 ≤ N ≤ 100).
+N dòng tiếp theo, mỗi dòng gồm N kí tự mô tả bảng.
+Cuối cùng là 4 số nguyên a, b, c, d với (a, b) là tọa độ điểm xuất phát, (c, d) là tọa độ đích. Dữ liệu đảm bảo hai vị trí này không phải là ô có vật cản.
+  Output: 
+Với mỗi test, in ra một số nguyên là đáp số của bài toán.
+  Ví dụ:
+  Input
+Output
+1
+3
+.X.
+.X.
+...
+0 0 0 2
+  3
+   
+------------------------------
+CODE: T301
+Cho 2 xâu S1 và S2. Hãy tìm xâu con chung dài nhất của 2 xâu này (các phần tử không nhất thiết phải liên tiếp nhau).
+Input: Dòng đầu tiên là số lượng bộ test T (T ≤ 20). Mỗi test gồm hai dòng, mô tả xâu S1 và S2, mỗi xâu có độ dài không quá 1000 và chỉ gồm các chữ cái in hoa.
+Output:  Với mỗi test, in ra độ dài dãy con chung dài nhất trên một dòng.
+Ví dụ:
+Input
+Output
+2
+AGGTAB
+GXTXAYB
+AA
+BB
+4
+0
+Giải thích test 1: Dãy con chung là G, T, A, B.
+------------------------------
+CODE: T304
+Cho một dãy số nguyên gồm N phần tử A[1], A[2], ... A[N]. 
+Biết rằng dãy con tăng là 1 dãy A[i1],... A[ik]
+thỏa mãn i1 < i2 < ... < ik và A[i1] < A[i2] < .. < A[ik].
+Hãy cho biết dãy con tăng dài nhất của dãy này có bao nhiêu phần tử? 
+Input: Dòng 1 gồm 1 số nguyên là số N (1 ≤ N ≤ 1000). Dòng thứ 2 ghi N số nguyên A[1], A[2], .. A[N] (1 ≤ A[i] ≤ 1000). 
+Output: Ghi ra độ dài của dãy con tăng dài nhất.
+Ví dụ:
+Input
+Output
+6
+1 2 5 4 6 2
+4
+   
+------------------------------
+CODE: T305
+Cho dãy số A[] gồm N số. Nhiệm vụ của bạn là tìm tổng lớn nhất của dãy con được sắp theo thứ tự tăng dần của dãy A[]. Ví dụ với dãy A[] = {1, 101, 2, 3, 100, 4, 5} ta có kết quả là 106 = 1 + 2 + 3 + 100. Với dãy A[] = {10, 7, 5} ta có kết quả là 10. Với dãy A[] = {1, 2, 3, 5} ta có kết quả là 11.
+Input:
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng đầu tiên đưa vào N là số phần tử của dãy A[]; dòng tiếp theo đưa vào N số A[i]; các số được viết cách nhau một vài khoảng trống.
+T, N, A[i] thỏa mãn ràng buộc: 1≤T≤100;  1≤N ≤103; 0≤A[i] ≤103.
+Output:
+Đưa ra kết quả mỗi test theo từng dòng.
+Ví dụ:
+Input
+Output
+3
+7
+1 101 2 3 100 4 5
+3
+10 7 5
+4
+1 2 3 5
+106
+10
+11
+ 
+------------------------------
+CODE: T307
+Một con ếch có thể nhảy 1, 2, 3 bước để có thể lên đến một đỉnh cần đến. Hãy đếm số các cách con ếch có thể nhảy đến đỉnh.
+Input:
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là số n là số bước con ếch có thể lên được đỉnh.
+T, n thỏa mãn ràng buộc: 1≤T≤100;  1≤n ≤50.
+Output:
+Đưa ra kết quả mỗi test theo từng dòng.
+Ví dụ:
+Input
+Output
+2
+1
+5
+1
+13
+   
+------------------------------
+CODE: T308
+Cho 2 số nguyên n, k. Bạn hãy tính C(n, k) modulo 109+7.
+Input:
+Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
+Mỗi test gồm 2 số nguyên n, k (1 ≤ k ≤ n ≤ 1000).
+Output: 
+Với mỗi test, in ra đáp án trên một dòng.
+Ví dụ:
+Input
+Output
+2
+5 2
+10 3
+  10
+120
+ 
+------------------------------
+CODE: T309
+Một chiếc cầu thang có N bậc. Mỗi bước, bạn được phép bước lên trên tối đa K bước. Hỏi có tất cả bao nhiêu cách bước để đi hết cầu thang? (Tổng số bước đúng bằng N).
+Input:
+Dòng đầu tiên là số lượng bộ test T (T ≤ 100).
+Mỗi test gồm hai số nguyên dương N và K(1 ≤ N ≤ 100000, 1 ≤ K ≤ 100).
+Output: 
+Với mỗi test, in ra đáp án tìm được trên một dòng theo modulo 109+7.
+Ví dụ:
+Input
+Output
+2
+2 2
+4 2
+  2
+5
+  Giải thích test 1: Có 2 cách đó là (1, 1) và (2).
+Giải thích test 2: 5 cách đó là: (1, 1, 1, 1), (1, 1, 2), (1, 2, 1), (2, 1, 1), (2, 2).
+------------------------------
+CODE: T310
+Cho xâu S chỉ bao gồm các ký tự viết thường và dài không quá 1000 ký tự.
+Hãy tìm xâu con đối xứng dài nhất của S.
+Input:
+Dòng đầu tiên là số lượng bộ test T (T ≤ 10).
+Mỗi test gồm một xâu S có độ dài không vượt quá 1000, chỉ gồm các kí tự thường.
+Output:  Với mỗi test, in ra đáp án tìm được.
+Ví dụ:
+Input
+Output
+2
+abcbadd
+aaaaa
+  5
+5
+ 
+------------------------------
+CODE: T313
+John có một đàn bò. Một ngày đẹp trời, anh ta quyết định mua xe tải với khả năng chở được C kg (1000 ≤ C ≤ 25000) để đưa những con bò đi xem phim. Cho số con bò là N (20 ≤ N ≤ 100) và khối lượng w[i] của từng con (đều nhỏ hơn C), hãy cho biết khối lượng bò lớn nhất mà John có thể đưa đi xem phim là bao nhiêu.
+Input:
+Dòng 1: 2 số nguyên C và N cách nhau bởi dấu cách
+Dòng 2..N+1:   Ghi lần lượt các số nguyên: w[i]
+Output:
+Một số nguyên là tổng khối lượng bò lớn nhất mà John có thể mang đi xem phim.
+Ví dụ:
+Input
+Output
+259 5
+81
+58
+42
+33
+61
+  242
+   
+------------------------------
+CODE: T314
+Một người có cái túi thể tích V (V<1000). Anh ta có N đồ vật cần mang theo (N≤1000), mỗi đồ vật có thể tích là A[i] (A[i]≤100) và giá trị là C[i] (C[i]≤100). Hãy xác định tổng giá trị lớn nhất của các đồ vật mà người đó có thể mang theo, sao cho tổng thể tích không vượt quá V.
+Input
+Dòng đầu ghi số bộ test T (T<10)
+Mỗi bộ test gồm ba dòng. Dòng đầu ghi 2 số N và V. Dòng tiếp theo ghi N số của mảng A. Sau đó là một dòng ghi N số của mảng C.
+Dữ liệu vào luôn đảm bảo không có đồ vật nào có thể tích lớn hơn V.
+Output
+Với mỗi bộ test, ghi trên một dòng giá trị lớn nhất có thể đạt được.
+Ví dụ
+Input
+Output
+1
+15 10
+5 2 1 3 5 2 5 8 9 6 3 1 4 7 8
+1 2 3 5 1 2 5 8 7 4 1 2 3 2 1
+15
+ 
+------------------------------
+CODE: T315
+Giả sử bạn cần viết N ký tự giống nhau lên màn hình. Bạn chỉ được phép thực hiện ba thao tác dưới đây với chi phí thời gian khác nhau:
+Thao tác insert: chèn một ký tự với thời gian là X.
+Thao tác delete: loại bỏ ký tự cuối cùng với thời gian là Y.
+Thao tác copying: copy và paste tất cả các ký tự đã viết để số ký tự được nhân đôi với thời gian là Z.
+Hãy tìm thời gian ít nhất để có thể đưa ra màn hình N ký tự giống nhau. Ví dụ với N = 9, X =1, Y = 2, Z =1 ta có kết quả là 5 bằng cách thực hiện: insert, insert, copying, copying, insert.
+Input:
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng đầu tiên đưa vào N là số các ký tự giống nhau cần viết lên màn hình; dòng tiếp theo đưa vào bộ ba số X, Y, Z tương ứng với thời gian thực hiện ba thao tác; các số được viết cách nhau một vài khoảng trống.
+T, N, X, Y, Z thỏa mãn ràng buộc: 1≤T≤100;  1≤N ≤100; 1≤X, Y, Z ≤100.
+Output:
+Đưa ra kết quả mỗi test theo từng dòng.
+Ví dụ:
+Input
+Output
+2
+9
+1 2 1
+10
+2 5 4
+5
+14
+ 
+------------------------------
+CODE: T316
+Một bản tin M đã mã hóa bí mật thành các con số theo ánh xạ như sau: ‘A’->1, ‘B’->2, .., ‘Z’->26. Hãy cho biết có bao nhiêu cách khác nhau để giải mã bản tin M. Ví dụ với bản mã M=”123” nó có thể được giải mã thành ABC (1 2 3), LC (12 3), AW(1 23).
+Input:
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một xâu ký tự số M.
+T, M thỏa mãn ràng buộc: 1≤T≤100;  1≤length(M)≤40.
+Output:
+Đưa ra kết quả mỗi test theo từng dòng.
+Ví dụ:
+Input
+Output
+2
+123
+2563
+3
+2
+ 
+------------------------------
+CODE: T317
+Mọi số nguyên dương N đều có thể phân tích thành tổng các bình phương của các số nhỏ hơn N. Ví dụ số 100 = 102 hoặc 100 = 52 + 52 + 52 + 52. Cho số nguyên dương N. Nhiệm vụ của bạn là tìm số lượng ít nhất các số nhỏ hơn N mà có tổng bình phương bằng N.
+Input:
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi test là một số tự nhiên N được viết trên 1 dòng.
+T, N thỏa mãn ràng buộc: 1≤T≤100;  1≤N≤10000.
+Output:
+Đưa ra kết quả mỗi test theo từng dòng.
+Ví dụ:
+  Input
+Output
+3
+100
+6
+25
+1
+3
+1
+     
+------------------------------
+CODE: TN01
+Dãy số Fibonacci được định nghĩa theo công thức như sau:
+F1 = 1
+F2 = 1
+Fn = Fn-1 + Fn-2 với n>2
+Viết chương trình tính số Fibonacci thứ n (với n không quá 92)
+Dữ liệu vào: Dòng đầu ghi số bộ test. Mỗi bộ test là một số nguyên n.
+Kết quả: Với mỗi bộ test, ghi ra số Fibonacci thứ n trên một dòng.
+Ví dụ
+Input
+Output
+3
+2
+5
+20
+1
+5
+6765
+ 
+------------------------------
+CODE: TN01007
+Cho hai số nguyên dương a và b không quá 500 chữ số. Hãy kiểm tra xem a chia hết cho b hoặc b chia hết cho a hay không.
+Input
+Dòng đầu ghi số bộ test
+Mỗi bộ test viết trên 1 dòng hai số nguyên dương, cách nhau một khoảng trống. Mỗi số có không quá 500 chữ số.
+Output
+Với mỗi test, ghi ra YES hoặc NO theo kết quả kiểm tra.
+Ví dụ
+Input
+Output
+2
+18 7
+3 123
+NO
+YES
+ 
+------------------------------
+CODE: TN01013
+Cho chữ cái c in hoa (‘A’ < c < ’K’) và số nguyên K (0 < K < (c – ‘A’)).
+Hãy tìm cách  liệt kê tất cả các xâu có K ký tự khác nhau được tạo ra bởi các chữ cái tính từ ‘A’ đến ký tự c. Các ký tự được phép lặp lại nhưng không tính các xâu là hoán vị của xâu nào đó đã liệt kê trước đó.
+Xem ví dụ để hiểu thêm yêu cầu đề bài.
+Input
+Chỉ có một dòng ghi chữ cái c và số nguyên K thỏa mãn ràng buộc đề bài.
+Output
+Ghi ra lần lượt các xâu ký tự kết quả theo thứ tự từ điển, mỗi xâu trên một dòng.
+Ví dụ
+Input
+Output
+D 2
+AA
+AB
+AC
+AD
+BB
+BC
+BD
+CC
+CD
+DD
+ 
+------------------------------
+CODE: TN01021
+Khu vui chơi trẻ em thiết kế một cầu thang có N bậc để di chuyển lên đỉnh tháp. Sinh viên PTIT cũng được phép leo lên cầu thang này nhưng nhìn chung chân sinh viên PTIT khá là dài nên có thể đi từ 1 đến K bậc mỗi bước (chứ không chỉ là 1 bậc như trẻ em).
+Hãy tính xem sinh viên PTIT có bao nhiêu cách để leo lên đến đỉnh.
+Input:
+Dòng đầu tiên là số lượng bộ test T (T ≤ 100).
+Mỗi test gồm hai số nguyên dương N và K (1 ≤ N ≤ 100000, 1 ≤ K ≤ 100).
+Output: 
+Với mỗi test, in ra đáp án tìm được trên một dòng theo modulo 109+7.
+Ví dụ:
+Input Output
+2
+2 2
+4 2
+2
+5
+  Giải thích test 2: Có 5 cách lần lượt là: (1, 1, 1, 1), (1, 1, 2), (1, 2, 1), (2, 1, 1), (2, 2).
+------------------------------
+CODE: TN01022
+Cho hai số nguyên không âm a và b. Hãy tính ab.
+Nếu kết quả quá lớn hãy chia dư cho 109 + 7.
+Input
+Gồm không quá 20 bộ test, mỗi test ghi trên một dòng hai số a,b; a không quá 9 chữ số, b không quá 18 chữ số.
+Input kết thúc khi a = b = 0
+Output
+Với mỗi test ghi ra kết quả tính được trên một dòng.
+Ví dụ
+Input
+Output
+2 3
+2 4
+3 2
+0 0
+8
+16
+9
+ 
+------------------------------
+CODE: TN02
+Cho số nguyên dương N. Hãy đưa ra ước số nguyên tố lớn nhất của N.
+Input:
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test ghi số nguyên dương N.
+T, N thỏa mãn ràng buộc: 1≤T≤100; 2≤N≤1010.
+Output:
+Đưa ra kết quả mỗi test theo từng dòng.
+      Ví dụ:
+  Input:
+Output:
+2
+315
+31
+7
+31
+ 
+------------------------------
+CODE: TN02004
+Viết chương trình khai báo lớp Matrix mô tả ma trận các số nguyên.
+Sau đó nhập và tính tích hai ma trận A cỡ n*m và ma trận B cỡ m*p.
+Với 1 < n,m,p < 50. Các giá trị trong ma trận đều nguyên dương và không vượt quá 1000.
+Input
+Dòng đầu ghi 3 số n,m,p
+n dòng tiếp theo ghi ma trận A
+m dòng tiếp theo ghi ma trận B
+Output
+Ghi ra ma trận tích
+Ví dụ
+Input
+Output
+3 4 3
+1 2 3 4
+4 2 3 1
+2 4 1 3
+1 1 1
+2 2 2
+3 3 3
+4 4 4
+30 30 30
+21 21 21
+25 25 25
+ Chú ý: Trong bài này cần viết hàm main đúng theo mô tả. 
+------------------------------
+CODE: TN02013
+Xây dựng lớp Phân Số với hai thuộc tính tử số và mẫu số kiểu long
+Nhập hai phân số A và B từ bàn phím sau đó tính:
+C = (A + B)2  rồi rút gọn kết quả.
+D = A x B x C rồi rút gọn kết quả.
+Input:
+Dòng đầu tiên là số bộ test T (T <= 100)
+T dòng tiếp theo, mỗi dòng gồm 4 số lần lượt là tử và mẫu số của phân số A và phân số B với -103<= tử số, mẫu số <= 103. Mẫu số đảm bảo khác 0.
+Output:
+Ghi ra kết quả của hai phép tính theo định dạng phân số, cách nhau một khoảng trống.
+Ví dụ
+Input Output
+2
+1 2
+3 4
+2 3
+4 5
+25/16 75/128
+484/225 3872/3375
+Chú ý: Cần viết hàm main đúng theo mẫu. 
+------------------------------
+CODE: TN02015
+Một từ được định nghĩa là một dãy ký tự liên tiếp không có khoảng trống, dấu tab hay dấu xuống dòng. Tạm thời chưa xét đến các dấu câu trong bải toán này.
+Hãy đọc tất cả dữ liệu vào và chuyển các từ về dạng chữ thường sau đó liệt kê các từ khác nhau xuất hiện theo thứ tự từ điển.
+Yêu cầu hướng đối tượng: Cần xây dựng lớp WordSet phù hợp với hàm main cho trước. 
+Input
+Đọc đến hết dữ liệu vào, có không quá 500 dòng. 
+Output
+Ghi ra danh sách các từ khác nhau. Mỗi từ trên một dòng theo thứ tự từ điển.
+Ví dụ
+Input
+Output
+lap trinh Huong doi tuong
+lap trinh Huong thanh phan
+doi
+huong
+lap
+phan
+thanh
+trinh
+tuong
+   
+------------------------------
+CODE: TN03
+Cho xâu ký tự S bao gồm các ký tự ‘A’,..,’Z’ và các chữ số ‘0’,...,’9’. Nhiệm vụ của bạn in các ký tự từ ’A’,.., ‘Z’ trong S theo thứ tự từ điển và nối với tổng các chữ số trong S ở cuối cùng. Ví dụ S =”ACCBA10D2EW30” ta nhận được kết quả: “AABCCDEW6”.
+Input:
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test là một xâu ký tự S.
+T, S thỏa mãn ràng buộc: 1≤ T ≤100; 1≤ Length(S)≤105.
+Output:
+Đưa ra kết quả mỗi test theo từng dòng.
+ Ví dụ:
+Input:
+Output:
+2
+AC2BEW3
+ACCBA10D2EW30
+ABCEW5
+AABCCDEW6
+ 
+------------------------------
+CODE: TN04
+Một số được coi là đẹp nếu đó là số thuận nghịch và chỉ toàn các chữ số chẵn. Viết chương trình đọc vào các số nguyên dương có không quá 500 chữ số và kiếm tra xem số đó có đẹp hay không.  
+Dữ liệu vào:
+Dòng đầu tiên ghi số bộ test.
+Mỗi bộ test viết trên một dòng số nguyên dương n không quá 500 chữ số. 
+Kết quả:
+            Mỗi bộ test viết ra trên một dòng chữ YES nếu đó là số đẹp, chữ NO nếu ngược lại
+Ví dụ                          
+Input
+Output
+4
+123456787654321
+86442824468
+8006000444422220000222244440006008
+235365789787654324567856578654356786556
+NO
+YES
+YES
+NO
+ 
+------------------------------
+CODE: TN04001
+Cho biểu thức số học có chứa các ký tự dấu ngoặc ‘(‘, ‘)’. Hãy in ra số thứ tự của các cặp ‘(‘, ‘)’ trong biểu thức.
+Ví dụ với biểu thức                                              (a + (b *c) ) + (d/e)
+ta có thứ tự của các cặp ‘(‘, ‘)’ là                         1  2  2  1  3  3
+Input:
+Dòng đầu tiên đưa vào số lượng bộ test T (không quá 100).
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một biểu thức số học được đưa vào trên một dòng, độ dài không quá 106.
+Output:
+Đưa ra kết quả mỗi test theo từng dòng.
+  Ví dụ:
+  Input
+Output
+2
+(a + (b *c) ) + (d/e)
+( ( () ) ( () ) )
+1  2  2  1  3  3
+1 2  3  3  2  4  5  5  4  1
+   
+------------------------------
+CODE: TN04003
+Cho dãy số A[] có N phần tử. Với mỗi vị trí thứ i trong dãy, hãy tính độ dài của đoạn liên tiếp tính từ i trở về phía trước mà các giá trị đều nhỏ hơn hoặc bằng A[i].
+Input: Dòng đầu ghi số bộ test (không quá 10). Mỗi test có 2 dòng.
+Dòng đầu tiên gồm 1 số nguyên N (1 ≤ N ≤ 105).
+Dòng tiếp theo gồm N số nguyên A1, A2, …, AN (1 ≤ A[i] ≤ 106).
+Output
+Với mỗi bộ test, in ra dãy kết quả trên một dòng.
+Ví dụ:
+Input
+Output
+1
+7
+100 80 60 70 60 75 85
+1 1 1 2 1 4 6
+   
+------------------------------
+CODE: TN05
+Một xâu họ tên được coi là viết chuẩn nếu chữ cái đầu tiên mỗi từ được viết hoa, các chữ
+cái khác viết thường. Các từ cách nhau đúng một dấu cách và không có khoảng trống thừa ở đầu và cuối xâu. Hãy viết chương trình đưa các xâu họ tên về dạng chuẩn.
+Dữ liệu vào :
+Dòng 1 ghi số bộ test.
+Mỗi bộ test ghi trên một dòng xâu ký tự họ tên, không quá 100 ký tự.
+Kết quả :
+Với mỗi bộ test ghi ra xâu ký tự họ tên đã chuẩn hóa.
+Ví dụ:
+Input
+Output
+3
+   nGuYEN    vAN    naM
+tRan           TRUNG hiEU
+      vO le         hOA bINh
+Nguyen Van Nam
+Tran Trung Hieu
+Vo Le Hoa Binh
+
+ 
+------------------------------
+CODE: TN05001
+Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy viết thuật toán duyệt theo chiều sâu bắt đầu tại đỉnh u (DFS(u)=?)
+Input:       Dòng đầu tiên đưa vào T là số lượng bộ test.
+Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm |E| +1 dòng: dòng đầu tiên đưa vào ba số |V|, |E| tương ứng với số đỉnh và số cạnh của đồ thị, và u là đỉnh xuất phát; |E| dòng tiếp theo đưa vào các bộ đôi u, v tương ứng với một cạnh của đồ thị.
+T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤200; 1≤|V|≤103; 1≤|E|≤|V|(|V|-1)/2;
+Output: Đưa ra danh sách các đỉnh được duyệt theo thuật toán DFS(u) của mỗi test theo khuôn dạng của ví dụ dưới đây.
+Chú ý: giữa các số và dấu mũi tên -> có khoảng trống. 
+Ví dụ:
+Input:
+Output:
+1
+6 9 5
+1 2
+1 3
+2 3
+2 4
+3 4
+3 5
+4 5
+4 6
+5 6
+DFS(5) = 5 -> 3 -> 1 -> 2 -> 4 -> 6
+ 
+------------------------------
+CODE: TN05002
+Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy viết thuật toán duyệt theo chiều rộng bắt đầu tại đỉnh u (BFS(u)=?)
+Input:  Dòng đầu tiên đưa vào T là số lượng bộ test.
+Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưa vào ba số |V|, |E|, u tương ứng với số đỉnh, số cạnh và đỉnh bắt đầu duyệt; Dòng tiếp theo đưa vào các bộ đôi u, v tương ứng với một cạnh của đồ thị.
+T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤200; 1≤|V|≤103; 1≤|E|≤|V|(|V|-1)/2;
+Output: Đưa ra danh sách các đỉnh được duyệt theo thuật toán BFS(u) của mỗi test theo khuôn dạng của ví dụ dưới đây.
+Chú ý: giữa các số và dấu -> có khoảng trống.
+Ví dụ:
+Input:
+Output:
+1
+6 9 1
+1 2 1 3 2 3 2 5 3 4 3 5 4 5 4 6 5 6
+BFS(1) = 1 -> 2 -> 3 -> 5 -> 4 -> 6
+ 
+------------------------------
+CODE: TN05003
+Cho đồ thị vô hướng G= được biểu diễn dưới dạng danh sách cạnh. Hãy tìm đường đi từ đỉnh s đến tất cả các đỉnh còn lại bằng thuật toán BFS.
+Input:
+Dòng đầu tiên đưa vào T là số lượng bộ test.
+Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưa vào ba số N, M, s  tương ứng với số đỉnh, số cạnh,  đỉnh xuất phát.
+Dòng tiếp theo đưa vào các bộ đôi u, v tương ứng với một cạnh của đồ thị.
+T, N, M thỏa mãn ràng buộc: 1≤T≤100; 1≤ N ≤103; 1≤ M ≤| N*(N-1)/2;
+Output:
+Đưa ra đường đi từ đỉnh s đến lần lượt từng đỉnh từ 1 đến N (trừ chính đỉnh s).
+Nếu đỉnh nào không có đường đi từ s thì ghi ra “No path”
+      Ví dụ:
+Input:
+Output:
+1
+6 9 1
+1 2 1 3 2 3 2 5 3 4 3 5 4 5 4 6 5 6
+1 2
+1 3
+1 3 4
+1 2 5
+1 2 5 6
+ 
+------------------------------
+CODE: TN05004
+Cho đồ thị vô hướng G= được biểu diễn dưới dạng danh sách cạnh. Hãy tìm đường đi từ đỉnh s đến tất cả các đỉnh còn lại bằng thuật toán DFS.
+Input:
+Dòng đầu tiên đưa vào T là số lượng bộ test.
+Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưa vào ba số N, M, s  tương ứng với số đỉnh, số cạnh,  đỉnh xuất phát.
+Dòng tiếp theo đưa vào các bộ đôi u, v tương ứng với một cạnh của đồ thị.
+T, N, M thỏa mãn ràng buộc: 1≤T≤100; 1≤ N ≤103; 1≤ M ≤| N*(N-1)/2;
+Output:
+Đưa ra đường đi từ đỉnh s đến lần lượt từng đỉnh từ 1 đến N (trừ chính đỉnh s).
+Nếu đỉnh nào không có đường đi từ s thì ghi ra “No path”
+      Ví dụ:
+Input:
+Output:
+1
+6 9 1
+1 2 1 3 2 3 2 5 3 4 3 5 4 5 4 6 5 6
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+1 2 3 4 5 6
+ 
+------------------------------
+CODE: TN05005
+Cho một đồ thị thỏa mãn tính chất của cây khung (tức là liên thông và có đúng n-1 cạnh). Tại mỗi bước, người ta sẽ tất cả node lá của cây khung đó (tức là các đỉnh của đồ thị có duy nhất một cạnh nối đến một đỉnh khác). Hỏi sau M bước thì đồ thị còn lại bao nhiêu đỉnh.
+Ví dụ: cây khung có 7 đỉnh dưới  đây sẽ bị xóa hết các node sau 2 bước:
+Sau một bước còn lại 2 đỉnh:
+Đến bước thứ 2 thì sẽ không còn đỉnh nào.
+Input
+Dòng đầu tiên ghi số bộ test t (1 ≤ t ≤ 10). 
+Dòng đầu tiên của mỗi bộ test ghi 2 số nguyên N, M (1 ≤ N, M ≤ 105)
+N - 1 dòng tiếp theo chứa 2 số nguyên u, v(1≤ u, v ≤ N) mô tả đường đi nối u và v.
+ Output:
+Với mỗi bộ test, ghi ra số đỉnh còn lại sau M bước.
+Ví dụ:
+Input
+Output
+4
+7 1
+4 3
+5 1
+1 3
+6 1
+1 7
+2 1
+6 2
+5 1
+2 5
+5 6
+4 2
+3 4
+2 1000
+1 2
+14 1
+1 2
+2 3
+2 4
+4 5
+4 6
+2 7
+7 8
+8 9
+8 10
+3 11
+3 12
+1 13
+13 14
+2
+1
+0
+7
+ 
+------------------------------
+CODE: TN06
+Địa chỉ email của các cán bộ, giảng viên PTIT được tạo ra bằng cách viết đầy đủ tên và ghép với các chữ cái đầu của họ và tên đệm. Nếu có nhiều người cùng email thì từ người thứ 2 sẽ thêm số thứ tự vào email đó.
+Cho trước các xâu họ tên (có thể không chuẩn). Hãy tạo ra các địa email tương ứng.
+Dữ liệu vào:
+Dòng 1 ghi số N là xâu họ tên trong danh sách
+N dòng tiếp theo ghi lần lượt các xâu họ tên (không quá 50 ký tự)
+Kết quả: Ghi ra các email được tạo ra.
+Ví dụ:
+Input
+Output
+4
+    nGUYEn    quaNG   vInH  
+   tRan   thi THU    huOnG
+   nGO   quoC  VINH
+ lE            tuAn    aNH
+vinhnq@ptit.edu.vn
+huongttt@ptit.edu.vn
+vinhnq2@ptit.edu.vn
+anhlt@ptit.edu.vn
+ 
+------------------------------
+CODE: TN06001
+Cho đồ thị có hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh.
+Hãy tìm đường đi từ đỉnh u đến đỉnh v trên đồ thị bằng thuật toán BFS.
+Input:
+Dòng đầu tiên đưa vào T là số lượng bộ test.
+Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm |E|+1 dòng: dòng đầu tiên đưa vào bốn số |V|, |E|, u, v tương ứng với số đỉnh, số cạnh,  đỉnh xuất phát u, đỉnh kết thúc v;
+|E| dòng tiếp theo mỗi dòng đưa vào bộ đôi x, y tương ứng với một cạnh của đồ thị.
+T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤100; 1≤|V|≤103; 1≤|E|≤|V|(|V|-1)/2;
+Output:
+Đưa ra đường đi từ đỉnh s đến đỉnh t của mỗi test theo thuật toán BFS của mỗi test theo khuôn dạng của ví dụ dưới đây. Nếu không có đáp án, in ra -1.
+Ví dụ:
+Input
+Output
+1
+6 9 1 6
+1 2  
+2 5
+3 1
+3 2
+3 5
+4 3
+5 4
+5 6
+6 4
+1 -> 2 -> 5 -> 6
+   
+------------------------------
+CODE: TN06002
+Cho đồ thị vô hướng gồm N đỉnh và M cạnh. Xét lần lượt các đỉnh từ 1 đến N, hãy tính xem nếu xóa đỉnh đó đi thì đồ thị có bao nhiêu thành phần liên thông.
+Input
+Dòng đầu ghi 2 số N và M (1 < N < 20000; 1 < M < 50000).
+Tiếp theo là M dòng ghi các cạnh của đồ thị.
+Output
+In ra N dòng, dòng thứ k (tính từ 1) là số thành phần liên thông của đồ thị nếu xóa đỉnh K.
+Ví dụ
+Input
+Output
+4 3
+1 2
+2 3
+2 4
+1
+3
+1
+1
+ 
+------------------------------
+CODE: TN06003
+Cho đồ thị vô hướng G có N đỉnh, M cạnh. 
+Hãy liệt kê các đỉnh không cùng thành phần liên thông với một đỉnh cho trước.
+Input
+Dòng đầu ghi 3 số N, M và X (0 < N < 300; 1 <= M <= N*(N-1)/2), 0 < X < N).
+Tiếp theo là M dòng, mỗi dòng ghi một cạnh của đồ thị. Các cạnh được liệt kê với thứ tự bất kỳ.
+Output
+Ghi ra các đỉnh không liên thông với đỉnh X theo thứ tự tăng dần, mỗi dòng ghi một đỉnh. Nếu không có đỉnh nào thì ghi ra số 0.
+Ví dụ
+Input
+Output
+6 4 2
+1 3
+2 3
+1 2
+4 5
+4
+5
+6
+ 
+------------------------------
+CODE: TN06005
+Cho đồ thị có hướng với N đỉnh và M cạnh. Người ta muốn thực hiện hành trình với hai bước di chuyển sau:
+- Bước 1: tìm đường đi từ đỉnh 1 qua các cạnh đến đỉnh 2.
+- Bước 2: từ đỉnh 2 lại đi qua các cạnh nào đó để quay lại đỉnh 1.
+Không có cạnh nào được đi qua 2 lần. Hãy tính xem  số đỉnh ít nhất cần phải đi qua trong hành trình đó là bao nhiêu.
+Input
+Dòng đầu ghi số bộ test.
+Mỗi test bắt đầu với một dòng ghi hai số N, M (1 < N<=20).
+Tiếp theo là M dòng ghi các cạnh có hướng. Không có cạnh nào trùng nhau.
+Output
+Với mỗi bộ test, ghi ra số đỉnh tối thiểu cần phải đi qua thỏa mãn yêu cầu đề bài.
+Ví dụ
+Input
+Ouput
+  2
+6 7
+1 3
+3 4
+4 5
+5 1
+4 2
+2 6
+6 3
+9 11
+1 3
+3 4
+4 2
+2 5
+5 3
+3 6
+6 1
+2 7
+7 8
+8 9
+9 1
+6
+6
+ 
+------------------------------
+CODE: TN07
+Cho một xâu S. Mỗi bước, bạn được phép xóa đi 2 kí tự liền nhau mà giống nhau. Chẳng hạn xâu “aabcc” có thể trở thành “bcc” hoặc “aab” sau 1 lần xóa.
+Hỏi xâu cuối cùng thu được là gì? Nếu xâu rỗng, in ra “Empty String”.
+Input:
+Một xâu S chỉ gồm các chữ cái thường, có độ dài không vượt quá 100.
+Output: 
+In ra đáp án tìm được.
+Ví dụ:
+Test 1
+Test 2
+Input:
+aaabccddd
+  Output:
+abd
+  Input:
+abba
+  Output:
+Empty String
+   
+------------------------------
+CODE: TN08
+Cho xâu nhị phân X[], nhiệm vụ của bạn là hãy đưa ra xâu nhị phân tiếp theo của X[]. Ví dụ X[] =”010101” thì xâu nhị phân tiếp theo của X[] là “010110”.
+Input:
+Dòng đầu tiên đưa vào số lượng test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một xâu nhi phân X.
+T, X[] thỏa mãn ràng buộc: 1≤T≤100; 1≤length(X)≤103.
+Output:
+Đưa ra kết quả mỗi test theo từng dòng.
+Input
+Output
+2
+010101
+111111
+010110
+000000
+ 
+------------------------------
+CODE: TN09
+Cho số tự nhiên N và một hoán vị X[] của 1, 2, .., N. Nhiệm vụ của bạn là đưa ra hoán vị tiếp theo của X[]. Ví dụ N=5, X[] = {1, 2, 3, 4, 5} thì hoán vị tiếp theo của X[] là {1, 2, 3, 5, 4}.
+Input:
+Dòng đầu tiên đưa vào số lượng test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng thứ nhất là số N; dòng tiếp theo đưa vào hoán vị X[] của 1, 2, .., N.
+T, N, X[] thỏa mãn ràng buộc: 1≤T≤100; 1≤ N≤103.
+Output:
+Đưa ra kết quả mỗi test theo từng dòng.
+Input
+Output
+2
+5 
+1  2  3  4  5
+5
+5  4  3  2  1
+  1 2  3  5  4
+1 2  3  4  5
+ 
+------------------------------
+CODE: TN10
+Cho số nguyên dương N. Nhiệm vụ của bạn là hãy liệt kê tất cả các hoán vị của 1, 2, .., N theo thứ tự ngược. Ví dụ với N = 3 ta có kết quả: 321, 312, 231, 213, 132, 123.
+Input:
+Dòng đầu tiên đưa vào số lượng test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một số tự nhiên N được viết trên một dòng.
+T, n thỏa mãn ràng buộc: 1≤T, N≤10.
+Output:
+Đưa ra kết quả mỗi test theo từng dòng.
+            Ví dụ:
+Input
+Output
+2
+2
+3
+21 12 
+321 312 231 213 132 123       
+ 
+------------------------------
+CODE: TN11
+Cho một xâu ký tự S không có ký tự lặp lại. Hãy đưa ra tất cả các tập con của xâu ký tự S theo thứ tự tăng dần của các xâu ký tự.
+Input:
+Dòng đầu tiên đưa vào số lượng test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một xâu ký tự.
+T, S thỏa mãn ràng buộc: 1≤T≤100; 1≤length(S)≤16.
+Output:
+Đưa ra kết quả mỗi test theo từng dòng.
+Ví dụ:
+Input
+Output
+1
+3
+abc
+a ab abc ac b bc c
+   
+------------------------------
+CODE: TN12
+Cho số nguyên dương (1<N<40) và số nguyên dương K<N. Với 1 tổ hợp chập K phần tử của N, hãy cho biết tổ hợp tiếp theo sẽ có bao nhiêu phần tử mới. Nếu tổ hợp đã cho là cuối cùng thì kết quả là K.  
+Dữ liệu vào: Dòng đầu ghi số bộ test, không quá 20. Mỗi bộ test viết trên hai dòng
+Dòng 1: hai số nguyên dương N và K (K<N)
+Dòng 2 ghi K số của tổ hợp ban đầu. Theo đúng thứ tự tăng dần, không có số nào trùng nhau.
+Kết quả: Với mỗi bộ dữ liệu in ra số lượng phần tử mới.
+ Ví dụ:
+INPUT
+OUTPUT
+3
+5 3
+1 3 5
+5 3
+1 4 5
+6 4
+3 4 5 6
+1
+2
+4
+ 
+------------------------------
+CODE: TN13
+Bạn được giao cho N công việc, công việc thứ i có thời gian bắt đầu là A[i] và kết thúc tại B[i]. Tại một thời điểm, bạn chỉ có thể làm một công việc.
+Bạn hãy lựa chọn các công việc một cách tối ưu sao cho số công việc làm được là nhiều nhất.
+Input: Dòng đầu tiên là số lượng bộ test T (T ≤ 10).
+Mỗi test gồm 1 số nguyên N ( 1 ≤ N ≤ 100 000).
+N dòng tiếp theo, mỗi dòng gồm 2 số A[i] và B[i] (0 ≤ A[i] < B[i] ≤ 106).
+Output:  Với mỗi test, in ra đáp án trên một dòng.
+Ví dụ:
+Input
+Output
+1
+6
+5 9
+1 2
+3 4
+0 6
+5 7
+8 9
+  4
+Giải thích test: Lựa chọn công việc 2, 3, 5, 6.
+------------------------------
+CODE: TN14
+Có N sợi dây cần nối lại với nhau thành một sợi duy nhất. Mỗi lần chỉ được phép nối 2 sợi dây với nhau. Thời gian để nối hai sợi dây có độ dài a và b mất tổng cộng a + b phút.
+Hãy tính xem cần ít nhất bao nhiêu thời gian để có thể nối xong N sợi dây?
+Dữ liệu vào: Dòng đầu ghi số bộ test. Mỗi test có hai dòng:
+Dòng đầu tiên là số nguyên N (N ≤ 2*106).
+Dòng tiếp theo gồm N số nguyên dương c[i] ( 1 ≤ c[i] ≤ 109).
+Kết quả: In ra đáp án của bài toán theo modulo 109+7.
+Ví dụ:
+Input:
+Output
+1
+7
+2 4 1 2 10 2 3
+59
+ 
+------------------------------
+CODE: TN15
+Cho một mê cung bao gồm các khối được biểu diễn như một ma trận nhị phân A[N][N]. Một con chuột đi từ ô đầu tiên góc trái (A[0][0]) đến ô cuối cùng góc phải (A[N-1][N-1]) theo nguyên tắc:
+Down (D): Chuột được phép xuống dưới nếu ô dưới nó có giá trị 1.
+Right (R): Chuột được phép sang phải dưới nếu ô bên phải nó có giá trị 1.
+Hãy đưa ra một hành trình của con chuột trên mê cung. Đưa ra -1 nếu chuột không thể đi đến đích.
+                        Input:
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai phần: phần thứ nhất đưa vào số N là kích cỡ của mê cung; dòng tiếp theo đưa vào ma trận nhị phân A[N][N].
+T, N, A[i][j] thỏa mãn ràng buộc: 1≤T ≤10; 2≤N≤10; 0≤A[i][j] ≤1.
+Output:
+Đưa ra tất cả đường đi của con chuột trong mê cung theo thứ tự từ điển. Đưa ra -1 nếu chuột không đi được đến đích.
+Input
+Output
+2
+4
+1  0  0  0
+1  1  0  1 
+0  1  0  0 
+1  1  1  1
+5
+1 0 0 0 0
+1 1 1 1 1
+1 1 0 0 1
+0 1 1 1 1
+0 0 0 1 1
+DRDDRR
+DDRDRRDR DDRDRRRD DRDDRRDR DRDDRRRD DRRRRDDD
+   
+------------------------------
+CODE: TN17
+Cho số tự nhiên K và xâu ký tự các chữ số S.  Nhiệm vụ của bạn là đưa ra số lớn nhất bằng cách thực hiện nhiều nhất K lần đổi chỗ các ký tự trong S. Ví dụ K =3 và S = “1234567” ta được “7654321”.
+Input:
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng thứ nhất là số K; dòng tiếp theo là xâu ký tự S.
+T, K, S thỏa mãn ràng buộc: 1≤T ≤100; 1≤K≤10; 1≤length(S)≤7.
+Output:
+Đưa ra kết quả mỗi test theo từng dòng.
+Input
+Output
+3
+4
+1234567
+3
+3435335
+2
+1034
+7654321
+5543333
+4301
+ 
+------------------------------
+CODE: TN18
+Cho mảng A[] gồm N số nguyên dương phân biệt và số X. Nhiệm vụ của bạn là tìm phép tổ hợp các số trong mảng A[] có tổng bằng X. Các số trong mảng A[] có thể được sử dụng nhiều lần. Mỗi tổ hợp các số của mảng A[] được in ra theo thứ tự không giảm các số. Ví dụ với A[] = {2, 4, 6, 8}, X = 8 ta có các tổ hợp các số như sau:
+[2, 2, 2, 2], [2, 2, 4], [2, 6], [4, 4], [8].
+Input:
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai phần: phần thứ nhất là hai số N và X; dòng tiếp theo đưa vào N số của mmảng A[]; các số được viết cách nhau một vài khoảng trống.
+T, N, X, A[i] thỏa mãn ràng buộc: 1≤T ≤10; 1≤X, A[i]≤100. N ≤ 20.
+Output:
+Đưa ra kết quả mỗi test theo từng dòng. Mỗi đường tổ hợp được bao bởi cặp ký tự [, ]. Đưa ra -1 nếu không có tổ hợp nào thỏa mãn yêu cầu bài toán.
+Input
+Output
+1
+4  8
+2  4  6  8
+[2 2 2 2] [2 2 4] [2 6] [4 4] [8]
+ 
+------------------------------
+CODE: TN19
+Một số X được gọi là số khối lập phương nếu X là lũy thừa bậc 3 của số Y (X= Y3). Cho số nguyên dương N, nhiệm vụ của bạn là tìm số khối lập phương lớn nhất bằng cách loại bỏ đi các chữ số của N. Ví dụ số 4125 ta có kết quả là 125 = 53.
+Input:
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một số tự nhiên N được viết trên một dòng.
+T, N thỏa mãn ràng buộc: 1≤T≤100;  1≤N≤1018.
+Output:
+Đưa ra kết quả mỗi test theo từng dòng. Nếu không tìm được đáp án in ra -1.
+Ví dụ:
+Input
+Output
+2
+4125
+976
+125
+-1
+ 
+------------------------------
+CODE: TN20
+Một phân số đơn vị nếu tử số của phân số đó là 1. Mọi phân số nguyên dương đều có thể biểu diễn thành tổng các phân số đơn vị. Ví dụ 2/3 = 1/2  + 1/6. Cho phân số nguyên dương P/Q bất kỳ (P < Q), hãy biểu diễn phân số nguyên dương thành tổng phân số đơn vị.
+Input:
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là bộ đôi tử số P và mẫu số Q của phân số nguyên dương được viết trên một dòng.
+T, P, Q thỏa mãn ràng buộc: 1≤T≤100;  1≤P, Q≤100.
+Output:
+Đưa ra đáp án tìm được trên 1 dòng, theo dạng “1/a + 1/b + …”
+Ví dụ:
+Input
+Output
+2
+2 3
+1 3
+1/2 + 1/6 
+1/3
+ 
+------------------------------
+CODE: TN21
+Cho một bàn cờ vua có kích thước n * n, ta biết ràng quân hậu có thể di chuyển theo chiều ngang, dọc, chéo. Vấn đề đặt ra rằng, có n quân hậu, bạn cần đếm số cách đặt n quân hậu này lên bàn cờ sao cho với 2 quân hậu bất kì, chúng không “ăn” nhau.
+Input: Dòng đầu ghi số bộ test T (T<5). Mỗi bộ test ghi một số nguyên dương n duy nhất (không quá 10)
+Output:  Ghi kết quả mỗi bộ test trên một dòng. Số cách đặt quân hậu.
+Ví dụ:
+Input
+Output
+1
+4
+  2
+ 
+------------------------------
+CODE: TN22
+Cho một bàn cờ 8 x 8, mỗi ô có một giá trị A[i][j] nhất định (0 ≤ A[i][j] ≤ 100), tương ứng với điểm số đạt được nếu như bạn đặt một quân cờ vào đó.
+Nhiệm vụ của bạn là đặt 8 quân hậu lên bàn cờ, sao cho không có 2 quân nào ăn nhau, và số điểm đạt được là lớn nhất.
+Input: Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
+Mỗi test gồm 8 dòng, mỗi dòng 8 số nguyên mô tả bàn cờ.
+Output:  Với mỗi test, in ra đáp án trên một dòng.
+Ví dụ:
+Input
+Output
+1
+1 2 3 4 5 6 7 8
+9 10 11 12 13 14 15 16
+17 18 19 20 21 22 23 24
+25 26 27 28 29 30 31 32
+33 34 35 36 37 38 39 40
+41 42 43 44 45 46 47 48
+48 50 51 52 53 54 55 56
+57 58 59 60 61 62 63 64
+260
+ 
+------------------------------
+CODE: TN23
+Một máy ATM hiện có n (n ≤ 30) tờ tiền có giá trị t[1], t[2], …, t[n]. Hãy tìm cách trả ít tờ nhất với số tiền đúng bằng S (các tờ tiền có giá trị bất kỳ và có thể bằng nhau, mỗi tờ tiền chỉ được dùng một lần).
+Input: Dòng đầu tiên ghi số bộ test T (T<10). Mỗi bộ test gồm 2 số nguyên n và S (S ≤ 109). Dòng thứ hai chứa n số nguyên t[1], t[2], …, t[n] (t[i] ≤ 109)
+Output: Với mỗi bộ test ghi ra số tờ tiền ít nhất phải trả.
+     Nếu không thể tìm được kết quả, in ra -1.
+Ví dụ
+Input
+Output
+1
+3 5
+1 4 5
+1
+ 
+------------------------------
+CODE: TN24
+Cho số nguyên dương N. Nhiệm vụ của bạn là hãy liệt kê tất cả các cách phân tích số tự nhiên N thành tổng các số tự nhiên nhỏ hơn hoặc bằng N. Phép hoán vị vủa một cách được xem là giống nhau. Ví dụ với N = 5 ta có kết quả là: (5), (4, 1), (3, 2), (3, 1, 1), (2, 2, 1), (2, 1, 1, 1), (1, 1, 1, 1, 1)
+Input:
+Dòng đầu tiên đưa vào số lượng test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một số tự nhiên N được viết trên một dòng.
+T, n thỏa mãn ràng buộc: 1≤T, N≤10.
+Output:
+Đưa ra kết quả mỗi test theo từng dòng.
+Ví dụ:
+Input
+Output
+2
+4
+5
+(4) (3 1) (2 2) (2 1 1) (1 1 1 1)
+(5) (4 1)  (3 2)  (3 1 1) (2 2 1)  (2 1 1 1)  (1 1 1 1 1)
+ 
+------------------------------
+CODE: TN25
+Cho xâu ký tự S bao gồm các ký tự in hoa khác nhau. Hãy đưa ra tất cả các hoán vị của xâu ký tự S. Ví dụ S=”ABC” ta có kết quả {ABC ACB BAC BCA CAB CBA}. 
+Input:
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test là một xâu ký tự S được viết trên 1 dòng.
+T, S thỏa mãn ràng buộc: 1≤T≤10; 1≤length(S) ≤10;
+Output:
+Đưa ra kết quả mỗi test theo từng dòng.
+Ví dụ:
+Input
+Output
+2
+AB
+ABC
+AB BA
+ABC ACB BAC BCA CAB CBA 
+ 
+------------------------------
+CODE: TN26
+Xét tất cả các tập hợp các số nguyên dương có các phần tử khác nhau và không lớn hơn số n cho trước. Nhiệm vụ của bạn là hãy đếm xem có tất cả bao nhiêu tập hợp có số lượng phần tử bằng k và tổng của tất cả các phần tử trong tập hợp bằng s?
+Các tập hợp là hoán vị của nhau chỉ được tính là một.
+Ví dụ với n = 9, k = 3, s = 23, {6, 8, 9} là tập hợp duy nhất thỏa mãn.
+Input:  Gồm nhiều bộ test (không quá 100 test).
+Mỗi bộ test gồm 3 số nguyên n, k, s với 1 ≤ n ≤ 20, 1 ≤ k ≤ 10 và 1 ≤ s ≤ 155. Input kết thúc bởi 3 số 0.
+Output:  Với mỗi test in ra số lượng các tập hợp thỏa mãn điều kiện đề bài.
+Ví dụ:
+Input
+Output
+9 3 23
+9 3 22
+10 3 28
+16 10 107
+20 8 102
+20 10 105
+20 10 155
+3 4 3
+4 2 11
+0 0 0
+1
+2
+0
+20
+1542
+5448
+1
+0
+0
+   
+------------------------------
+CODE: TN27
+Trong một buổi học toán, giáo viên viết 2 số nguyên, A và B, và yêu cầu Tèo thực hiện phép cộng. Tèo không bao giờ tính toán sai, nhưng thỉnh thoảng cậu ta chép các con số một cách không chính xác. Lỗi duy nhất của là ghi nhầm '5' thành '6' hoặc ngược lại.  Cho hai số, A và B, tính tổng nhỏ nhất và lớn nhất mà Tèo có thể nhận được.
+Input: Chỉ có một dòng chứa hai số nguyên dương A và B ( 1 ≤ A, B ≤ 1 000 000).
+Output: In ra 2 số nguyên cách nhau một dấu cách, tổng nhỏ nhất và lớn nhất có thể nhận được.
+Ví dụ:
+Test 1
+Test 2
+Test 3
+Input:
+11 25
+
+Ouput:
+36 37
+Input:
+1430 4862
+
+Ouput:
+6282 6292
+Input:
+16796 58786
+
+Ouput:
+74580 85582
+   
+------------------------------
+CODE: TN29
+Cho xâu ký tự S. Ta gọi giá trị của xâu S là tổng bình phương số lần xuất hiện mỗi ký tự trong S. Hãy tìm giá trị nhỏ nhất của xâu S sau khi thực hiện K lần loại bỏ ký tự.
+Input:
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai phần: phần thứ nhất là số K; phần thứ hai là một xâu ký tự S được viết trên một dòng.
+T, S, K thỏa mãn ràng buộc: 1≤T≤100;  1≤length(S)≤10000; 1≤K≤1000.
+Output:
+Đưa ra kết quả mỗi test theo từng dòng.
+Ví dụ:
+Input
+Output
+2
+2
+ABCCBC
+2
+AAAB
+6
+2
+ 
+------------------------------
+CODE: TN30
+Cho một mảng S gồm 2×N ký tự, trong đó có N ký tự ‘[’ và N ký tự ‘]’. Xâu S được gọi là viết đúng nếu S có dạng S2[S1] trong đó S, S2 là các xâu viết đúng. Nhiệm vụ của bạn là tìm số các phép đổi chỗ ít nhất các ký tự kề nhau của xâu S viết sai để  S trở thành viết đúng. Ví dụ với xâu S =”[]][][” ta có số phép đổi chỗ kề nhau ít nhất là 2.
+Input:
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một xâu S viết sai theo nguyên tắc kể trên.
+T, S thòa mãn ràng buộc: 1≤T≤100; 1≤length(S)≤100000.
+Output:
+Đưa kết quả trên một dòng.
+Ví dụ:
+Input
+Output
+2
+[]][][
+[][][]
+2
+0
+   
+------------------------------
+CODE: DSA07019
+Cho N cột, mỗi cột có chiều cao bằng H[i]. Bạn hãy tìm hình chữ nhật lớn nhất bị che phủ bởi các cột?
+Input:
+Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
+Mỗi test bắt đầu bởi số nguyên N (N ≤ 100 000).
+Dòng tiếp theo gồm N số nguyên H[i] (1 ≤ H[i] ≤ 109).
+Output: 
+Với mỗi test, in ra diện tích hình chữ nhật lớn nhất tìm được.
+Ví dụ:
+Input
+Output
+2
+7
+6 2 5 4 5 1 6
+3
+2 2 2
+  12
+6
+ 
+------------------------------
+CODE: DSA09006
+Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy tìm đường đi từ đỉnh sÎV đến đỉnh tÎV trên đồ thị bằng thuật toán DFS.
+Input:
+Dòng đầu tiên đưa vào T là số lượng bộ test.
+Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưa vào bốn số |V|, |E|, sÎV, tÎV tương ứng với số đỉnh, số cạnh,  đỉnh u, đỉnh v; Dòng tiếp theo đưa vào các bộ đôi uÎV, vÎV tương ứng với một cạnh của đồ thị.
+T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤100; 1≤|V|≤103; 1≤|E|≤|V|(|V|-1)/2;
+Output:
+Đưa ra đường đi từ đỉnh s đến đỉnh t của mỗi test theo thuật toán DFS của mỗi test theo khuôn dạng của ví dụ dưới đây. Nếu không có đáp án, in ra -1.
+      Ví dụ:
+Input:
+Output:
+1
+6  9 1 6
+1 2 1 3 2 3 2 5 3 4 3 5 4 5 4 6 5 6
+1 2 3 4 5 6
+ 
+------------------------------
+CODE: DSA09007
+Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy tìm đường đi từ đỉnh sÎV đến đỉnh tÎV trên đồ thị bằng thuật toán BFS.
+Input:
+Dòng đầu tiên đưa vào T là số lượng bộ test.
+Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưa vào bốn số |V|, |E|, sÎV, tÎV tương ứng với số đỉnh, số cạnh,  đỉnh u, đỉnh v; Dòng tiếp theo đưa vào các bộ đôi uÎV, vÎV tương ứng với một cạnh của đồ thị.
+T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤100; 1≤|V|≤103; 1≤|E|≤|V|(|V|-1)/2;
+Output:
+Đưa ra đường đi từ đỉnh s đến đỉnh t của mỗi test theo thuật toán BFS của mỗi test theo khuôn dạng của ví dụ dưới đây. Nếu không có đáp án, in ra -1.
+     Ví dụ:
+Input:
+Output:
+1
+6 9 1 6
+1 2 1 3 2 3 2 5 3 4 3 5 4 5 4 6 5 6
+1 2 5 6
+ 
+------------------------------
+CODE: DSA09008
+Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy tìm số thành phần liên thông của đồ thị.
+Input:
+Dòng đầu tiên đưa vào T là số lượng bộ test.
+Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưa vào hai số |V|, |E| tương ứng với số đỉnh và số cạnh; Dòng tiếp theo đưa vào các bộ đôi uÎV, vÎV tương ứng với một cạnh của đồ thị.
+T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤100; 1≤|V|≤103; 1≤|E|≤|V|(|V|-1)/2;
+Output:
+Đưa ra số thành phần liên thông của đồ thị.
+      Ví dụ:
+Input:
+Output:
+1
+5 6 
+1 2 1 3 2 3 3 4 3 5 4 5
+1
+ 
+------------------------------
+CODE: DSA09010
+Cho đồ thị có hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy kiểm tra xem đồ thị có liên thông mạnh hay không?
+Input:
+Dòng đầu tiên đưa vào T là số lượng bộ test.
+Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưa vào hai số |V|, |E| tương ứng với số đỉnh và số cạnh; Dòng tiếp theo đưa vào các bộ đôi u, v tương ứng với một cạnh của đồ thị.
+T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤100; 1≤|V|≤103; 1≤|E|≤|V|(|V|-1)/2;
+Output:
+Đưa ra “YES”, hoặc “NO” theo từng dòng tương ứng với test là liên thông mạnh hoặc không liên thông mạnh.
+      Ví dụ:
+Input:
+Output:
+1
+6 9 
+1 2 2 4 3 1 3 2 3 5 4 3 5 4 5 6 6  3
+YES
+ 
+------------------------------
+CODE: DSA09018
+Cho đồ thị vô hướng liên thông G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy đưa ra tất cả các đỉnh trụ của đồ thị?
+Input:
+Dòng đầu tiên đưa vào T là số lượng bộ test.
+Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưa vào hai số |V|, |E| tương ứng với số đỉnh và số cạnh; Dòng tiếp theo đưa vào các bộ đôi uÎV, vÎV tương ứng với một cạnh của đồ thị.
+T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤100; 1≤|V|≤103; 1≤|E|≤|V|(|V|-1)/2;
+Output:
+Đưa ra danh sách các đỉnh trụ của mỗi test  theo từng dòng.
+      Ví dụ:
+Input:
+Output:
+1
+5 5
+1 2 1 3 2 3 2 5 3 4
+2 3
+ 
+------------------------------
+CODE: DSA09019
+Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy kiểm tra xem đồ thị có tồn tại chu trình hay không?
+Input:
+Dòng đầu tiên đưa vào T là số lượng bộ test.
+Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưa vào hai số |V|, |E| tương ứng với số đỉnh,  số cạnh của đồ thị; Dòng tiếp theo đưa vào các bộ đôi uÎV, vÎV tương ứng với một cạnh của đồ thị.
+T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤100; 1≤|V|≤103; 1≤|E|≤|V|(|V|-1)/2;
+Output:
+Đưa ra YES hoặc “NO” kết quả test theo từng dòng tương ứng với đồ thị tồn tại hoặc không tồn tại chu trình.
+      Ví dụ:
+Input:
+Output:
+1
+6  9
+1 2 1 3 2 3 2 5 3 4 3 5 4 5 4 6 5 6
+YES
+ 
+------------------------------
+CODE: DSA10006
+Cho đồ thị vô hướng G=(V, E). Hãy xây dựng một cây khung của đồ thị G với đỉnh u ∈ V là gốc của cây bằng thuật toán DFS.
+Input
+Dòng đầu tiên gồm một số nguyên T (1 ≤ T ≤ 20) là số lượng bộ test.
+Tiếp theo là T bộ test, mỗi bộ test có dạng sau:
+Dòng đầu tiên gồm 3 số nguyên N=|V|, M=|E|, u (1 ≤ N ≤ 103, 1 ≤ M ≤ 105, 1 ≤ u ≤ N).
+M dòng tiếp theo, mỗi dòng gồm 2 số nguyên a, b (1 ≤ a, b ≤ N, a ≠ b) tương ứng cạnh nối hai chiều từ a tới b.
+Dữ liệu đảm bảo giữa hai đỉnh chỉ tồn tại nhiều nhất một cạnh nối.
+Output
+Với mỗi bộ test, nếu tồn tại cây khung thì in ra N – 1 cạnh của cây khung với gốc là đỉnh u trên N – 1 dòng theo thứ tự duyệt của thuật toán DFS. Ngược lại nếu không tồn tại cây khung thì in ra -1.
+Ví dụ
+Input
+Output
+2
+4 4 2
+1 2
+1 3
+2 4
+3 4
+4 2 2
+1 2
+3 4
+2 1
+1 3
+3 4
+-1
+ 
+------------------------------
+CODE: DSA10007
+Cho đồ thị vô hướng G=(V, E). Hãy xây dựng một cây khung của đồ thị G với đỉnh u ∈ V là gốc của cây bằng thuật toán BFS.
+Input
+Dòng đầu tiên gồm một số nguyên T (1 ≤ T ≤ 20) là số lượng bộ test.
+Tiếp theo là T bộ test, mỗi bộ test có dạng sau:
+Dòng đầu tiên gồm 3 số nguyên N=|V|, M=|E|, u (1 ≤ N ≤ 103, 1 ≤ M ≤ 105, 1 ≤ u ≤ N).
+M dòng tiếp theo, mỗi dòng gồm 2 số nguyên a, b (1 ≤ a, b ≤ N, a ≠ b) tương ứng cạnh nối hai chiều từ a tới b.
+Dữ liệu đảm bảo giữa hai đỉnh chỉ tồn tại nhiều nhất một cạnh nối.
+Output
+Với mỗi bộ test, nếu tồn tại cây khung thì in ra N – 1 cạnh của cây khung với gốc là đỉnh u trên N – 1 dòng theo thứ tự duyệt của thuật toán BFS. Ngược lại nếu không tồn tại cây khung thì in ra -1.
+Ví dụ
+Input
+Output
+2
+4 4 2
+1 2
+1 3
+2 4
+3 4
+4 2 2
+1 2
+3 4
+2 1
+2 4
+1 3
+-1
+ 
+------------------------------
+CODE: DSAKT012
+Có n tờ tiền có giá trị t[1], t[2], …, t[n].
+Hãy tìm cách trả ít tờ tiền nhất với số tiền đúng bằng S
+Chú ý: Các tờ tiền có giá trị bất kỳ và có thể bằng nhau, mỗi tờ tiền chỉ được dùng một lần.
+Input
+Mỗi bộ test gồm 2 số nguyên n và S (n ≤ 30; S  ≤  109).
+Dòng thứ hai chứa n số nguyên t[1], t[2], …, t[n] (t[i] ≤ 109)
+Output: 
+Ghi ra trên một dòng số tờ tiền ít nhất phải trả.
+Nếu không thể tìm được kết quả, in ra -1.
+Ví dụ
+Input
+Output
+3 5
+1 4 5
+1
+ 
+------------------------------
+CODE: J02024
+Cho dãy số A[] có N phần tử là các số nguyên dương khác nhau từng đôi một.
+Hãy sắp xếp dãy theo thứ tự giảm dần, sau đó liệt kê tất cả các dãy con (đúng thứ tự trước sau) của A[] có tổng các phần tử là số lẻ.
+Các dãy con được liệt kê theo thứ tự từ điển tăng dần.
+Input
+Dòng đầu ghi số bộ test, mỗi test có 2 dòng:
+Dòng đầu ghi số N (2 < N <15)
+Dòng thứ 2 ghi N số của dãy A[], các số đều nguyên dương, nhỏ hơn 100 và khác nhau từng đôi một.
+Output
+Với mỗi test, liệt kê tất cả các dãy con có tổng các phần tử là số lẻ theo thứ tự từ điển tăng dần, mỗi dãy con trên một dòng.  
+Ví dụ
+Input
+Output
+1
+4
+2 3 4 5
+3
+3 2
+4 3
+4 3 2
+5
+5 2
+5 4
+5 4 2
+ 
+------------------------------
+CODE: J02025
+  Cho dãy số A[] có N phần tử là các số nguyên dương khác nhau từng đôi một. Hãy liệt kê tất cả các dãy con của A[] có tổng các phần tử là số nguyên tố.
+Các dãy con được liệt kê theo thứ tự từ điển tăng dần.
+Input
+Dòng đầu ghi số bộ test, mỗi test có 2 dòng:
+Dòng đầu ghi số N (2 < N <15)
+Dòng thứ 2 ghi N số của dãy A[], các số đều nguyên dương, nhỏ hơn 100 và khác nhau từng đôi một.
+Output
+Với mỗi test, liệt kê tất cả các dãy con có tổng các phần tử là số nguyên tố theo thứ tự từ điển tăng dần, mỗi dãy con trên một dòng. 
+Ví dụ
+Input
+Output
+1
+4
+3 2 5 4
+2
+3
+3 2
+4 3
+5
+5 2
+5 4 2
+ 
+------------------------------
+CODE: J02026
+Cho dãy số A[] có N phần tử là các số nguyên dương khác nhau từng đôi một và một số K < N.
+Hãy liệt kê tất cả các dãy con khác nhau có K phần tử của A[], mỗi dãy đều được sắp xếp theo thứ tự tăng dần.
+Các dãy con được liệt kê lần lượt theo thứ tự từ điển.
+Input
+Dòng đầu ghi số bộ test, mỗi test có 2 dòng:
+Dòng đầu ghi hai số N và K (2 < K < N <15)
+Dòng thứ 2 ghi N số của dãy A[], các số đều nguyên dương, nhỏ hơn 100 và khác nhau từng đôi một.
+Output
+Với mỗi test, liệt kê tất cả các dãy con thỏa mãn, mỗi dãy con trên một dòng. 
+Ví dụ
+Input
+Output
+1
+4 3
+3 2 5 4
+2 3 4
+2 3 5
+2 4 5
+3 4 5
+ 
+------------------------------
+CODE: J03014
+Cho hai xâu ký tự A và B mô tả hai số nguyên dương lớn có thể có đến 1000 chữ số.
+Có thể có các chữ số 0 ở đầu của A và B.
+Hãy tính tổng A + B.
+Kết quả ghi ra cần loại bỏ các chữ số 0 ở đầu nếu có.
+Input
+Có hai dòng ghi 2 số A và B.
+Output
+Ghi ra kết quả A + B.
+Ví dụ
+Input
+Output
+121212121212121212
+45678978
+121212121257800190
+ 
+------------------------------
+CODE: J04012
+Thông tin về nhân viên bao gồm:
+Mã nhân viên (tự động tăng theo thứ tự nhập, tính từ NV01, nếu chỉ có 1 nhân viên thì mã là NV01)
+Họ và tên
+Lương cơ bản mỗi ngày công
+Số ngày công
+Chức vụ
+Tiền lương được tính bằng lương cơ bản nhân với số ngày công.
+Giả sử quy tắc tính tiền thưởng như sau:
+Số ngày công từ 25 trở lên thì thưởng 20% tiền lương
+Số ngày công từ 22 đến dưới 25 thì thưởng 10% tiền lương
+Dưới 22 ngày công thì không có thưởng.
+Mỗi nhân viên có thể có thêm phụ cấp chức vụ:
+GD: 250000  
+PGD: 200000 
+TP: 180000
+NV: 150000
+Hãy nhập thông tin 1 nhân viên và tính toán thu nhập theo quy tắc trên.
+Input
+Gồm 4 dòng lần lượt ghi Họ tên, lương cơ bản, số ngày công và chức vụ.
+Output
+Ghi ra một dòng gồm: mã nhân viên, tên nhân viên, lương tháng, thưởng, phụ cấp và thu nhập. Mỗi thông tin cách nhau một khoảng trống.
+Ví dụ
+Input
+Output
+Bui Thi Trang
+45000
+23
+PGD
+NV01 Bui Thi Trang 1035000 103500 200000 1338500
+ 
+------------------------------
+CODE: J04013
+Trường Đại học XYZ tuyển sinh theo hình thức xét điểm thi ba môn Toán – Lý – Hóa, trong đó điểm Toán được nhân đôi. Để đơn giản, khu vực tuyển sinh được quy định luôn bởi ba chữ cái đầu tiên trong mã thí sinh. Do rất thích các thí sinh đến từ Khu vực 3 nên trường XYZ tự quy định giá trị điểm ưu tiên Khu vực như trong bảng sau:
+Giả sử biết trước điểm chuẩn là 24. Hãy xác định tình trạng của thí sinh.
+Input
+Chỉ bao gồm thông tin của một thí sinh trên 5 dòng lần lượt là:
+Mã thí sinh
+Họ tên
+Điểm toán
+Điểm lý
+Điểm hóa
+Các giá trị điểm đều đảm bảo trong phạm vi [0,10] và có thể có 1 chữ số phần thập phân.  
+Output
+Ghi ra các thông tin:
+Mã thí sinh
+Họ tên
+Điểm ưu tiên (có thể có 1 số phần thập phân)
+Tổng điểm – không tính ưu tiên (có thể có 1 số phần thập phân)
+Trạng thái: TRUNG TUYEN hoac TRUOT (sau khi đã tính cả điểm ưu tiên)
+Ví dụ
+Input
+Output
+KV2A002
+Hoang Thanh Tuan
+5
+6
+5
+KV2A002 Hoang Thanh Tuan 1 21 TRUOT
+KV2B123
+Ly Thi Thu Ha
+8
+6.5
+7
+KV2B123 Ly Thi Thu Ha 1 29.5 TRUNG TUYEN
+ 
+------------------------------
+CODE: J04019
+Khai báo lớp Point (điểm trong không gian hai chiều) với hai thuộc tính là tọa độ x và tọa độ y (số thực).
+Khai báo lớp Triangle (tam giác) với thuộc tính là 3 điểm. Viết các phương thức phù hợp để tính chu vi tam giác.
+Input
+Dòng đầu ghi số bộ test, không quá 10
+Mỗi bộ test ghi trên 1 dòng 6 số thực có giá trị tuyệt đối không quá 1000 lần lượt là tọa độ của 3 điểm. 
+Output
+Nếu 3 điểm không thể tạo thành tam giác thì in ra INVALID
+Nếu 3 điểm tạo thành 1 tam giác thì in ra chu vi của tam giác đó, làm tròn đến 3 chữ số phần thập phân.
+Ví dụ
+Input
+Output
+3
+0 0 0 5 0 199
+1 1 1 1 1 1
+0 0 0 5 5 0
+INVALID
+INVALID
+17.071
+ Chú ý: cần viết hàm main theo đúng yêu cầu
+------------------------------
+CODE: J04020
+Khai báo lớp Pair mô tả các thao tác với cặp số nguyên. Sử dụng lớp Pair để giải quyết bài toán sau (chú ý viết hàm main đúng theo mẫu).
+Nhập số tự nhiên N, hãy tìm cặp số nguyên tố đầu tiên có tổng là N.
+Nếu không tồn tại cặp số nguyên tố có tổng bằng N, hãy đưa ra -1.
+Input:
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm là một số N được ghi trên một dòng.
+T, N thỏa mãn ràng buộc: 1≤T≤100; 1≤ N ≤106
+Output:
+Đưa ra kết quả mỗi test theo từng dòng.
+Ví dụ:
+Input
+Output:
+2
+4
+8
+2 2
+3 5
+ 
+------------------------------
+CODE: J04021
+Trong lý thuyết tập hợp, một tập hợp chỉ được phép chứa các giá trị phân biệt và luôn luôn lưu các giá trị theo thứ tự tăng dần.
+Khai báo lớp IntSet và viết các phương thức để thực hiện các thao tác trên tập hợp số nguyên. Sử dụng lớp IntSet để in ra tập hợp các số nguyên là hợp của hai tập số trong 2 dãy ban đầu.
+Chú ý viết hàm main đúng theo mẫu.
+Input
+Dòng đầu ghi 2 số n và m (1 < n,m <100).
+Dòng thứ 2 ghi n số của a[]. Dòng thứ 3 ghi m số của b[].
+Các số đều dương và nhỏ hơn 1000, nhưng có các giá trị trùng nhau và có thể chưa được sắp xếp. 
+Output
+Ghi ra hợp của hai tập theo thứ tự tăng dần. 
+Ví dụ:
+Input
+Output
+5 6
+1 2 3 4 5
+3 4 5 6 7 8
+1 2 3 4 5 6 7 8
+ 
+------------------------------
+CODE: J04022
+Trong lập trình cơ bản, một từ được hiểu là một dãy ký tự liên tiếp không chứa khoảng trống, dấu tab hoặc dấu xuống dòng.
+
+Xây dựng lớp WordSet để quản lý tập hợp các từ khác nhau trong một xâu ký tự, sau khi đã chuyển hết về dạng chữ thường. Khi liệt kê thì tập từ thì sẽ luôn theo thứ tự từ điển tăng dần.
+  Viết chương trình nhập hai dòng ký tự và hiển thị hợp và giao của hai tập từ tương ứng.
+Input
+Chỉ có 2 dòng, mỗi dòng có độ dài không quá 1000 ký tự.
+Output
+Dòng 1 ghi hợp của 2 tập từ theo thứ tự từ điển
+Dòng 2 ghi giao của 2 tập từ theo thứ tự từ điển.
+Ví dụ
+Input
+Output
+Lap trinh huong doi tuong
+Ngon ngu lap trinh C++
+c++ doi huong lap ngon ngu trinh tuong
+lap trinh
+ 
+------------------------------
+CODE: J05003
+Viết chương trình khai báo lớp Sinh Viên gồm các thông tin: Mã SV, Họ tên, Ngày sinh, Lớp và Điểm GPA (dạng số thực). Hàm khởi tạo không có tham số, gán các giá trị thuộc tính ở trạng thái mặc định (xâu ký tự rỗng, giá trị số bằng 0).
+Đọc thông tin N sinh viên từ bàn phím (không có mã sinh viên) và in ra lần lượt màn hình mỗi dòng 1 sinh viên theo đúng thứ tự ban đầu. Trong đó Mã SV được tự tạo ra theo quy tắc thêm mã B20DCCN sau đó là giá trị nguyên tự động tăng tính từ 001 (tối đa là 099). Ngày sinh được chuẩn hóa về dạng dd/mm/yyyy
+Input
+Dòng đầu tiên ghi số sinh viên N (0 < N < 50).
+Mỗi sinh viên ghi trên 4 dòng lần lượt là Họ tên, Lớp, Ngày sinh và Điểm GPA.
+Trong đó:
+Họ tên không quá 30 chữ cái.
+Lớp theo đúng định dạng thường dùng ở PTIT
+Ngày sinh có đủ 3 phần ngày tháng năm nhưng có thể chưa đúng chuẩn dd/mm/yyyy.
+Điểm GPA đảm bảo trong thang điểm 4 với 2 nhiều nhất 2 số sau dấu phẩy.  
+Output
+Ghi ra danh sách lần lượt các sinh viên có đầy đủ Mã sinh viên, Họ tên, Lớp, Ngày sinh (đã chuẩn hóa về dạng dd/mm/yyyy), Điểm GPA (với đúng 2 số sau dấu phẩy).
+Mỗi sinh viên ghi trên 1 dòng, mỗi thông tin cách nhau 1 khoảng trống.
+Ví dụ
+Input
+Output
+1
+Nguyen Van An
+D20CQCN01-B
+2/12/2002
+3.19
+B20DCCN001 Nguyen Van An D20CQCN01-B 02/12/2002 3.19
+ 
+------------------------------
+CODE: J05004
+Viết chương trình khai báo lớp Sinh Viên gồm các thông tin: Mã SV, Họ tên, Ngày sinh, Lớp và Điểm GPA (dạng số thực). Hàm khởi tạo không có tham số, gán các giá trị thuộc tính ở trạng thái mặc định (xâu ký tự rỗng, giá trị số bằng 0).
+Đọc thông tin N thí sinh từ bàn phím (không có mã sinh viên) và in ra lần lượt màn hình mỗi dòng 1 sinh viên theo đúng thứ tự ban đầu. Trong đó Mã SV được tự tạo ra theo quy tắc thêm mã B20DCCN sau đó là giá trị nguyên tự động tăng tính từ 001 (tối đa là 099). Họ tên được xử lý đưa về dạng chuẩn. Ngày sinh được chuẩn hóa về dạng dd/mm/yyyy
+Input
+Dòng đầu tiên ghi số sinh viên N (0 < N < 50).
+Mỗi sinh viên ghi trên 4 dòng lần lượt là Họ tên, Lớp, Ngày sinh và Điểm GPA.
+Trong đó:
+Họ tên không quá 30 chữ cái.
+Lớp theo đúng định dạng thường dùng ở PTIT
+Ngày sinh có đủ 3 phần ngày tháng năm nhưng có thể chưa đúng chuẩn dd/mm/yyyy.
+Điểm GPA đảm bảo trong thang điểm 4 với 2 nhiều nhất 2 số sau dấu phẩy. 
+Output
+Ghi ra danh sách lần lượt các sinh viên có đầy đủ Mã sinh viên, Họ tên, Lớp, Ngày sinh (đã chuẩn hóa), điểm GPA (với đúng 2 số sau dấu phẩy).
+Mỗi sinh viên ghi trên 1 dòng, mỗi thông tin cách nhau 1 khoảng trống.
+Ví dụ
+Input
+Output
+1
+nGuyEn  vaN    biNH
+D20CQCN01-B
+2/12/2002
+3.1
+B20DCCN001 Nguyen Van Binh D20CQCN01-B 02/12/2002 3.10
+ 
+------------------------------
+CODE: J05006
+Một nhân viên làm việc trong công ty được lưu lại các thông tin sau:
+Mã nhân viên: được gán tự động tăng, bắt đầu từ 00001
+Họ tên: Xâu ký tự không quá 40 chữ cái.
+Giới tính: Nam hoặc Nu
+Ngày sinh: đúng theo chuẩn dd/mm/yyyy
+Địa chỉ: Xâu ký tự không quá 100 chữ cái
+Mã số thuế: Dãy số có đúng 10 chữ số
+Ngày ký hợp đồng: đúng theo chuẩn dd/mm/yyyy
+Viết chương trình nhập danh sách nhân viên (không nhập mã) trong đó có sử dụng chồng toán tử nhập/xuất và in ra màn hình danh sách vừa nhập.
+Input
+Dòng đầu ghi số N là số nhân viên (không quá 40). Mối nhân viên ghi trên 6 dòng lần lượt ghi các thông tin theo thứ tự đã ghi trong đề bài. Không có mã nhân viên.
+Output
+Ghi ra danh sách đầy đủ nhân viên, mỗi nhân viên trên một dòng, các thông tin cách nhau đúng một khoảng trống.
+Ví dụ
+Input
+3
+Nguyen Van A
+Nam
+22/10/1982
+Mo Lao-Ha Dong-Ha Noi
+8333012345
+31/12/2013
+Ly Thi B
+Nu
+15/10/1988
+Mo Lao-Ha Dong-Ha Noi
+8333012346
+22/08/2011
+Hoang Thi C
+Nu
+04/02/1981
+Mo Lao-Ha Dong-Ha Noi
+8333012347
+22/08/2011
+Output
+00001 Nguyen Van A Nam 22/10/1982 Mo Lao-Ha Dong-Ha Noi 8333012345 31/12/2013
+00002 Ly Thi B Nu 15/10/1988 Mo Lao-Ha Dong-Ha Noi 8333012346 22/08/2011
+00003 Hoang Thi C Nu 04/02/1981 Mo Lao-Ha Dong-Ha Noi 8333012347 22/08/2011
+ 
+------------------------------
+CODE: J05007
+Một nhân viên làm việc trong công ty được lưu lại các thông tin sau:
+Mã nhân viên: được gán tự động tăng, bắt đầu từ 00001
+Họ tên: Xâu ký tự không quá 40 chữ cái.
+Giới tính: Nam hoặc Nu
+Ngày sinh: đúng theo chuẩn dd/mm/yyyy
+Địa chỉ: Xâu ký tự không quá 100 chữ cái
+Mã số thuế: Dãy số có đúng 10 chữ số
+Ngày ký hợp đồng: đúng theo chuẩn dd/mm/yyyy
+Viết chương trình nhập danh sách nhân viên (không nhập mã) sau đó sắp xếp theo thứ tự ngày sinh từ già nhất đến trẻ nhất và in ra màn hình danh sách đối tượng nhân viên đã sắp xếp.
+Input
+Dòng đầu ghi số N là số nhân viên (không quá 40). Mỗi nhân viên ghi trên 6 dòng lần lượt ghi các thông tin theo thứ tự đã ghi trong đề bài. Không có mã nhân viên.
+Output
+Ghi ra danh sách đầy đủ nhân viên đã sắp xếp, mỗi nhân viên trên một dòng, các thông tin cách nhau đúng một khoảng trống.
+Ví dụ
+Input
+3
+Nguyen Van A
+Nam
+22/10/1982
+Mo Lao-Ha Dong-Ha Noi
+8333012345
+31/12/2013
+Ly Thi B
+Nu
+15/10/1988
+Mo Lao-Ha Dong-Ha Noi
+8333012346
+22/08/2011
+Hoang Thi C
+Nu
+04/02/1981
+Mo Lao-Ha Dong-Ha Noi
+8333012347
+22/08/2011
+Output
+00003 Hoang Thi C Nu 04/02/1981 Mo Lao-Ha Dong-Ha Noi 8333012347 22/08/2011
+00001 Nguyen Van A Nam 22/10/1982 Mo Lao-Ha Dong-Ha Noi 8333012345 31/12/2013
+00002 Ly Thi B Nu 15/10/1988 Mo Lao-Ha Dong-Ha Noi 8333012346 22/08/2011
+------------------------------
+CODE: J05009
+Cho danh sách thí sinh gồm các thông tin: Mã thí sinh: là một số nguyên, tự động tăng, tính từ 1; Tên thí sinh, ngày sinh, điểm môn 1, điểm môn 2, điểm môn 3. Hãy tìm thủ khoa trong danh sách đó. Nếu có nhiều thí sinh có điểm bằng nhau và đều cao nhất thì in ra tất cả thí sinh đó theo mã tăng dần.
+Dữ liệu vào
+Dòng đầu chứa số thí sinh. Mỗi thí sinh viết trên 3 dòng: Dòng 1: Tên thí sinh, Dòng 2: Ngày sinh, Dòng 3,4,5: 3 điểm thi tương ứng. Các điểm thi đều đảm bảo hợp lệ (từ 0 đến 10).
+Kết quả: In ra các thủ khoa của kỳ thi, mỗi thí sinh 1 dòng, gồm mã, tên, ngày sinh và tổng điểm. 
+Ví dụ:
+Input Output
+3
+Nguyen Van A
+12/12/1994
+3.5
+7.0
+5.5
+Nguyen Van B
+1/9/1994
+7.5
+9.5
+9.5
+Nguyen Van C
+6/7/1994
+8.5
+9.5
+8.5 2 Nguyen Van B 1/9/1994 26.5
+3 Nguyen Van C 6/7/1994 26.5
+ 
+------------------------------
+CODE: J05011
+Quán Game mùa này vắng khách nên chủ quán quyết định tính tiền chi tiết đến từng phút. Dựa trên dữ liệu giờ vào và giờ ra, hãy tính thời gian chơi game của các Game thủ nhé.
+Input
+Dòng đầu của dữ liệu vào ghi số lượng game thủ trong ngày (không quá 20).
+Thông tin về một game thủ đến chơi game được ghi lại trên 4 dòng lần lượt là:
+Mã người chơi (xâu ký tự độ dài không quá 10, không có khoảng trống)
+Tên người chơi (xâu ký tự độ dài không quá 100, có thể có khoảng trống).
+Giờ vào (định dạng hh:mm)
+Giờ ra (định dạng hh:mm)
+Dữ liệu vào đảm bảo không có cặp game thủ nào có thời gian bằng nhau. 
+Ouput
+Ghi ra danh sách game thủ đã được sắp xếp theo thời gian chơi game giảm dần.
+Ví dụ
+Input
+Output
+3
+01T
+Nguyen Van An
+09:00
+10:30
+06T
+Hoang Van Nam
+15:30
+18:00
+02I
+Tran Hoa Binh
+09:05
+10:00
+06T  Hoang Van Nam 2 gio 30 phut
+01T  Nguyen Van An 1 gio 30 phut
+02I  Tran Hoa Binh 0 gio 55 phut
+ 
+------------------------------
+CODE: J05018
+Trường THCS XYZ lập bảng điểm tổng kết cho học sinh. Có 10 môn học lần lượt gồm: Toán, Tiếng Việt, Ngoại ngữ, Vật lý, Hóa học, Sinh học, Lịch Sử, Địa, Giáo dục công dân và môn Công nghệ. Trong đó môn Toán và Tiếng Việt tính hệ số 2, các môn còn lại hệ số 1.
+Học sinh được xếp hạng theo điểm trung bình:
+Từ 9 trở lên: loại XUAT SAC
+Từ 8 đến 8.9: loại GIOI
+Từ 7 đến 7.9: loại KHA
+Từ 5 đến 6.9: loại TB
+Dưới 5: loai YEU
+Hãy lập bảng điểm tổng kết và sắp xếp theo điểm trung bình giảm dần.
+Input
+Dòng đầu ghi số học sinh (không quá 50).
+Thông tin về mỗi học sinh có hai dòng: dòng đầu là họ tên (độ dài không quá 50), dòng thứ 2 gồm 10 số thực trong đoạn [0..10] lần lượt là điểm 10 môn theo đúng thứ tự đã mô tả.
+Output
+Danh sách đã sắp xếp được ghi ra bao gồm các thông tin:
+Mã học sinh (tự động gán tăng dần theo thứ tự nhập, bắt đầu là HS01)
+Họ và tên
+Điểm trung bình (với 1 chữ số phần thập phân)
+Xếp loại
+Trong trường hợp điểm trung bình bằng nhau thì học sinh nào có mã học sinh nhỏ hơn sẽ xếp trên.
+Ví dụ
+Input
+3
+Luu Thuy Nhi
+9.3  9.0  7.1  6.5  6.2  6.0  8.2  6.7  4.8  5.5
+Le Van Tam
+8.0  8.0  5.5  9.0  6.8  9.0  7.2  8.3  7.2  6.8
+Nguyen Thai Binh
+9.0  6.4  6.0  7.5  6.7  5.5  5.0  6.0  6.0  6.0
+Output
+HS02 Le Van Tam 7.7 KHA
+HS01 Luu Thuy Nhi 7.3 KHA
+HS03 Nguyen Thai Binh 6.6 TB
+ 
+------------------------------
+CODE: J05020
+Thông tin về mỗi sinh viên gồm:
+Mã sinh viên: dãy ký tự không có khoảng trống (không quá 15). Đảm bảo không trùng nhau.
+Họ và tên: độ dài không quá 100
+Lớp: dãy ký tự không có khoảng trống (không quá 15)
+Email: dãy ký tự không có khoảng trống (không quá 15)
+Hãy nhập danh sách sinh viên và sắp xếp theo lớp tăng dần (thứ tự từ điển)
+Input
+Dòng đầu ghi số sinh viên.
+Mỗi sinh viên ghi trên 4 dòng lần lượt là: mã, họ tên, lớp, email.
+Có không quá 1000 sinh viên trong danh sách.
+Output
+Ghi ra danh sách sinh viên đã sắp xếp theo lớp. Mỗi sinh viên trên một dòng, các thông tin cách nhau một khoảng trống.
+Nếu 2 sinh viên có cùng lớp thì sắp xếp theo mã tăng dần (thứ tự từ điển)
+Ví dụ
+Input
+Output
+4
+B16DCCN011
+Nguyen Trong Duc Anh
+D16CNPM1
+sv1@stu.ptit.edu.vn
+B15DCCN215
+To Ngoc Hieu
+D15CNPM3
+sv2@stu.ptit.edu.vn
+B15DCKT150
+Nguyen Ngoc Son
+D15CQKT02-B
+sv3@stu.ptit.edu.vn
+B15DCKT199
+Nguyen Trong Tung
+D15CQKT03-B
+sv4@stu.ptit.edu.vn
+B15DCCN215 To Ngoc Hieu D15CNPM3 sv2@stu.ptit.edu.vn
+B15DCKT150 Nguyen Ngoc Son D15CQKT02-B sv3@stu.ptit.edu.vn
+B15DCKT199 Nguyen Trong Tung D15CQKT03-B sv4@stu.ptit.edu.vn
+B16DCCN011 Nguyen Trong Duc Anh D16CNPM1 sv1@stu.ptit.edu.vn
+   
+------------------------------
+CODE: J05021
+Thông tin về mỗi sinh viên gồm:
+Mã sinh viên: dãy ký tự không có khoảng trống (không quá 15). Đảm bảo không trùng nhau.
+Họ và tên: độ dài không quá 100
+Lớp: dãy ký tự không có khoảng trống (không quá 15)
+Email: dãy ký tự không có khoảng trống (không quá 15)
+Hãy nhập danh sách sinh viên và sắp xếp theo mã sinh viên tăng dần (thứ tự từ điển)
+Input
+Mỗi sinh viên ghi trên 4 dòng lần lượt là: mã, họ tên, lớp, email.
+Không cho biết số sinh viên nhưng dữ liệu đảm bảo là chẵn lần 4 dòng.
+Có không quá 1000 sinh viên trong danh sách.
+Output
+Ghi ra danh sách sinh viên đã sắp xếp theo mã. Mỗi sinh viên trên một dòng, các thông tin cách nhau một khoảng trống.
+Ví dụ
+Input
+Output
+B16DCCN011
+Nguyen Trong Duc Anh
+D16CNPM1
+sv1@stu.ptit.edu.vn
+B15DCCN215
+To Ngoc Hieu
+D15CNPM3
+sv2@stu.ptit.edu.vn
+B15DCKT150
+Nguyen Ngoc Son
+D15CQKT02-B
+sv3@stu.ptit.edu.vn
+B15DCKT199
+Nguyen Trong Tung
+D15CQKT03-B
+sv4@stu.ptit.edu.vn
+B15DCCN215 To Ngoc Hieu D15CNPM3 sv2@stu.ptit.edu.vn
+B15DCKT150 Nguyen Ngoc Son D15CQKT02-B sv3@stu.ptit.edu.vn
+B15DCKT199 Nguyen Trong Tung D15CQKT03-B sv4@stu.ptit.edu.vn
+B16DCCN011 Nguyen Trong Duc Anh D16CNPM1 sv1@stu.ptit.edu.vn
+ 
+------------------------------
+CODE: J05022
+Thông tin về mỗi sinh viên gồm:
+Mã sinh viên: dãy ký tự không có khoảng trống (không quá 15). Đảm bảo không trùng nhau.
+Họ và tên: độ dài không quá 100
+Lớp: dãy ký tự không có khoảng trống (không quá 15)
+Email: dãy ký tự không có khoảng trống (không quá 15)
+Hãy nhập danh sách sinh viên và liệt kê sinh viên theo lớp
+Input
+Dòng đầu ghi số sinh viên (không quá 1000)
+Mỗi sinh viên ghi trên 4 dòng lần lượt là: mã, họ tên, lớp, email.
+Sau đó sẽ có giá trị số Q là số truy vấn
+Tiếp theo là Q dòng, mỗi dòng ghi một lớp
+Output
+Với mỗi truy vấn, liệt kê danh sách sinh viên của lớp đó theo mẫu như trong ví dụ. Mỗi sinh viên ghi trên một dòng, các thông tin cách nhau một khoảng trống. Thứ tự sinh viên vẫn giữ nguyên như thứ tự ban đầu.  
+Ví dụ
+Input
+Output
+4
+B16DCCN011
+Nguyen Trong Duc Anh
+D16CNPM1
+sv1@stu.ptit.edu.vn
+B15DCCN215
+To Ngoc Hieu
+D15CNPM3
+sv2@stu.ptit.edu.vn
+B15DCKT150
+Nguyen Ngoc Son
+D15CQKT02-B
+sv3@stu.ptit.edu.vn
+B15DCKT199
+Nguyen Trong Tung
+D15CQKT02-B
+sv4@stu.ptit.edu.vn
+1
+D15CQKT02-B
+DANH SACH SINH VIEN LOP D15CQKT02-B:
+B15DCKT150 Nguyen Ngoc Son D15CQKT02-B sv3@stu.ptit.edu.vn
+B15DCKT199 Nguyen Trong Tung D15CQKT02-B sv4@stu.ptit.edu.vn
+ 
+------------------------------
+CODE: J05024
+Thông tin về mỗi sinh viên gồm:
+Mã sinh viên: dãy ký tự không có khoảng trống (không quá 15). Đảm bảo không trùng nhau.
+Họ và tên: độ dài không quá 100
+Lớp: dãy ký tự không có khoảng trống (không quá 15)
+Email: dãy ký tự không có khoảng trống (không quá 15)
+Hãy nhập danh sách sinh viên và liệt kê sinh viên theo ngành. 
+Input
+Dòng đầu ghi số sinh viên (không quá 1000)
+Mỗi sinh viên ghi trên 4 dòng lần lượt là: mã, họ tên, lớp, email.
+Sau đó sẽ có giá trị số Q là số truy vấn
+Tiếp theo là Q dòng, mỗi dòng ghi ngành đào tạo. Chỉ có 3 ngành đào tạo trong danh sách sau (trong Input sẽ không có dấu):
+Kế toán – mã sinh viên có cụm ký tự DCKT
+Công nghệ thông tin – mã sinh viên có cụm DCCN – trừ đi các sinh viên lớp bắt đầu bằng chữ E
+An toàn thông tin – mã sinh viên có cụm DCAT – trừ các sinh viên lớp bắt đầu bằng chữ E
+Viễn thông – mã sinh viên có cụm DCVT
+Điện tử - mã sinh viên có cụm DCDT
+Output
+Với mỗi truy vấn, liệt kê danh sách sinh viên của ngành đó theo mẫu như trong ví dụ. Mỗi sinh viên ghi trên một dòng, các thông tin cách nhau một khoảng trống. Thứ tự sinh viên vẫn giữ nguyên như thứ tự ban đầu.  
+Ví dụ
+Input
+Output
+4
+B16DCCN011
+Nguyen Trong Duc Anh
+D16CNPM1
+sv1@stu.ptit.edu.vn
+B15DCCN215
+To Ngoc Hieu
+D15CNPM3
+sv2@stu.ptit.edu.vn
+B15DCKT150
+Nguyen Ngoc Son
+D15CQKT02-B
+sv3@stu.ptit.edu.vn
+B15DCKT199
+Nguyen Trong Tung
+D15CQKT02-B
+sv4@stu.ptit.edu.vn
+1
+Ke toan
+DANH SACH SINH VIEN NGANH KE TOAN:
+B15DCKT150 Nguyen Ngoc Son D15CQKT02-B sv3@stu.ptit.edu.vn
+B15DCKT199 Nguyen Trong Tung D15CQKT02-B sv4@stu.ptit.edu.vn
+ 
+------------------------------
+CODE: J05026
+Thông tin về giảng viên Khoa CNTT ban đầu chỉ có họ tên và Bộ môn. Mã giảng viên sẽ tự động điền tăng dần, tính từ GV01.
+Hãy liệt kê danh sách giảng viên của Bộ môn được yêu cầu.
+Input
+Dòng đầu ghi số giảng viên.
+Mỗi giảng viên ghi trên 2 dòng gồm họ tên (không quá 50 ký tự) và Bộ môn (không quá 30 ký tự).
+Tiếp theo là một dòng ghi số Q là số truy vấn.
+Mỗi truy vấn là tên một bộ môn trên một dòng.
+Output
+Danh sách các giảng viên của bộ môn theo từng truy vấn, trong đó mỗi giảng viên ghi trên một dòng. Mã được tự động điền theo thứ tự nhập, bộ môn được viết tắt theo các chữ cái đầu của từng từ và ở dạng in hoa.
+Thứ tự giảng viên của mỗi bộ môn được liệt kê theo đúng thứ tự ban đầu.
+Ví dụ
+Input
+Ouput
+3
+Nguyen Manh Son
+Cong nghe phan mem
+Vu Hoai Nam
+Khoa hoc may tinh
+Dang Minh Tuan
+An toan thong tin
+1
+Cong nghe phan mem
+DANH SACH GIANG VIEN BO MON CNPM:
+GV01 Nguyen Manh Son CNPM
+ 
+------------------------------
+CODE: J05052
+Cửa hàng quần áo thời trang muốn lưu trữ thông tin về các đơn hàng dưới dạng các thông tin ngắn gọn nhất có thể. Mã đơn hàng do đó chứa khá nhiều thông tin:
+Chữ cái đầu tiên giúp chủ cửa hàng biết tên mặt hàng
+Ba chữ số tiếp theo là số thứ tự đơn hàng
+Chữ số cuối cùng là mã loại: chỉ có 2 loại là 1 hoặc 2.
+Dựa trên mã loại, mặt hàng sẽ được giảm giá theo quy tắc sau:
+nếu Mã loại là 1 thì Giảm giá = 50%*Đơn giá * Số lượng                                
+nếu Mã loại là 2 thì Giảm giá = 30%*Đơn giá * Số lượng
+Hãy tính toán thành tiền cho từng mã đơn hàng.
+Input
+Dòng đầu ghi số lượng đơn hàng
+Mỗi đơn hàng ghi trên 4 dòng gồm:
+Tên hàng (độ dài không quá 30)
+Mã đơn hàng hàng: có đúng 5 ký tự theo mẫu đã mô tả
+Đơn giá
+Số lượng
+Output
+Ghi ra danh sách mặt hàng sau khi tính toán, thứ tự giữ nguyên như lúc nhập. Các thông tin cần hiển thị gồm:
+Tên hàng
+Mã đơn hàng
+Số thứ tự đơn hàng (đủ 3 chữ số)
+Giảm giá
+Thành tiền
+Mỗi thông tin cách nhau một khoảng trống.
+Ví dụ
+Input
+Output
+3
+Kaki 2
+K0252
+80000
+15
+Jean 1
+J2011
+200000
+24
+Jean 2
+J0982
+150000
+12
+Kaki 2 K0252 025 360000 840000
+Jean 1 J2011 201 2400000 2400000
+Jean 2 J0982 098 540000 1260000
+ 
+------------------------------
+CODE: J05053
+Cửa hàng quần áo thời trang muốn lưu trữ thông tin về các đơn hàng dưới dạng các thông tin ngắn gọn nhất có thể. Mã đơn hàng do đó chứa khá nhiều thông tin:
+Chữ cái đầu tiên giúp chủ cửa hàng biết tên mặt hàng
+Ba chữ số tiếp theo là số thứ tự đơn hàng
+Chữ số cuối cùng là mã loại: chỉ có 2 loại là 1 hoặc 2.
+Dựa trên mã loại, mặt hàng sẽ được giảm giá theo quy tắc sau:
+nếu Mã loại là 1 thì Giảm giá = 50%*Đơn giá * Số lượng 
+nếu Mã loại là 2 thì Giảm giá = 30%*Đơn giá * Số lượng
+Hãy tính toán thành tiền cho từng mã đơn hàng.
+Input
+Dòng đầu ghi số lượng đơn hàng
+Mỗi đơn hàng ghi trên 4 dòng gồm:
+Tên hàng (độ dài không quá 30)
+Mã đơn hàng hàng: có đúng 5 ký tự theo mẫu đã mô tả
+Đơn giá
+Số lượng
+Dữ liệu vào đảm bảo không có 2 đơn hàng nào có số thứ tự bằng nhau.
+Output
+Ghi ra danh sách mặt hàng sau khi tính toán và sắp xếp theo thứ tự đơn hàng từ nhỏ đến lớn. Các thông tin cần hiển thị gồm:
+Tên hàng
+Mã đơn hàng
+Số thứ tự đơn hàng (đủ 3 chữ số)
+Giảm giá
+Thành tiền
+Mỗi thông tin cách nhau một khoảng trống.
+Ví dụ
+Input
+Output
+3
+Kaki 2
+K0252
+80000
+15
+Jean 1
+J2011
+200000
+24
+Jean 2
+J0982
+150000
+12
+Kaki 2 K0252 025 360000 840000
+Jean 2 J0982 098 540000 1260000
+Jean 1 J2011 201 2400000 2400000
+   
+------------------------------
+CODE: J05057
+Trường Đại học XYZ tuyển sinh theo hình thức xét điểm thi ba môn Toán – Lý – Hóa, trong đó điểm Toán được nhân đôi. Để đơn giản, khu vực tuyển sinh được quy định luôn bởi ba chữ cái đầu tiên trong mã thí sinh. Do rất thích các thí sinh đến từ Khu vực 3 nên trường XYZ tự quy định giá trị điểm ưu tiên Khu vực như trong bảng sau:
+Giả sử biết trước điểm chuẩn là 24. Hãy xác định kết quả của từng thí sinh.
+Input
+Dòng đầu tiên ghi số thí sinh (nhỏ hơn 100), thông tin của một thí sinh trên 5 dòng lần lượt là:
+Mã thí sinh
+Họ tên
+Điểm toán
+Điểm lý
+Điểm hóa
+Các giá trị điểm đều đảm bảo trong phạm vi [0,10] và có thể có 1 chữ số phần thập phân.  
+Output
+Với mỗi thí sinh (theo đúng thứ tự nhập vào) ghi ra các thông tin:
+Mã thí sinh
+Họ tên
+Điểm ưu tiên (có thể có 1 số phần thập phân)
+Tổng điểm – không tính ưu tiên (có thể có 1 số phần thập phân)
+Trạng thái: TRUNG TUYEN hoac TRUOT (sau khi đã tính cả điểm ưu tiên)
+Ví dụ
+Input
+Output
+2
+KV2A002
+Hoang Thanh Tuan
+5
+6
+5
+KV2B123
+Ly Thi Thu Ha
+8
+6.5
+7
+KV2A002 Hoang Thanh Tuan 1 21 TRUOT
+KV2B123 Ly Thi Thu Ha 1 29.5 TRUNG TUYEN
+ 
+------------------------------
+CODE: J05058
+Trường Đại học XYZ tuyển sinh theo hình thức xét điểm thi ba môn Toán – Lý – Hóa, trong đó điểm Toán được nhân đôi. Để đơn giản, khu vực tuyển sinh được quy định luôn bởi ba chữ cái đầu tiên trong mã thí sinh. Do rất thích các thí sinh đến từ Khu vực 3 nên trường XYZ tự quy định giá trị điểm ưu tiên Khu vực như trong bảng sau:
+Giả sử biết trước điểm chuẩn là 24. Hãy xác định kết quả của từng thí sinh và sắp xếp theo điểm xét tuyển giảm dần.  
+Input
+Dòng đầu tiên ghi số thí sinh (nhỏ hơn 100), thông tin của một thí sinh trên 5 dòng lần lượt là:
+Mã thí sinh
+Họ tên
+Điểm toán
+Điểm lý
+Điểm hóa
+Các giá trị điểm đều đảm bảo trong phạm vi [0,10] và có thể có 1 chữ số phần thập phân.  
+Output
+In ra danh sách đã sắp xếp theo điểm xét tuyển giảm dần, nếu điểm xét tuyển bằng nhau thì sắp xếp theo mã thí sinh (thứ tự từ điển) .
+Với mỗi thí sinh ghi ra các thông tin:
+Mã thí sinh
+Họ tên
+Điểm ưu tiên (có thể có 1 số phần thập phân)
+Điểm xét tuyển – có ưu tiên (có thể có 1 số phần thập phân)
+Trạng thái: TRUNG TUYEN hoac TRUOT (sau khi đã tính cả điểm ưu tiên)
+Ví dụ
+Input
+Output
+2
+KV2A002
+Hoang Thanh Tuan
+5
+6
+5
+KV2B123
+Ly Thi Thu Ha
+8
+6.5
+7
+KV2B123 Ly Thi Thu Ha 1 30.5 TRUNG TUYEN
+KV2A002 Hoang Thanh Tuan 1 22 TRUOT
+   
+------------------------------
+CODE: J05074
+Lớp học phần môn XYZ của trường ABC có không quá 100 sinh viên. Danh sách sinh viên gồm các thông tin: mã sinh viên, họ tên, lớp. Môn học có 10 buổi. Dữ liệu điểm danh với mỗi sinh viên được cho bởi một xâu ký tự gồm 10 ký tự trong đó: x là có mặt, m là đến muộn, v là vắng.
+Với điểm chuyên cần tối đa là 10. Giả sử mỗi buổi vắng bị trừ 2 điểm, mỗi buổi đến muộn bị trừ 1 điểm. Hãy tính điểm chuyên cần cho mỗi sinh viên (tất nhiên nếu tính ra điểm âm thì ghi vào bảng điểm vẫn là 0).
+Nếu điểm bằng 0 thì in thêm ghi chú KDDK (tức là không đủ điều kiện dự thi hết môn).
+Input
+Dòng đầu ghi số n là số sinh viên. Mỗi sinh viên ghi trên 3 dòng lần lượt là mã sinh viên, họ tên, lớp.
+Tiếp theo là n dòng ghi dữ liệu điểm danh. Mỗi dòng gồm mã sinh viên, sau đó là một khoảng trống rồi đến xâu ký tự điểm danh có đúng 10 chữ cái.
+Output
+Ghi ra danh sách điểm chuyên cần (theo đúng thứ tự ban đầu) gồm các thông tin:
+Mã sinh viên
+Họ và tên
+Lớp
+Điểm chuyên cần
+Ghi chú (nếu có)
+Mỗi thông tin cách nhau một khoảng trống.
+Ví dụ
+Input
+Output
+3
+B19DCCN999
+Le Cong Minh
+D19CQAT02-B
+B19DCCN998
+Tran Truong Giang
+D19CQAT02-B
+B19DCCN997
+Nguyen Tuan Anh
+D19CQCN04-B
+B19DCCN998 xxxmxmmvmx
+B19DCCN997 xmxmxxxvxx
+B19DCCN999 xvxmxmmvvm
+B19DCCN999 Le Cong Minh D19CQAT02-B 0 KDDK
+B19DCCN998 Tran Truong Giang D19CQAT02-B 4
+B19DCCN997 Nguyen Tuan Anh D19CQCN04-B 6
+ 
+------------------------------
+CODE: J05075
+Lớp học phần môn XYZ của trường ABC có không quá 100 sinh viên. Danh sách sinh viên gồm các thông tin: mã sinh viên, họ tên, lớp. Môn học có 10 buổi. Dữ liệu điểm danh với mỗi sinh viên được cho bởi một xâu ký tự gồm 10 ký tự trong đó: x là có mặt, m là đến muộn, v là vắng.
+Với điểm chuyên cần tối đa là 10. Giả sử mỗi buổi vắng bị trừ 2 điểm, mỗi buổi đến muộn bị trừ 1 điểm. Hãy tính điểm chuyên cần cho mỗi sinh viên (tất nhiên nếu tính ra điểm âm thì ghi vào bảng điểm vẫn là 0).
+Nếu điểm bằng 0 thì in thêm ghi chú KDDK (tức là không đủ điều kiện dự thi hết môn).
+Chỉ ghi ra danh sách sinh viên theo lớp được yêu cầu.
+Input
+Dòng đầu ghi số n là số sinh viên. Mỗi sinh viên ghi trên 3 dòng lần lượt là mã sinh viên, họ tên, lớp.
+Tiếp theo là n dòng ghi dữ liệu điểm danh. Mỗi dòng gồm mã sinh viên, sau đó là một khoảng trống rồi đến xâu ký tự điểm danh có đúng 10 chữ cái.
+Dòng cuối cùng ghi mã lớp cần liệt kê danh sách
+Output
+Ghi ra danh sách điểm chuyên cần của sinh viên trong lớp (theo đúng thứ tự ban đầu) gồm các thông tin:
+Mã sinh viên
+Họ và tên
+Lớp
+Điểm chuyên cần
+Ghi chú (nếu có)
+Mỗi thông tin cách nhau một khoảng trống.
+Ví dụ
+Input
+Output
+3
+B19DCCN999
+Le Cong Minh
+D19CQAT02-B
+B19DCCN998
+Tran Truong Giang
+D19CQAT02-B
+B19DCCN997
+Nguyen Tuan Anh
+D19CQCN04-B
+B19DCCN998 xxxmxmmvmx
+B19DCCN997 xmxmxxxvxx
+B19DCCN999 xvxmxmmvvm
+D19CQAT02-B
+B19DCCN999 Le Cong Minh D19CQAT02-B 0 KDDK
+B19DCCN998 Tran Truong Giang D19CQAT02-B 4
+ 
+------------------------------
+CODE: J05079
+Một lớp học phần tại Học viện Công nghệ Bưu chính Viễn thông sẽ gồm các thông tin:
+Mã môn học
+Tên môn học
+Nhóm lớp (thường được đánh số từ 01, tối đa mỗi môn không quá 40 nhóm)
+Tên giảng viên
+Hãy nhập thông tin danh sách các lớp học phần của học kỳ này và liệt kê danh sách các lớp theo môn học.
+Input
+Dòng đầu ghi số n là số lớp học phần.
+Mỗi lớp học phần ghi trên 4 dòng lần lượt là mã, tên, nhóm, tên giảng viên.
+Tiếp theo là một dòng ghi số m là số môn cần liệt kê danh sách
+Sau đó là m dòng, mỗi dòng ghi một mã môn học.
+Output
+Với mỗi môn học, ghi ra danh sách lớp học phần theo thứ tự nhóm từ nhỏ đến lớn. Chỉ cần liệt kê hai thông tin là nhóm và tên giảng viên.
+Xem ví dụ để hiểu rõ hơn cách hiển thị danh sách.
+Ví dụ
+Input
+Output
+4
+THCS2D20
+Tin hoc co so 2 - D20
+01
+Nguyen Binh An
+CPPD20
+Ngon ngu lap trinh C++ - D20
+01
+Le Van Cong
+THCS2D20
+Tin hoc co so 2 - D20
+02
+Nguyen Trung Binh
+LTHDTD19
+Lap trinh huong doi tuong - D19
+01
+Nguyen Binh An
+1
+THCS2D20
+Danh sach nhom lop mon Tin hoc co so 2 - D20:
+01 Nguyen Binh An
+02 Nguyen Trung Binh
+ 
+------------------------------
+CODE: J05080
+Một lớp học phần tại Học viện Công nghệ Bưu chính Viễn thông sẽ gồm các thông tin:
+Mã môn học
+Tên môn học
+Nhóm lớp (thường được đánh số từ 01, tối đa mỗi môn không quá 40 nhóm)
+Tên giảng viên
+Hãy nhập thông tin danh sách các lớp học phần của học kỳ này và liệt kê danh sách các lớp theo giảng viên.
+Input
+Dòng đầu ghi số n là số lớp học phần.
+Mỗi lớp học phần ghi trên 4 dòng lần lượt là mã, tên, nhóm, tên giảng viên.
+Tiếp theo là một dòng ghi số m là số giảng viên liệt kê danh sách
+Sau đó là m dòng, mỗi dòng ghi tên 1 giảng viên.
+Output
+Với mỗi giảng viên, ghi ra danh sách lớp học phần theo thứ tự mã môn học, nếu cùng môn học thì liệt kê theo thứ tự nhóm từ nhỏ đến lớn. Cần liệt kê các thông tin: mã môn, tên môn, nhóm.
+Xem ví dụ để hiểu rõ hơn cách hiển thị danh sách.
+Ví dụ
+Input
+Output
+4
+THCS2D20
+Tin hoc co so 2 - D20
+01
+Nguyen Binh An
+CPPD20
+Ngon ngu lap trinh C++ - D20
+01
+Le Van Cong
+THCS2D20
+Tin hoc co so 2 - D20
+02
+Nguyen Trung Binh
+LTHDTD19
+Lap trinh huong doi tuong - D19
+01
+Nguyen Binh An
+1
+Nguyen Binh An
+Danh sach cho giang vien Nguyen Binh An:
+LTHDTD19 Lap trinh huong doi tuong - D19 01
+THCS2D20 Tin hoc co so 2 - D20 01
+ 
+------------------------------
+CODE: J05082
+Bài toán quản lý danh sách khách hàng, trong đó mỗi Khách hàng có các thông tin:
+Mã khách hàng: tự động tăng, tính từ KH001
+Tên khách hàng: xâu ký tự độ dài không quá 50, cần đưa về dạng chuẩn
+Giới tính: Nam hoặc Nu
+Ngày sinh: cần đưa về dạng chuẩn dd/mm/yyyy
+Địa chỉ: xâu ký tự độ dài không quá 100
+Viết chương trình nhập danh sách khách hàng, sắp xếp theo ngày sinh từ già nhất đến trẻ nhất. Không có hai khách hàng nào cùng ngày sinh. 
+Input
+Dòng đầu ghi số N là số khách hàng (không quá 20).
+Tiếp theo là thông tin của N khách hàng, mỗi khách hàng ghi trên 4 dòng theo đúng thứ tự đã mô tả (không có mã)
+Output
+Danh sách khách hàng với đầy đủ các thông tin liệt kê ở trên, trong đó tên và ngày sinh đã được chuẩn hóa. 
+Ví dụ
+Input Output
+2
+ nGuyen VAN     nAm
+Nam
+12/12/1997
+Mo Lao-Ha Dong-Ha Noi
+ TRan    vAn     biNh
+Nam
+14/11/1995
+Phung Khoang-Nam Tu Liem-Ha Noi
+  KH002 Tran Van Binh Nam Phung Khoang-Nam Tu Liem-Ha Noi 14/11/1995
+KH001 Nguyen Van Nam Nam Mo Lao-Ha Dong-Ha Noi 12/12/1997
+   
+------------------------------
+CODE: J07014
+Cho hai file DATA1.in và DATA2.in.
+Một từ được định nghĩa là một dãy ký tự liên tiếp không có khoảng trống, dấu tab hay dấu xuống dòng. Tạm thời chưa xét đến các dấu câu trong bải toán này.
+Hãy viết chương trình liệt kê hợp và giao của hai tập từ khác nhau trong hai file.
+Các từ được liệt kê theo thứ tự từ điển.
+Input
+Hai file văn bản DATA1.in và DATA2.in, có không quá 200 dòng.
+Output
+Hợp và giao của hai tập từ khác nhau trong hai file ban đầu. Mỗi tập trên một dòng, các từ liệt kê theo thứ tự từ điển và cách nhau đúng một khoảng trống.
+Ví dụ
+DATA1.in
+Output
+lap trinh huong doi tuong
+ngon ngu lap trinh C++
+ban c++ co doi huong lap ngon ngu phan thanh trinh tuong
+huong lap trinh
+DATA2.in
+lap trinh co ban
+lap trinh huong thanh phan
+ 
+------------------------------
+CODE: J07018
+lớp Sinh Viên gồm các thông tin: Mã SV, Họ tên, Ngày sinh, Lớp và Điểm GPA (dạng số thực). 
+Đọc thông tin N thí sinh từ file văn bản SINHVIEN.in (không có mã sinh viên) và in ra lần lượt màn hình mỗi dòng 1 sinh viên theo đúng thứ tự ban đầu. Trong đó Mã SV được tự tạo ra theo quy tắc thêm mã B20DCCN sau đó là giá trị nguyên tự động tăng tính từ 001 (tối đa là 099).
+Họ tên được xử lý đưa về dạng chuẩn.
+Ngày sinh được chuẩn hóa về dạng dd/mm/yyyy
+Input: file SINHVIEN.in
+Dòng đầu tiên ghi số sinh viên N (0 < N < 50).
+Mỗi sinh viên ghi trên 4 dòng lần lượt là Họ tên, Lớp, Ngày sinh và Điểm GPA.
+Trong đó:
+Họ tên không quá 30 chữ cái.
+Lớp theo đúng định dạng thường dùng ở PTIT
+Ngày sinh có đủ 3 phần ngày tháng năm nhưng có thể chưa đúng chuẩn dd/mm/yyyy.
+Điểm GPA đảm bảo trong thang điểm 4 với 2 nhiều nhất 2 số sau dấu phẩy. 
+Output
+Ghi ra danh sách lần lượt các sinh viên có đầy đủ Mã sinh viên, Họ tên, Lớp, Ngày sinh (đã chuẩn hóa), điểm GPA (với đúng 2 số sau dấu phẩy).
+Mỗi sinh viên ghi trên 1 dòng, mỗi thông tin cách nhau 1 khoảng trống.
+Ví dụ
+Input - SINHVIEN.in
+Output
+1
+nGuyEn  vaN    biNH
+D20CQCN01-B
+2/12/2002
+3.1
+B20DCCN001 Nguyen Van Binh D20CQCN01-B 02/12/2002 3.10
+ 
+------------------------------
+CODE: J07024
+Cho hai file văn bản DATA1.in và DATA2.in.
+Một từ được định nghĩa là một dãy ký tự liên tiếp không có khoảng trống, dấu tab hay dấu xuống dòng. Tạm thời chưa xét đến các dấu câu trong bải toán này.
+Hãy viết chương trình liệt kê  tập hợp các từ có mặt trong file DATA1.in nhưng không có trong file DATA2.in và ngược lại.
+Các từ được liệt kê theo thứ tự từ điển.
+Input
+Hai file văn bản DATA1.in và DATA2.in, có không quá 200 dòng.
+Output
+Dòng 1 ghi các từ có mặt trong file DATA1.in nhưng không có trong file DATA2.in.
+Dòng 2 ghi các từ có mặt trong file DATA2.in nhưng không có trong file DATA1.in.
+Ví dụ
+DATA1.in
+Output
+lap trinh huong doi tuong
+ngon ngu lap trinh C++
+c++ doi ngon ngu tuong
+ban co phan thanh
+DATA2.in
+lap trinh co ban
+lap trinh huong thanh phan
+ 
+------------------------------
+CODE: J07025
+Bài toán quản lý danh sách khách hàng, trong đó mỗi Khách hàng có các thông tin:
+Mã khách hàng: tự động tăng, tính từ KH001
+Tên khách hàng: xâu ký tự độ dài không quá 50, cần đưa về dạng chuẩn
+Giới tính: Nam hoặc Nu
+Ngày sinh: cần đưa về dạng chuẩn dd/mm/yyyy
+Địa chỉ: xâu ký tự độ dài không quá 100
+Viết chương trình nhập danh sách khách hàng từ file văn bản KHACHHANG.in, sắp xếp theo ngày sinh từ già nhất đến trẻ nhất. Không có hai khách hàng nào cùng ngày sinh. 
+Input- file KHACHHANG.in
+Dòng đầu ghi số N là số khách hàng (không quá 20).
+Tiếp theo là thông tin của N khách hàng, mỗi khách hàng ghi trên 4 dòng theo đúng thứ tự đã mô tả (không có mã)
+Output
+Danh sách khách hàng với đầy đủ các thông tin liệt kê ở trên, trong đó tên và ngày sinh đã được chuẩn hóa. 
+Ví dụ
+KHACHHANG.in Output
+2
+ nGuyen VAN     nAm
+Nam
+12/12/1997
+Mo Lao-Ha Dong-Ha Noi
+ TRan    vAn     biNh
+Nam
+14/11/1995
+Phung Khoang-Nam Tu Liem-Ha Noi
+  KH002 Tran Van Binh Nam Phung Khoang-Nam Tu Liem-Ha Noi 14/11/1995
+KH001 Nguyen Van Nam Nam Mo Lao-Ha Dong-Ha Noi 12/12/1997
+   
+------------------------------
+CODE: J07074
+Để chuẩn bị tổ chức giảng dạy học kỳ mới, Học viện Hoàng gia phân công giảng viên cho từng nhóm lớp với lịch giảng dạy cố định cho từng nhóm.
+Thông tin về môn học gồm:
+Mã môn
+Tên môn
+Số tín chỉ
+Thông tin về nhóm lớp học phần bao gồm:
+Mã nhóm (tự động tăng tính từ HP001)
+Mã môn
+Ngày giảng dạy (thứ trong tuần – đánh số từ 2 đến 7, không có Chủ Nhật).
+Kíp học: giá trị số từ 1 đến 6
+Họ tên giảng viên
+Phòng học
+Hãy viết chương trình nhập thông tin lịch giảng dạy từ file văn bản, sau đó lọc ra lịch giảng dạy theo môn học và sắp xếp theo thời gian giảng dạy, từ đầu tuần đến cuối tuần.
+Input – 2 file văn bản
+MONHOC.in
+Dòng đầu ghi số môn học. Mỗi môn học ghi trên 3 dòng gồm mã môn, tên môn, số tín chỉ.
+LICHGD.in
+Dòng đầu ghi số nhóm lớp học phần. Mỗi nhóm gồm các thông tin:
+Mã môn
+Thứ
+Kíp
+Họ tên giảng viên
+Phòng học
+Mỗi thông tin ghi trên một dòng
+Dòng cuối cùng ghi mã môn học cần liệt kê danh sách.
+Output – in ra màn hình
+Ghi ra danh sách nhóm lớp của môn học được yêu cầu. Trình bày theo mẫu như trong ví dụ trong đó mỗi nhóm lớp sẽ có các thông tin: mã nhóm, thứ, kíp, giảng viên, phòng học.
+Sắp xếp theo thời gian giảng dạy, từ đầu tuần đến cuối tuần. Nếu cùng kíp học thì sắp xếp theo họ tên giảng viên (thứ tự từ điển).
+Ví dụ
+Input – 2 file văn bản
+MONHOC.in
+2
+INT1155
+Tin hoc co so 2
+2
+INT13162
+Lap trinh voi Python
+3
+LICHGD.in
+4
+INT13162
+5
+1
+Nguyen Hoang Anh
+102-A2
+INT1155
+3
+1
+Nguyen Dinh Hien
+201A-A3
+INT1155
+4
+1
+Nguyen Quy Sy
+201A-A3
+INT1155
+5
+1
+Tran Quy Nam
+201A-A3
+INT1155
+Output
+LICH GIANG DAY MON Tin hoc co so 2:
+HP002 3 1 Nguyen Dinh Hien 201A-A3
+HP003 4 1 Nguyen Quy Sy 201A-A3
+HP004 5 1 Tran Quy Nam 201A-A3
+ 
+------------------------------
+CODE: J07075
+Để chuẩn bị tổ chức giảng dạy học kỳ mới, Học viện Hoàng gia phân công giảng viên cho từng nhóm lớp với lịch giảng dạy cố định cho từng nhóm.
+Thông tin về môn học gồm:
+Mã môn
+Tên môn
+Số tín chỉ
+Thông tin về nhóm lớp học phần bao gồm:
+Mã nhóm (tự động tăng tính từ HP001)
+Mã môn
+Ngày giảng dạy (thứ trong tuần – đánh số từ 2 đến 7, không có Chủ Nhật).
+Kíp học: giá trị số từ 1 đến 6
+Họ tên giảng viên
+Phòng học
+Hãy viết chương trình nhập thông tin lịch giảng dạy từ file văn bản, sau đó lọc ra lịch giảng dạy của một giảng viên và sắp xếp theo thời gian giảng dạy, từ đầu tuần đến cuối tuần.
+Input – 2 file văn bản
+MONHOC.in
+Dòng đầu ghi số môn học. Mỗi môn học ghi trên 3 dòng gồm mã môn, tên môn, số tín chỉ.
+LICHGD.in
+Dòng đầu ghi số nhóm lớp học phần. Mỗi nhóm gồm các thông tin:
+Mã môn
+Thứ
+Kíp
+Họ tên giảng viên
+Phòng học
+Mỗi thông tin ghi trên một dòng
+Dòng cuối cùng ghi họ tên giảng viên cần liệt kê danh sách.
+Dữ liệu đảm bảo họ tên giảng viên đều đã được chuẩn hóa và có tồn tại trong lịch giảng dạy.
+Output – in ra màn hình
+Ghi ra lịch giảng dạy của giảng viên được yêu cầu. Trình bày theo mẫu như trong ví dụ, trong đó mỗi dòng gồm các thông tin: mã nhóm, tên môn, thứ, kíp, phòng học.
+Sắp xếp theo thời gian giảng dạy, từ đầu tuần đến cuối tuần. Nếu cùng kíp học thì sắp xếp theo họ tên giảng viên (thứ tự từ điển).
+Ví dụ
+Input – 2 file văn bản
+MONHOC.in
+2
+INT1449       
+Phat trien ung dung cho cac thiet bi di dong
+3
+INT13162
+Lap trinh voi Python
+3
+LICHGD.in
+3
+INT13162
+5
+4
+Nguyen Trong Khanh
+102-A2
+INT1449
+2
+2
+Nguyen Hoang Anh
+105-A2
+INT13162
+5
+1
+Nguyen Hoang Anh
+102-A2
+Nguyen Hoang Anh
+Output
+LICH GIANG DAY GIANG VIEN Nguyen Hoang Anh:
+HP002 Phat trien ung dung cho cac thiet bi di dong 2 2 105-A2
+HP003 Lap trinh voi Python 5 1 102-A2
+ 
+------------------------------
+CODE: S223
+Cho số tự nhiên N (N<10^9) và hai phép biến đổi (a), (b) dưới đây.
+Thao tác (a): Trừ N đi 1 (N=N-1). Ví dụ N=17, thao tác (a) biến đổi N = N-1 =16.
+Thao tác (b): N = max(u,v) nếu u*v =N (u>1, v>1). Ví dụ N=16, thao tác (b) có thể biến đổi N = max(2, 8)=8 hoặc N=max(4, 4)=4.
+Chỉ được phép sử dụng hai thao tác (a) hoặc (b), hãy biến đổi N thành 1 sao số các thao tác (a), (b) được thực hiện ít nhất. Ví dụ với N=17, số các phép (a), (b) nhỏ nhất biến đổi N thành 1 là 4 bước như sau:
+                                    Thao tác (a): N = N-1 = 17-1 = 16
+                                    Thao tác (b): 16 = max(4,4) = 4
+                                    Thao tác (b): 4 = max(2,2) = 2
+                                    Thao tác (a): 2 = 2-1 = 1
+Input:
+Dòng đầu tiên ghi lại số tự nhiên T là số lượng Test;
+T dòng kế tiếp mỗi dòng ghi lại một bộ Test. Mỗi test là một số N.
+Output:
+Đưa ra kết quả mỗi test theo từng dòng.
+Ví dụ:
+  Input
+Output
+3
+17
+50
+100
+4
+5
+5
+ 
+------------------------------
+CODE: S308
+Mạng xã hội hoàn hảo khi với mọi bộ ba X, Y, Z, nếu X kết bạn với Y, Y kết bạn với Z thì X và Z cũng phải là bạn bè của nhau trên mạng xã hội.
+Hãy xác định một mạng xã hội có phải là hoàn hảo hay không? Nếu có hãy in ra “YES”, “NO” trong trường hợp ngược lại.
+Input:
+Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
+Mỗi test bắt đầu bởi 2 số nguyên N và M (N, M ≤ 100 000).
+M dòng tiếp theo, mỗi dòng gồm 2 số nguyên u, v (u #v) cho biết u và v là kết bạn với nhau trên mạng xã hội.
+Output: 
+Với mỗi test, in ra đáp án tìm được trên một dòng.
+Ví dụ:
+Input:
+Output
+3
+4 3
+1 3
+3 4
+1 4
+4 4
+3 1
+2 3
+3 4
+1 2
+10 4
+4 3
+5 10
+8 9
+1 2
+  YES
+NO
+YES
+ 
+------------------------------
+CODE: TN01009
+Một câu trong văn bản được hiểu là dãy ký tự (có cả khoảng trống) cho đến khi gặp dấu ngắt câu hoặc xuống dòng (tức là đôi khi người ta quên viết dấu ngắt câu nhưng cứ xuống dòng là sang một câu mới). Các dấu ngắt câu trong bài toán này bao gồm: dấu chấm (.), dấu chấm cảm (!), dấu chấm hỏi (?).
+Hãy viết chương trình chuẩn hóa các câu trong dữ liệu vào với các yêu cầu sau:
+Ký tự đầu mỗi câu viết hoa, các ký tự khác viết thường.
+Các từ cách nhau đúng một khoảng trống.
+Tự động điền thêm dấu chấm (.) nếu xuống dòng mà chưa có dấu ngắt câu.
+Dấu ngắt câu phải viết sát ký tự cuối cùng của câu (không tính khoảng trống)
+Input
+Một văn bản không quá 100 dòng.
+Output
+Ghi ra các câu đã chuẩn hóa, mỗi câu 1 dòng.
+Ví dụ
+Input
+Chuong trinh Dao Tao CLC nganh CNTT duoc Thiet     Ke theo chuan quoc te.
+co 03 chuyen nganh la: Cong  nghe phan mem, Tri tue nhan tao va An toan thong tin
+muc tieu cua chuong trinh la trang bi cho sinh vien cac ky nang nghe nghiep
+moi    CAC BAN danG ky     thaM giA !
+Output
+Chuong trinh dao tao clc nganh cntt duoc thiet ke theo chuan quoc te.
+Co 03 chuyen nganh la: cong  nghe phan mem, tri tue nhan tao va an toan thong tin.
+Muc tieu cua chuong trinh la trang bi cho sinh vien cac ky nang nghe nghiep.
+Moi cac ban dang ky tham gia!
+ 
+------------------------------
+CODE: TN01010
+Cho một số nguyên dương không quá 200 chữ số. Mỗi bước tách số nguyên thành hai nửa: nửa đầu là n/2 chữ số đầu tiên, nửa sau là phần còn lại (trong đó n là số chữ số của số ban đầu, nếu n lẻ thì phép chia 2 sẽ tính phần nguyên). Sau đó thực hiện tính tổng của hai nửa này.
+Lặp lại các bước trên cho đến khi kết quả chỉ còn là số có 1 chữ số.
+Hãy thực hiện tính toán và in kết quả của từng bước.
+Input
+Chỉ có một số nguyên dương không quá 200 chữ số.
+Output
+Ghi ra kết quả từng bước, mỗi bước trên một dòng. Dừng lại khi kết quả chỉ còn 1 chữ số.
+Ví dụ
+Input
+Ouput
+123456
+579
+84
+12
+3
+ 
+------------------------------
+CODE: TN01014
+Một xâu ký tự số chỉ bao gồm các chữ số 6 và 8 sẽ được gọi là “phát lộc” nếu thỏa mãn các điều kiện sau:
+Độ dài xâu ít nhất là 6
+Chữ số đầu tiên là chữ số 8, chữ số cuối cùng là chữ số 6
+Không có 2 chữ số 8 nào ở cạnh nhau
+Không có nhiều hơn 3 chữ số 6 ở cạnh nhau.
+Viết chương trình liệt kê các xâu ký tự phát lộc độ dài N theo thứ tự tăng dần.
+Input
+Chỉ có 1 dòng ghi số N (5 < N < 16).
+Output
+Ghi ra các xâu ký tự phát lộc độ dài N, mỗi xâu trên một dòng.
+Ví dụ
+Input
+Output
+6
+866686
+866866
+868666
+868686
+ 
+------------------------------
+CODE: TN01015
+Số lượng máy tính ở các phòng thực hành nhà A3 tăng lên nhanh chóng. Để gán mã cho các máy tính của PTIT người ta sử dụng mã gồm 2*N ký tự, trong đó:
+N ký tự đầu tiên là hoán vị của N chữ cái in hoa đầu tiên, tính từ A.
+N ký tự tiếp theo là các ký tự số bất kỳ từ 1 đến N (có thể trùng nhau).
+Người ta ước tính chỉ cần N = 5 là đủ để gán mã cho toàn bộ máy tính kể cả khi mở rộng quy mô các phòng thực hành. Hãy viết chương trình liệt kê các mã tạo được với giá trị N cho trước.
+Input
+Chỉ có duy nhất số N (1 < N < 6)
+Output
+Ghi ra lần lượt các mã khác nhau tạo được theo thứ tự từ điển, mỗi mã ghi trên một dòng
+Ví dụ
+Input Output
+2
+AB11
+AB12
+AB21
+AB22
+BA11
+BA12
+BA21
+BA22
+ 
+------------------------------
+CODE: TN01018
+Trong 8 chữ cái Tiếng Anh đầu tiên (ABCDEFGH) thì có 2 nguyên âm là ‘A’, ‘E’, còn lại là phụ âm.
+Người ta muốn ghép các chữ cái bắt đầu từ chữ cái ‘A’ cho đến chữ cái c (‘D’ <= c <= ‘H’) sao cho mỗi chữ cái được sử dụng đúng một lần và xâu kết quả không có nguyên âm nào bị kẹp giữa bởi hai phụ âm.
+Hãy liệt kê các xâu thỏa mãn theo thứ tự từ điển.
+Input
+Chỉ có một dòng ghi chữ cái c (đảm bảo từ ‘D’ đến ‘H’).
+Output
+Liệt kê các xâu thỏa mãn, mỗi xâu trên một dòng.
+Ví dụ
+Input
+Output
+D
+ABCD
+ABDC
+ACBD
+ACDB
+ADBC
+ADCB
+BCDA
+BDCA
+CBDA
+CDBA
+DBCA
+DCBA
+ 
+------------------------------
+CODE: TN01019
+Nam có N thẻ bài, mỗi thẻ ghi một con số từ 1 tới N. Không có 2 thẻ nào ghi hai số trùng nhau. Nam muốn xếp thứ tự các thẻ bài sao cho không có hai con số nào liền kề nhau ở cạnh nhau.
+Ví dụ với N = 4 thì cách xếp 3142 là hợp lệ nhưng cách xếp 1324 không hợp lệ.
+Hãy giúp Nam liệt kê tất cả các cách xếp thỏa mãn theo thứ tự từ điển.  
+Input
+Dòng đầu ghi số bộ test T (không quá 10)
+Mỗi bộ test ghi số N (3 < N < 10)
+Output
+Với mỗi bộ test, ghi ra tất cả các cách xếp thứ tự thỏa mãn, mỗi cách trên một dòng.
+Ví dụ
+Input
+Output
+1
+4
+2413
+3142
+ 
+------------------------------
+CODE: TN01024
+Cho hai dãy số thực A[] và B[] đều có N phần tử, các giá trị là số thực và không quá 100.
+Hãy tính độ dài dài nhất của dãy các vị trí (không cần liên tiếp) thỏa mãn cả hai điều kiện:
+Nếu xét các vị trí đó trên dãy A[] thì dãy con thu được thỏa mãn tính chất tăng dần (giá trị bằng nhau không được tính vào dãy tăng).
+Nếu xét các vị trí đó trên dãy B[] thì dãy con thu được thỏa mãn tính chất giảm dần (giá trị bằng nhau không được tính vào dãy giảm).
+Input
+Dòng đầu ghi số bộ test (không quá 100).
+Mỗi bộ test bắt đầu bởi số N (không quá 500).
+Tiếp theo là N dòng, mỗi dòng ghi 2 giá trị A[i] và B[i]
+Output
+Với mỗi test, ghi ra độ dài tính được trên một dòng.
+Ví dụ
+Input
+Output
+3
+2
+1.0 1.0
+1.5 0.0
+3
+1.0 1.0
+1.0 1.0
+1.0 1.0
+6
+1.5 9.0
+2.0 2.0
+2.5 6.0
+3.0 5.0
+4.0 2.0
+10.0 5.5
+2
+1
+4
+ 
+------------------------------
+CODE: TN01025
+Cho số nguyên dương N được biểu diễn như một xâu ký tự số. Nhiệm vụ của bạn là tìm tổng của tất cả các số tạo bởi các xâu con của N. Ví dụ N=”1234” ta có kết quả là 1670 = 1 + 2 + 3 + 4 + 12 + 23 + 34 + 123 + 234 + 1234.
+Input: Dòng đầu tiên đưa vào số lượng bộ test T. Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một số N.  T, N thỏa mãn ràng buộc: 1≤T≤100;  1≤N ≤1012.
+Output: Đưa ra kết quả mỗi test theo từng dòng.
+Ví dụ:
+Input Output
+2
+1234
+421 1670
+491
+ 
+------------------------------
+CODE: TN01033
+Cho dãy số A[] có N phần tử, N không quá 105, các số trong dãy đều nguyên dương và không quá 9 chữ số. Hãy tính độ dài của dãy con liên tiếp có trung bình cộng lớn nhất trong dãy.
+Trong trường hợp có nhiều dãy con liên tiếp đều có trung bình cộng lớn nhất thì dãy nào dài hơn sẽ được chọn.
+Input
+Dòng đầu ghi số N.
+Dòng thứ 2 ghi N số của dãy A[]
+Output
+Ghi ra độ dài dãy con liên tiếp có trung bình cộng lớn nhất tìm được.
+Ví dụ
+Input
+Output
+5
+5 1 6 7 2
+2
+ 
+------------------------------
+CODE: TN01034
+Cho ma trận vuông A kích thước N x N. Nhiệm vụ của bạn là hãy tính ma trận X = AK với K là số nguyên cho trước. Sau đó, tính tổng các phần tử của cột cuối cùng. Đáp số có thể rất lớn, hãy in ra kết quả theo modulo 109+7.
+Input:
+Dòng đầu tiên là số lượng bộ test T (T ≤ 100).
+Mỗi test bắt gồm một số nguyên N và K (1 ≤ N ≤ 10, 1 ≤ K ≤ 109) là kích thước của ma trận và số mũ.
+Output: 
+Với mỗi test, in ra kết quả của ma trận X.
+Ví dụ:
+Input Output
+2
+2 5
+1 1
+1 0
+3 1000000000
+1 2 3
+4 5 6
+7 8 9
+8
+581039956
+  Giải thích:
+A^5 = 8 5
+      5 3
+Tổng các phần tử trên cột cuối cùng bằng 5+3 = 8.
+               597240088 35500972 473761863
+B^1000000000 = 781257150 154135232 527013321
+               965274212 272769492 580264779
+Tổng các phần tử trên cột cuối cùng là:
+(473761863+527013321+580264779) % 1000000007 = 581039956
+  Giới hạn thời gian: 1s
+------------------------------
+CODE: TN02014
+Khai báo lớp Triangle (tam giác) với thuộc tính là 3 điểm trong không gian hai chiều.
+Hãy kiểm tra xem ba điểm trong dữ liệu vào có tạo thành một tam giác hay không, nếu có hãy tính chu vi tam giác đó.
+Input
+Dòng đầu ghi số bộ test, không quá 10
+Mỗi bộ test ghi trên 1 dòng 6 số thực có giá trị tuyệt đối không quá 1000 lần lượt là tọa độ của 3 điểm. 
+Output
+Nếu 3 điểm không thể tạo thành tam giác thì in ra INVALID
+Nếu 3 điểm tạo thành 1 tam giác thì in ra chu vi của tam giác đó, làm tròn đến 3 chữ số phần thập phân.
+Ví dụ
+Input
+Output
+3
+0 0 0 5 0 199
+1 1 1 1 1 1
+0 0 0 5 5 0
+INVALID
+INVALID
+17.071
+ Chú ý: cần viết hàm main theo đúng yêu cầu
+------------------------------
+CODE: TN02018
+Tại trường đại học ABC, môn học có mã môn và tên môn, thông tin của mỗi giảng viên gồm mã giảng viên, tên giảng viên.
+Một giảng viên khi tham gia giảng dạy một môn học sẽ được ghi nhận số giờ chuẩn. Giả sử với mỗi môn học thì một giảng viên chỉ giảng dạy nhiều nhất 1 lớp học phần.
+Viết chương trình lập bảng tính toán giờ chuẩn cho từng giảng viên.
+Input
+Dòng đầu ghi số môn học. Mỗi môn học viết trên một dòng gồm mã môn, sau đó đến khoảng trống rồi đến tên môn.
+Tiếp theo là một dòng ghi số giảng viên. Mỗi giảng viên viết trên một dòng gồm mã giảng viên và tên giảng viên.
+Tiếp theo là một dòng ghi số lớp học phần. Mỗi lớp học phần sẽ ghi trên một dòng gồm mã giảng viên, mã môn sau đó đến giờ chuẩn (dạng số thực).
+Tiếp theo là một dòng ghi mã giảng viên cần thống kê giờ chuẩn.
+Output
+Ghi ra tên giảng viên sau đó lần lượt các lớp môn giảng dạy (theo đúng thứ tự nhập), giờ chuẩn từng lớp và tổng giờ chuẩn theo mẫu trong ví dụ. Chú ý: tổng giờ chuẩn ghi 2 số phần thập phân.
+Ví dụ
+Input
+Output
+2
+INT1155 Tin hoc co so 2
+INT1306 Cau truc du lieu va giai thuat
+2
+GV01 Nguyen Van An
+GV02 Hoang Binh Minh
+2
+GV01 INT1155 113.2
+GV02 INT1306 126.72
+GV01
+Giang vien: Nguyen Van An
+Tin hoc co so 2 113.2
+Tong: 113.20
+
+ 
+------------------------------
+CODE: TN02019
+Một cửa hàng cần quản lý hóa đơn bán hàng, trong đó mỗi khách hàng với mỗi mặt hàng sẽ cho biết số lượng đã mua. Dựa trên số lượng và giá bán của mặt hàng sẽ tính ra thành tiền.
+Thông tin về Khách hàng bao gồm:
+Mã khách hàng: tự động tăng, tính từ KH001
+Tên khách hàng: xâu ký tự độ dài không quá 50, có thể cần chuẩn hóa. 
+Giới tính: Nam hoặc Nu
+Ngày sinh: Cần đưa về đúng chuẩn dd/mm/yyyy
+Địa chỉ: xâu ký tự độ dài không quá 100
+Thông tin về mặt hàng bao gồm:
+Mã mặt hàng: tự động tăng, tính từ MH001
+Tên mặt hàng: xâu ký tự độ dài không quá 100
+Đơn vị tính: xâu ký tự độ dài không quá 10
+Giá mua: số nguyên dương không quá 7 chữ số
+Giá bán: số nguyên dương không quá 7 chữ số
+Khai báo lớp Hóa đơn trong đó có các thông tin:
+Mã hóa đơn
+Khách hàng
+Mặt hàng
+Số lượng (không quá 1000)
+Viết chương trình nhập danh sách hóa đơn và in danh sách ra màn hình.
+Input 
+Dòng đầu ghi số N là số khách hàng (không quá 20).
+Tiếp theo là thông tin của N khách hàng, mỗi khách hàng ghi trên 4 dòng theo đúng thứ tự đã mô tả (không có mã)
+Tiếp theo là một dòng ghi số M là số mặt hàng (không quá 40).
+Tiếp theo là thông tin của M mặt hàng, mỗi mặt hàng ghi trên 4 dòng theo đúng thứ tự đã mô tả (không có mã)
+Tiếp theo là một dòng ghi số K là số hóa đơn (không quá 100)
+Mỗi hóa đơn ghi trên 1 dòng gồm 3 thông tin theo đúng thứ tự đã mô tả (không có mã).
+Output
+Ghi ra danh sách hóa đơn theo đúng thứ tự nhập, trong đó gồm các thông tin sau, mỗi thông tin cách nhau đúng một khoảng trống.
+Mã hóa đơn
+Tên khách hàng
+Địa chỉ
+Tên mặt hàng
+Đơn vị tính
+Giá mua
+Giá bán
+Số lượng
+Thành tiền
+Ví dụ
+Input
+2
+NguyEn VAN NAM
+Nam
+12/12/1997
+Mo Lao-Ha Dong-Ha Noi
+   tran van Binh
+Nam
+11/14/1995
+Phung Khoang-Nam Tu Liem-Ha Noi
+ 2
+Ao phong tre em
+Cai
+25000
+41000
+Ao khoac nam
+Cai
+240000
+515000
+3
+KH001 MH001 2
+KH001 MH002 3
+KH002 MH002 4
+Output
+HD001 Nguyen Van Nam Mo Lao-Ha Dong-Ha Noi Ao phong tre em Cai 25000 41000 2 82000
+HD002 Nguyen Van Nam Mo Lao-Ha Dong-Ha Noi Ao khoac nam Cai 240000 515000 3 1545000
+HD003 Tran Van Binh Phung Khoang-Nam Tu Liem-Ha Noi Ao khoac nam Cai 240000 515000 4 2060000
+ 
+------------------------------
+CODE: TN02020
+Tại trường đại học ABC, môn học có mã môn và tên môn, thông tin của mỗi giảng viên gồm mã giảng viên, tên giảng viên.
+Một giảng viên khi tham gia giảng dạy một môn học sẽ được ghi nhận số giờ chuẩn. Giả sử với mỗi môn học thì một giảng viên chỉ giảng dạy nhiều nhất 1 lớp học phần.
+Viết chương trình lập bảng tính toán giờ chuẩn cho từng giảng viên.
+Input
+Dòng đầu ghi số môn học. Mỗi môn học viết trên một dòng gồm mã môn, sau đó đến khoảng trống rồi đến tên môn.
+Tiếp theo là một dòng ghi số giảng viên. Mỗi giảng viên viết trên một dòng gồm mã giảng viên và tên giảng viên.
+Tiếp theo là một dòng ghi số lớp học phần. Mỗi lớp học phần sẽ ghi trên một dòng gồm mã giảng viên, mã môn sau đó đến giờ chuẩn (dạng số thực).
+Output
+Ghi ra danh sách giảng viên theo thứ tự nhập và tổng giờ chuẩn tính được. Thông tin cần liệt kê chỉ bao gồm tên giảng viên và tổng số giờ chuẩn (viết chính xác đến 2 số phần thập phân).
+Ví dụ
+Input
+Output
+2
+INT1155 Tin hoc co so 2
+INT1306 Cau truc du lieu va giai thuat
+2
+GV01 Nguyen Van An
+GV02 Hoang Binh Minh
+2
+GV01 INT1155 113.2
+GV02 INT1306 126.72
+Nguyen Van An 113.20
+Hoang Binh Minh 126.72
+
+ 
+------------------------------
+CODE: TN05006
+Cho đồ thị vô hướng có N đỉnh và M cạnh. Hãy tính xem đường đi đơn dài nhất trong đồ thị đi qua bao nhiêu cạnh. 
+Input:
+Dòng đầu tiên là số lượng bộ test T (T ≤ 10).
+Mỗi test bắt đầu bằng số nguyên N và M (1 ≤ N, M ≤ 20). Các đỉnh đánh dấu từ 0, 1, …, N-1.
+M dòng tiếp theo, mỗi dòng gồm 2 số u, v cho biết có cạnh nối giữa uàv.
+Output: 
+Với mỗi test, in ra số cạnh nhiều nhất có thể của một đường đi đơn trên đồ thị.
+Ví dụ:
+Input:
+Output
+2
+3 2
+0 1
+1 2
+15 16
+0 2
+1 2
+2 3
+3 4
+3 5
+4 6
+5 7
+6 8
+7 8
+7 9
+8 10
+9 11
+10 12
+11 12
+10 13
+12 14
+2
+12
+   
+------------------------------
+CODE: DSA05032
+Cho xâu ký tự str. Nhiệm vụ của bạn là tìm số phép chèn tối thiểu các ký tự vào str để str trở thành xâu đối xứng. Ví dụ: str =”ab” ta có số phép chèn tối thiểu là 1 để trở thành xâu đối xứng “aba” hoặc “bab”. Với xâu str=”aa” thì số phép chèn tối thiểu là 0. Với xâu str=”abcd” có số phép chèn tối thiểu là 3 để trở thành xâu “dcbabcd”
+Input:
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một xâu ký tự được viết trên một dòng
+T, str thỏa mãn ràng buộc: 1≤T≤100;  1≤length(str)≤40.
+Output:
+Đưa ra kết quả mỗi test theo từng dòng.
+Ví dụ:
+    Input
+Output
+3
+abcd
+aba
+geeks
+3
+0
+3
+ 
+------------------------------
+CODE: DSA05033
+Cho xâu ký tự S. Nhiệm vụ của bạn là tìm số phép loại bỏ ít nhất các ký tự trong S để S trở thành xâu đối xứng. Chú ý, phép loại bỏ phải bảo toàn tính trước sau của các ký tự trong S.
+Input:
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một xâu ký tự được viết trên một dòng
+T, str thỏa mãn ràng buộc: 1≤T≤100;  1≤length(S)≤100.
+Output:
+Đưa ra kết quả mỗi test theo từng dòng.
+Ví dụ:
+ Input
+Output
+2
+aebcbda
+geeksforgeeks
+2
+8
+ 
+------------------------------
+CODE: DSA10008
+Cho đồ thị có trọng số không âm G=<V, E> được biểu diễn dưới dạng danh sách cạnh trọng số. Hãy viết chương trình tìm đường đi ngắn nhất từ đỉnh uÎV đến tất cả các đỉnh còn lại trên đồ thị.
+Input:
+Dòng đầu tiên đưa vào T là số lượng bộ test.
+Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm |E|+1 dòng: dòng đầu tiên đưa vào hai ba số |V|, |E| tương ứng với số đỉnh và uÎV là đỉnh bắt đầu; |E| dòng tiếp theo mỗi dòng đưa vào bộ ba uÎV, vÎV, w tương ứng với một cạnh cùng với trọng số canh của đồ thị.
+T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤100; 1≤|V|≤103; 1≤|E|≤|V|(|V|-1)/2;
+Output:
+Đưa ra kết quả của mỗi test theo từng dòng. Kết quả mỗi test là trọng số đường đi ngắn nhất từ đỉnh u đến các đỉnh còn lại của đồ thị theo thứ tự tăng dần các đỉnh.
+     Ví dụ:
+Input:
+Output:
+1
+9  12 1
+1  2   4
+1  8   8
+2  3   8
+2  8   11
+3  4   7
+3  6   4
+3  9   2
+4  5   9
+4  6  14
+5  6  10
+6  7  2
+6  9  6
+0 4 12 19 26 16 18 8 14 
+   
+------------------------------
+CODE: DSA10009
+Cho đơn đồ thị vô hướng liên thông G = (V, E) gồm N đỉnh và M cạnh, các đỉnh được đánh số từ 1 tới N và các cạnh được đánh số từ 1 tới M.
+Có Q truy vấn, mỗi truy vấn yêu cầu bạn tìm đường đi ngắn nhất giữa đỉnh X[i] tới Y[i].
+Input:
+Dòng đầu tiên hai số nguyên N và M (1 ≤ N ≤ 100, 1 ≤ M ≤ N*(N-1)/2).
+M dòng tiếp theo, mỗi dòng gồm 3 số nguyên u, v, c cho biết có cạnh nối giữa đỉnh u và v có độ dài bằng c (1 ≤ c ≤ 1000).
+Tiếp theo là số lượng truy vấn Q (1 ≤ Q ≤ 100 000).
+Q dòng tiếp theo, mỗi dòng gồm 2 số nguyên X[i], Y[i].
+Output: 
+Với mỗi truy vấn, in ra đáp án là độ dài đường đi ngắn nhất tìm được.
+Ví dụ:
+Input:
+Output
+5 6
+1 2 6
+1 3 7
+2 4 8
+3 4 9
+3 5 1
+4 5 2
+3
+1 5
+2 5
+4 3
+  8
+10
+3
+   
+------------------------------
+CODE: DSA10011
+Cho một bảng số kích thước N x M. Chi phí khi đi qua ô (i,j) bằng A[i][j]. Nhiệm vụ của bạn là hãy tìm một đường đi từ ô (1, 1) tới ô (N, M) sao cho chi phí là nhỏ nhất. Tại mỗi ô, bạn được phép đi sang trái, sang phải, đi lên trên và xuống dưới.
+Input:
+Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
+Mỗi test bắt đầu bởi hai số nguyên N và M (1 ≤ N, M ≤ 500).
+N dòng tiếp theo, mỗi dòng gồm M số nguyên A[i][j] (0 ≤ A[i][j] ≤ 9).
+Output: 
+Với mỗi test, in ra một số nguyên là chi phí nhỏ nhất cho đường đi tìm được.
+  Ví dụ:
+Input:
+Output
+3
+4
+5
+0 3 1 2 9
+7 3 4 9 9
+1 7 5 5 3
+2 3 4 2 5
+1
+6
+0 1 2 3 4 5
+5 5
+1 1 1 9 9
+9 9 1 9 9
+1 1 1 9 9
+1 9 9 9 9
+1 1 1 1 1
+24
+15
+13
+   
+------------------------------
+CODE: J04017
+Khai báo lớp Matrix mô tả ma trận các số nguyên.
+Nhập ma trận A cấp N*M. Hãy viết chương trình tính tích của A với ma trận chuyển vị của A.    
+Input: Dòng đầu tiên ghi số bộ test. Với mỗi bộ test: Dòng đầu tiên ghi hai số n và m là bậc của ma trân a; n dòng tiếp theo, mỗi dòng ghi m  số của một dòng trong ma trận A.
+n và m đều nguyên dương và nhỏ hơn 50. Các giá trị trong ma trận không vượt quá 100. 
+Output: Với mỗi bộ test ghi ra ma trận tích tương ứng, mỗi số cách nhau đúng một khoảng trống. 
+Ví dụ
+Input Output
+1
+2  2
+1  2
+3  4
+5 11
+11 25
+Chú ý: Trong bài này cần viết hàm main đúng theo mô tả. 
+------------------------------
+CODE: J05012
+Cửa hàng điện máy – điện lạnh cần lập hóa đơn tính tiền cho khách hàng. Mỗi mặt hàng sẽ có đơn giá và một số tiền được gọi là chiết khấu trên tổng hóa đơn. Số tiền phải thanh toán sẽ bằng đơn giá * số lượng sau đó trừ đi tiền chiết khấu.
+Hãy tính tiền cho từng hóa đơn và sắp xếp theo số tiền giảm dần.
+Input
+Dòng đầu ghi số lượng hóa đơn. Không quá 20.
+Mỗi thông tin hóa đơn gồm 5 dòng:
+Mã mặt hàng (xâu ký tự độ dài không quá 10, không có khoảng trống)
+Tên mặt hàng (xâu ký tự độ dài không quá 100, có thể có khoảng trống)
+Số lượng mua (không quá 50)
+Đơn giá (số nguyên dương có thể đến 10 chữ số)
+Tiền chiết khấu của hóa đơn (có thể đến 9 chữ số).
+Output
+Ghi ra danh sách hóa đơn đã sắp xếp, trong đó mỗi dòng gồm đầy đủ 6 thông tin: mã mặt hàng, tên mặt hàng, số lượng mua, đơn giá, chiết khấu và tổng tiền. Mỗi thông tin cách nhau một khoảng trống.
+Ví dụ
+Input
+Output
+3
+ML01
+May lanh SANYO
+12
+4000000
+2400000
+ML02
+May lanh HITACHI
+4
+2550000000
+0
+ML03
+May lanh NATIONAL
+5
+3000000
+150000
+ML02 May lanh HITACHI 4 2550000000 0 10200000000
+ML01 May lanh SANYO 12 4000000 2400000 45600000
+ML03 May lanh NATIONAL 5 3000000 150000 14850000
+ 
+------------------------------
+CODE: J07060
+Học viện Hoàng gia tổ chức thi thời kỳ giãn cách theo các hình thức thi linh hoạt, phù hợp với từng môn học.
+Thông tin về mỗi môn học gồm:
+Mã môn: xâu ký tự không có khoảng trống, không quá 15 ký tự
+Tên môn: xâu ký tự không có thể có  khoảng trống, không quá 100 ký tự
+Hình thức thi: xâu ký tự không có thể có  khoảng trống, không quá 100 ký tự
+Mỗi ca thi gồm các thông tin:
+Mã ca thi: tự động tăng, tính từ C001
+Ngày thi: đúng định dạng dd/mm/yyyy
+Giờ thi: theo đúng định dạng hh:mm
+Phòng thi: một dãy chữ số đại diện cho ID phòng online, không quá 12 chữ số
+Lịch thi được xây dựng dựa trên mã môn và mã ca thi và mã nhóm lớp. Theo quy định, nhóm lớp đơn giản là các giá trị chữ số, bắt đầu từ 01 và không quá 99. Mỗi nhóm sẽ có số sinh viên tham gia ca thi đó.
+Hãy nhập lịch thi và sắp xếp lại theo thứ tự thời gian. Nếu cùng giờ thì sắp theo mã ca thi (thứ tự từ điển).
+Input – gồm 3 file văn bản.
+MONTHI.in
+Dòng đầu ghi số môn học. Mỗi môn ghi trên 3 dòng lần lượt là mã môn, tên môn, hình thức thi.
+CATHI.in
+Dòng đầu ghi số ca thi. Mỗi ca thi ghi trên 3 dòng gồm Ngày, Giờ và ID phòng thi.
+LICHTHI.in
+Dòng đầu ghi số lượng các dòng trong lịch thi.
+Mỗi dòng tiếp theo ghi 4 thông tin: mã ca thi, mã môn, mã nhóm, số sinh viên. Mỗi thông tin cách nhau một khoảng trống.
+Output
+Ghi ra danh sách lịch thi đã sắp xếp theo yêu cầu, các thông tin cần liệt kê gồm:
+Ngày thi
+Giờ thi
+ID Phòng thi
+Tên môn
+Nhóm
+Số sinh viên
+Các thông tin liệt kê cách nhau đúng một khoảng trống
+Ví dụ
+Input
+Output
+MONTHI.in
+2
+MUL1320
+Nhap mon da phuong tien
+Bai tap lon + Van dap truc tuyen
+BAS1203
+Giai tich 1
+Thi viet + Van dap truc tuyen
+09/01/2022 10:00 70279 Giai tich 1 04 72
+09/01/2022 15:30 70172 Nhap mon da phuong tien 01 46
+  CATHI.in
+2
+09/01/2022
+15:30
+70172
+09/01/2022
+10:00
+70279
+LICHTHI.in
+2
+C001 MUL1320 01 46
+C002 BAS1203 04 72
+ 
+------------------------------
+CODE: S224
+Cho một bảng số kích thước N x M. Chi phí khi đi qua ô (i,j) bằng A[i][j]. Nhiệm vụ của bạn là hãy tìm một đường đi từ ô (1, 1) tới ô (N, M) sao cho chi phí là nhỏ nhất. Tại mỗi ô, bạn được phép đi sang trái, sang phải, đi lên trên và xuống dưới.
+Input:
+Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
+Mỗi test bắt đầu bởi hai số nguyên N và M (1 ≤ N, M ≤ 500).
+N dòng tiếp theo, mỗi dòng gồm M số nguyên A[i][j] (0 ≤ A[i][j] ≤ 9).
+Output: 
+Với mỗi test, in ra một số nguyên là chi phí nhỏ nhất cho đường đi tìm được.
+  Ví dụ:
+Input:
+Output
+3
+4
+5
+0 3 1 2 9
+7 3 4 9 9
+1 7 5 5 3
+2 3 4 2 5
+1
+6
+0 1 2 3 4 5
+5 5
+1 1 1 9 9
+9 9 1 9 9
+1 1 1 9 9
+1 9 9 9 9
+1 1 1 1 1
+24
+15
+13
+   
+------------------------------
+CODE: S226
+Cho biểu thức số học bất kỳ. Nhiệm vụ của bạn là xác định độ dài lớn nhất của các cặp đóng mở ngoặc đúng lồng nhau. Ví dụ với biểu thức P = “( ((X)) (((Y))) )” ta có độ dài các cặp đóng mở ngoặc lồng nhau đúng là 4.
+Nếu biểu thức không đúng hãy đưa ra -1.
+Input:
+Dòng đầu tiên đưa vào số lượng bộ test T (1 ≤ T ≤ 100)
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một biểu thức số học được đưa vào trên một dòng. Độ dài biểu thức không quá 106
+Output:
+Đưa ra kết quả mỗi test theo từng dòng.
+Ví dụ
+Input
+Output
+2
+(((X))(((Y))))
+(b)((c)()
+4
+-1
+ 
+------------------------------
+CODE: TN02011
+Người quản lý kho của một kho hàng nông sản tiến hành phân loại và gán mã cho các sản phẩm nhập/xuất trong tháng.
+Với mã hàng dạng 5 chữ cái, các quy tắc liên quan đến gán mã hàng được mô tả như sau:
+Số lượng Xuất hàng được tính như sau:
+Nếu Mã hàng có ký tự đầu là A thì Xuất = 60% * Nhập
+Nếu Mã hàng có ký tự đầu là B thì Xuất = 70% * Nhập 
+Chú ý: Số lượng xuất cần được làm tròn (round) đến hàng đơn vị sau khi tính theo công thức trên, không thể xuất với số lượng lẻ phần thập phân.                              
+Tính Đơn giá như sau:
+Nếu Mã hàng có ký tự cuối là Y thì Đơn giá = 110000
+Nếu Mã hàng có ký tự cuối là N thì Đơn giá = 135000                         
+Tiền = Xuất * Đơn giá.                                                                 
+Thuế được tính như sau:
+Nếu Mã hàng có ký tự đầu là A và ký tự cuối là Y thì Thuế = 8% của Tiền
+Nếu Mã hàng có ký tự đầu là A và ký tự cuối là N thì Thuế = 11% của Tiền
+Nếu Mã hàng có ký tự đầu là B và ký tự cuối là Y thì Thuế = 17% của Tiền
+Nếu Mã hàng có ký tự đầu là B và ký tự cuối là N thì Thuế = 22% của Tiền.                                                           
+Cho mã hàng và số lượng nhập. Viết chương trình lập bảng theo dõi chi tiết theo quy tắc trên sau đó liệt kê theo nhóm mặt hàng (A hoặc B).
+Input
+Dòng đâu ghi số mã hàng. Mỗi mã hàng chỉ có 2 dòng gồm mã và số lượng nhập.
+Dòng cuối ghi nhóm cần liệt kê (chữ cái A hoặc B).
+Dữ liệu đảm bảo trong cùng nhóm không có mặt hàng nào có thuế bằng nhau.
+Output
+Tính toán và in ra thông tin chi tiết từng mã hàng theo nhóm được yêu cầu, và đã được sắp xếp theo Thuế giảm dần gồm:
+Mã hàng (đảm bảo đúng quy tắc, chữ cái đầu là A hoặc B, chữ cái cuối là Y hoặc N).
+Số lượng nhập
+Số lượng xuất (làm tròn - round - đến đơn vị)
+Đơn giá
+Tiền
+Thuế
+Các thông tin cách nhau một khoảng trống.
+Ví dụ
+Input
+Output
+3
+A001Y
+1000
+B012N
+2500
+B003Y
+4582
+B
+B003Y 4582 3207 110000 352770000 59970900
+B012N 2500 1750 135000 236250000 51975000
+ 
+------------------------------
+CODE: TN02012
+Công ty XYZ mỗi năm đều cập nhật hồ sơ và gán lại mã cho nhân viên (có đúng 5 ký tự) theo quy tắc sau:
+Ký tự đầu tiên là phân loại nhân viên, có 4 nhóm là A, B, C, D
+Hai chữ số tiếp theo mô tả số năm công tác
+Hai ký tự cuối là mã phòng ban.
+Dựa trên loại nhân viên và số năm công tác, hệ số nhân để tính lương được cho trong bảng sau:
+Mỗi nhân viên theo hợp đồng sẽ có một giá trị lương cơ bản có thể rất khác nhau. Lương tháng được tính bằng tích của lương cơ bản với số ngày công và hệ số nhân.
+Cho trước danh sách phòng ban, gồm mã phòng và tên phòng. Cho trước các thông tin nhân viên gồm mã, tên, lương cơ bản (tính theo ngày – đơn vị nghìn VNĐ) và số ngày công. Hãy tính toán và in ra bảng lương nhân viên trong tháng.
+Input
+Dòng đầu ghi số phòng ban, mỗi phòng ban viết trên một dòng gồm mã phòng và tên phòng.
+Tiếp theo là một dòng ghi số nhân viên, mỗi nhân viên ghi trên 4 dòng gồm mã, tên, lương cơ bản (tính theo ngày), số ngày công.
+Output
+Lập bảng lương của nhân viên theo đúng thứ tự nhập. Mỗi nhân viên cần ghi ra các thông tin sau đây trên một dòng:
+Mã nhân viên
+Tên nhân viên
+Phòng ban
+Lương tháng
+Ví dụ
+Input
+Output
+2
+HC Hanh chinh
+KH Ke hoach Dau tu
+2
+C06HC
+Tran Binh Minh
+65
+25
+D03KH
+Le Hoa Binh
+59
+24
+C06HC Tran Binh Minh Hanh chinh 16250000
+D03KH Le Hoa Binh Ke hoach Dau tu 11328000
+ 
+------------------------------
+CODE: TN04005
+Giả sử giá trị của dãy số là sự chênh lệch giữa số lớn nhất và nhỏ nhất trong dãy. Ví dụ,  giá trị của dãy (3, 1, 7, 2) là 6, và giá trị của (42, 42) là 0.
+Hãy tính tổng giá trị của tất cả các dãy con chứa các phần tử liên tiếp trong dãy số đã cho.
+Input
+Dòng đầu tiên ghi số nguyên N ( 2 ≤ N ≤ 300 000) là số phần tử của dãy.
+Tiếp theo là một số dòng ghi đủ N số của dãy. Các giá trị đều nguyên dương không lớn hơn 108.
+Output
+Ghi ra kết quả tính toán.
+Ví dụ
+Input
+Output
+3
+1 2 3
+4
+4
+7 5 7 5
+12
+  4
+3 1 7
+2
+31
+ 
+Giải thích test 3:
+Các tập con có 1 phần tử có độ chênh lệch bằng 0
+Các tập con có 2 phần tử: (3,1) là 2, (1,7) là 6, (7,2) là 5
+Các tập con có 3 phần tử: (3,1,7) là 6 , (1,7,2) là 6
+Các tập con có 4 phần tử là (3,1,7,2) là 6
+Tổng là: 6 + 6 + 6 + 6 + 5 + 2 = 31.
+ 
+------------------------------
+CODE: TN04007
+Cho một biểu thức đúng và thỏa mãn:
+- Các biến trong biểu thức chỉ chứa các chữ cái viết hoa.
+- Các toán tử trong biểu thức là ‘+’ hoặc ‘-’
+Hãy loại bỏ các dấu ngoặc thừa mà vẫn giữ nguyên ý nghĩa của biểu thức.
+Input:
+- Dòng đầu tiên chứa số biểu thức M (1<=M<=10).
+- M dòng tiếp theo, mỗi dòng là một biểu thức đúng, có thể có các dấu cách tùy ý trong mỗi dòng. Độ dài mỗi dòng (bao gồm cả dấu cách) không quá 255 kí tự.
+Output:
+Với mỗi biểu thức, in ra trên một dòng biểu thức không có các dấu ngoặc thừa.
+Chú ý: Thứ tự của các toán hạng trong biểu thức kết quả và biểu thức đầu vào phải giống nhau. Các dấu cách thừa nếu có cũng phải được loại bỏ.
+Ví dụ:
+Input
+Output
+3
+(A  -  B + C)-(A+   (B–C))  -  (C-   (D- E) )
+((A)-  ((B  )    ))
+A-(   B+C)
+A-B+C-(A+B-C)-(C-(D-E))
+A-B
+A-(B+C)
+ 
+------------------------------
+CODE: TN05007
+Khu dân cư bị mất điện dài ngày. Vì vậy, các hộ dân ở đây đã sử dụng máy phát điện. Không phải hộ gia đình nào cũng có, vì vậy, họ đã kết nối với nhau để tạo thành hệ thống lưới điện riêng. Rõ ràng những gia đình nào ở càng xa nguồn phát thì điện sẽ càng yếu.
+Hãy xác định xem gia đình nào điện sẽ yếu nhất?
+Độ yếu của điện tại hộ gia đình X được tính bằng 0 nếu hộ đó là hộ phát điện, nếu hộ X có kết nối điện với hộ Y mà hộ Y ở gần máy phát hơn, độ yếu tại hộ X = độ yếu tại hộ Y + 1. Nếu hộ X không có điện thì có độ yếu bằng vô cùng (infinity).
+Input
+Dòng đầu tiên gồm 3 số nguyên N, M, H lần lượt là số hộ gia đình, số hộ gia đình có máy phát điện, và số kết nối 2 chiều. (N, M ≤ 1 000, H ≤ 10 000).
+Dòng tiếp theo gồm M số là ID các hộ gia đình có máy phát điện (ID đánh số từ 0 tới N-1).
+H dòng tiếp theo, mỗi dòng gồm 2 số u, v, cho biết hộ gia đình u có kết nối với hộ gia đình.
+Output
+In ra hộ gia đình có độ yếu của điện là cao nhất.
+Nếu có nhiều đáp án, in ra hộ có thứ tự (ID) nhỏ nhất.
+Ví dụ:
+Input
+Output
+6 3 5
+0 5 2
+0 1
+1 2
+4 5
+3 5
+0 2
+1
+6 2 3
+5 2
+0 5
+0 1
+3 4
+3
+ 
+------------------------------
+CODE: TN05008
+Xét lưới ô vuông vô hạn trong đó có một số ô cấm, các ô còn lại là tự do. Các dòng và cột của lưới được đánh số theo thứ tự bởi các số nguyên … -3 -2 -1 0 1 2 3 … Các cột được đánh số theo thứ tự từ trái sang phải, còn các dòng theo thứ tự từ dưới lên trên. Ô nằm trên giao của dòng x và cột y được gọi là ô (x, y). Một quân mã  đặt ở ô xuất phát là ô (0,0). Sau một bước đi, ta có thể di quân mã đến một trong các ô ở đỉnh đối diện trên đường chéo của hình chữ nhật kích thước 2×3.
+Hình dưới đây mô tả luật di chuyển của quân mã.
+                    X
+    X 
+        X
+         X
+          M
+          X
+        X
+        X
+    X
+                  Yêu cầu: Cho biết toạ độ của các ô cấm, vị trí ô đích nơi quân mã cần đến, hãy tìm cách di chuyển quân mã từ ô (0,0) đến ô đích sao cho số lượng bước đi cần thực hiện là ít nhất.
+Input
+Dòng đầu tiên chứa T (T ≤ 3) là số lượng test, tiếp đến là T nhóm dòng, mỗi nhóm chứa dữ liệu về một test theo khuôn dạng sau:
+Dòng đầu tiên chứa 2 số nguyên xt, yt được ghi cách nhau bởi dấu cách cho biết toạ độ của ô đích là (xt, yt);
+Dòng thứ hai chứa số nguyên dương n (n ≤ 1000) là số lượng ô cấm;
+Dòng thứ i trong số n dòng tiếp theo chứa hai số nguyên được ghi cách nhau bởi dấu cách xi, yi cho biết (xi, yi) là toạ độ của ô cấm thứ i (i = 1, 2, …, n).
+Chú ý : (−103 ≤ xt, yt ≤ 103;  −103 ≤ xi, yi ≤ 103 )
+Output
+Gồm T dòng mỗi dòng chứa kết quả của một test tương ứng trong dữ liệu vào là số lượng bước đi ít nhất cần thực hiện để di chuyển quân mã từ ô xuất phát (0,0) đến ô đích. Ghi số −1 nếu như không thể di chuyển quân mã đến ô đích. 
+Ví dụ:
+Input
+Output
+1
+2 4
+0
+2
+   
